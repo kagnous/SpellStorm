@@ -29,7 +29,7 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
             ""actions"": [
                 {
                     ""name"": ""Move"",
-                    ""type"": ""Value"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""02f1e1de-a439-4283-a554-08cb4a26adb6"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
@@ -44,9 +44,58 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Cast"",
+                    ""type"": ""Button"",
+                    ""id"": ""d8a756c4-6526-4de7-8094-732f91b1e1be"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RollForm"",
+                    ""type"": ""Button"",
+                    ""id"": ""cd76cdc4-06c4-4cc1-8968-204199c9733f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RollElement"",
+                    ""type"": ""Button"",
+                    ""id"": ""d66ce795-4de1-4def-8c58-10859de50826"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""4fa8f890-006d-472c-9216-328c8ab4412c"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d0a7a0af-1f44-4ef1-b0b7-865b505b7448"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
                 {
                     ""name"": """",
                     ""id"": ""63111fd8-05a1-4f18-9dd3-1c6e307c1765"",
@@ -170,23 +219,67 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""4fa8f890-006d-472c-9216-328c8ab4412c"",
-                    ""path"": ""<Keyboard>/space"",
+                    ""id"": ""28ff814c-75ca-41fe-873c-3fc244c37e22"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Jump"",
+                    ""action"": ""Cast"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""d0a7a0af-1f44-4ef1-b0b7-865b505b7448"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""id"": ""a38eb813-593d-46ac-9df6-603fece1dca9"",
+                    ""path"": ""<Gamepad>/buttonWest"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Jump"",
+                    ""action"": ""Cast"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""22c69b54-8da8-4d86-8796-bc05408c8308"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RollForm"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""38a99088-16dd-4b66-b975-ed132d236255"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RollForm"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bddc7da2-33f2-44a1-bc91-f3329224c2fe"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RollElement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bde13472-ae10-4798-8806-aa23e21341b4"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RollElement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -199,6 +292,9 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
+        m_Player_Cast = m_Player.FindAction("Cast", throwIfNotFound: true);
+        m_Player_RollForm = m_Player.FindAction("RollForm", throwIfNotFound: true);
+        m_Player_RollElement = m_Player.FindAction("RollElement", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -260,12 +356,18 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Jump;
+    private readonly InputAction m_Player_Cast;
+    private readonly InputAction m_Player_RollForm;
+    private readonly InputAction m_Player_RollElement;
     public struct PlayerActions
     {
         private @GameInput m_Wrapper;
         public PlayerActions(@GameInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
+        public InputAction @Cast => m_Wrapper.m_Player_Cast;
+        public InputAction @RollForm => m_Wrapper.m_Player_RollForm;
+        public InputAction @RollElement => m_Wrapper.m_Player_RollElement;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -281,6 +383,15 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                 @Jump.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
+                @Cast.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCast;
+                @Cast.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCast;
+                @Cast.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCast;
+                @RollForm.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRollForm;
+                @RollForm.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRollForm;
+                @RollForm.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRollForm;
+                @RollElement.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRollElement;
+                @RollElement.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRollElement;
+                @RollElement.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRollElement;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -291,6 +402,15 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
+                @Cast.started += instance.OnCast;
+                @Cast.performed += instance.OnCast;
+                @Cast.canceled += instance.OnCast;
+                @RollForm.started += instance.OnRollForm;
+                @RollForm.performed += instance.OnRollForm;
+                @RollForm.canceled += instance.OnRollForm;
+                @RollElement.started += instance.OnRollElement;
+                @RollElement.performed += instance.OnRollElement;
+                @RollElement.canceled += instance.OnRollElement;
             }
         }
     }
@@ -299,5 +419,8 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnCast(InputAction.CallbackContext context);
+        void OnRollForm(InputAction.CallbackContext context);
+        void OnRollElement(InputAction.CallbackContext context);
     }
 }

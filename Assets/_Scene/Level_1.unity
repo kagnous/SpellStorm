@@ -159,8 +159,8 @@ Camera:
   m_GameObject: {fileID: 97283655}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.9, g: 0.9388889, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -251,11 +251,12 @@ GameObject:
   - component: {fileID: 156019274}
   - component: {fileID: 156019273}
   - component: {fileID: 156019276}
+  - component: {fileID: 156019278}
   - component: {fileID: 156019277}
   - component: {fileID: 156019275}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlayerMage
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -319,9 +320,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156019272}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5500001, y: -1.05, z: 0}
+  m_LocalPosition: {x: 0.5500001, y: -0.823, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 415434260}
+  - {fileID: 776669838}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -342,7 +345,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -358,8 +361,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27f7573027261dd4694653afde160741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 0
+  _speed: 200
   _jumpForce: 300
+  isGrounded: 0
+  groundCheck: {fileID: 415434260}
+  groundCheckRadius: 0.32
+  collisionLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!70 &156019277
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -376,6 +385,33 @@ CapsuleCollider2D:
   m_Offset: {x: 0.09657675, y: -0.07511526}
   m_Size: {x: 0.9968468, y: 1.8337694}
   m_Direction: 0
+--- !u!114 &156019278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156019272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd2a7ffeafa82f4d9097ece31147875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualForm: {fileID: 0}
+  actualElement: {fileID: 0}
+  forms:
+  - {fileID: 11400000, guid: 86148e1df34da1744b6287f0c8a635ce, type: 2}
+  - {fileID: 11400000, guid: 44decae1939f73d4180ac31111284741, type: 2}
+  elements:
+  - {fileID: 11400000, guid: 17079359766ae9f4592ade91df9fda6d, type: 2}
+  - {fileID: 11400000, guid: 8686245202f637e4a80ccb199c594d4a, type: 2}
+  - {fileID: 11400000, guid: 952ed4e098074e84d818ba79eb74fd39, type: 2}
+  spells:
+  - {fileID: 11400000, guid: dcd5eac31cbcb0d458ab84f1e45f7340, type: 2}
+  - {fileID: 11400000, guid: e7600fdd226c1b44e95186e1dd150acc, type: 2}
+  - {fileID: 11400000, guid: fb9c828339376294ead0051a92767097, type: 2}
+  - {fileID: 11400000, guid: f9f746a203b89d140ae5517c41e9b68d, type: 2}
+  - {fileID: 11400000, guid: e6d8872460acd0847a33b84e4c71cd8f, type: 2}
 --- !u!1 &269500800
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,6 +704,36 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &415434259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 415434260}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &415434260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415434259}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.154, y: -0.813, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 156019274}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &703006811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,6 +2099,36 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!1 &776669837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 776669838}
+  m_Layer: 3
+  m_Name: CastSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &776669838
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776669837}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.364, y: 0.313, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 156019274}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &915399838
 GameObject:
   m_ObjectHideFlags: 0
