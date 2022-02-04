@@ -17,27 +17,20 @@ public class ProjectileSpell : MagicSpell
     [SerializeField]
     protected Transform originCast;
 
-    private void Awake()
-    {
-        // ATTENTION, NE CE FAIT QUE LORS DE LA CREATION DU SCRIPTABLE (Trouver un meilleurs moyen d'être sûr sans à faire le if ci-dessous à chaque Cast ?)
-        Debug.Log("Awake");
-        originCast = FindObjectOfType<CharacterMovement>().transform.Find("CastSpawn");
-    }
-
-    public override void Cast()
+    public override void Cast(MagicSpell projectileSpell)
     {
         if(originCast == null) originCast = FindObjectOfType<CharacterMovement>().transform.Find("CastSpawn");
 
         GameObject projectile = Instantiate(defaultProjectile);
         projectile.transform.position = originCast.position;
+        if(spellSprite != null) projectile.GetComponent<SpriteRenderer>().sprite = spellSprite;
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
         rb.AddForce(originCast.transform.right * -1 * _speed);
 
-        // EN COURS DE DEV
-        //projectile.GetComponent<ProjectileController>().ProjectileSpell = { LUI MEME };
+        projectile.GetComponent<ProjectileController>().ProjectileSpell = (ProjectileSpell)projectileSpell;
     }
 
-    virtual public void Impact()
+    virtual public void Impact(Collider2D collision, GameObject projectile)
     {
         Debug.Log("Impact");
     }

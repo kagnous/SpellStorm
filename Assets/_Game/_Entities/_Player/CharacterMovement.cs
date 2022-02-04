@@ -5,11 +5,8 @@ using UnityEngine.InputSystem;
 
 public class CharacterMovement : MonoBehaviour
 {
-    [SerializeField, Tooltip("player speed")]
-    private float _speed = 100; public float Speed { get { return _speed; } set { _speed = value; } }
+    private StatsManager _playerStats;
 
-    [SerializeField, Tooltip("player jump intensity")]
-    private float _jumpForce = 300; public float JumpForce { get { return _jumpForce; } set { _jumpForce = value; } }
     private Rigidbody2D rb;
 
     private Vector3 velocity = Vector3.zero;
@@ -17,7 +14,6 @@ public class CharacterMovement : MonoBehaviour
     private GameInput _inputsInstance = null;
 
     #region GroundCheck
-    [SerializeField]
     private bool isGrounded;
 
     [SerializeField]
@@ -36,6 +32,7 @@ public class CharacterMovement : MonoBehaviour
     {
         _inputsInstance = new GameInput();
         rb = GetComponent<Rigidbody2D>();
+        _playerStats = GetComponent<StatsManager>();
     }
 
     private void OnEnable()
@@ -53,7 +50,7 @@ public class CharacterMovement : MonoBehaviour
     private void FixedUpdate()
     {
         #region Move
-        Vector3 targetVelocity = new Vector2(_directionMovment.x * _speed * Time.deltaTime, rb.velocity.y);
+        Vector3 targetVelocity = new Vector2(_directionMovment.x * _playerStats.Speed * Time.deltaTime, rb.velocity.y);
         rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocity, 0.05f);
         #endregion
     }
@@ -68,7 +65,7 @@ public class CharacterMovement : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, collisionLayer);
         if(isGrounded)
-        rb.AddForce(new Vector2(0f, _jumpForce));
+        rb.AddForce(new Vector2(0f, _playerStats.JumpForce));
     }
 
     private void OnDrawGizmos()

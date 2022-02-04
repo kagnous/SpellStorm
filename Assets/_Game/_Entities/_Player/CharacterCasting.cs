@@ -15,6 +15,7 @@ public class CharacterCasting : MonoBehaviour
     private MagicElement actualElement;
     private int actualElementIndex = 0;
 
+    #region Grimoire
     [Header("Grimoire :")]
     [SerializeField, Tooltip("Liste de forme")]
     private List<MagicForm> forms = new List<MagicForm>();
@@ -25,14 +26,20 @@ public class CharacterCasting : MonoBehaviour
     [SerializeField, Tooltip("Liste sorts")]
     private List<MagicSpell> spells = new List<MagicSpell>();
 
+    [SerializeField, Tooltip("Visuel du grimoire")]
+    private SpellBookDisplayer _spellBookDisplayer;
+    #endregion
+
     private void Awake()
     {
         _inputsInstance = new GameInput();
+        _spellBookDisplayer = FindObjectOfType<SpellBookDisplayer>();
     }
     private void Start()
     {
         actualForm = forms[0];
         actualElement = elements[0];
+        _spellBookDisplayer.DisplaySpellBook(actualForm, actualElement);
     }
 
     private void OnEnable()
@@ -55,7 +62,7 @@ public class CharacterCasting : MonoBehaviour
         {
             if (spells[i].Form == actualForm && spells[i].Element == actualElement)
             {
-                spells[i].Cast();
+                spells[i].Cast(spells[i]);
                 return;
             }
         }
@@ -69,6 +76,7 @@ public class CharacterCasting : MonoBehaviour
 
         actualForm = forms[actualFormIndex];
         Debug.Log(forms[actualFormIndex].name);
+        _spellBookDisplayer.DisplaySpellBook(actualForm, actualElement);
     }
 
     private void RollElement(InputAction.CallbackContext context)
@@ -78,5 +86,6 @@ public class CharacterCasting : MonoBehaviour
 
         actualElement = elements[actualElementIndex];
         Debug.Log(elements[actualElementIndex].name);
+        _spellBookDisplayer.DisplaySpellBook(actualForm, actualElement);
     }
 }

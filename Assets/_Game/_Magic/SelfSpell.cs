@@ -10,13 +10,9 @@ public class SelfSpell : MagicSpell
 
     protected GameObject player;
 
-    public void Awake()
+    public override void Cast(MagicSpell selfSpell)
     {
-        player = FindObjectOfType<CharacterMovement>().gameObject;
-    }
-
-    public override void Cast()
-    {
+        base.Cast(selfSpell);
         if(player == null) player = FindObjectOfType<CharacterMovement>().gameObject;
     }
 }

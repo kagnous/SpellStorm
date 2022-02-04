@@ -1,10 +1,10 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewSpell", menuName = "Magic/DefaultSpell")]
-public class MagicSpell : ScriptableObject
+abstract public class MagicSpell : ScriptableObject
 {
     [SerializeField, Tooltip("Logo du sort")]
-    private Sprite sprite; public Sprite Sprite => sprite;
+    protected Sprite spellSprite; public Sprite Sprite => spellSprite;
 
     [SerializeField, Tooltip("Forme du sort")]
     protected MagicForm form; public MagicForm Form => form;
@@ -15,7 +15,7 @@ public class MagicSpell : ScriptableObject
     [SerializeField, Tooltip("Coût en Mana")]
     protected int _mana; public int Mana => _mana;
 
-    virtual public void Cast()
+    virtual public void Cast(MagicSpell magicSpell)
     {
         Debug.Log($"Cast {name} : {form} + {element} !");
     }
