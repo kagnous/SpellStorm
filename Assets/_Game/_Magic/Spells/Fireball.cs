@@ -14,9 +14,9 @@ public class Fireball : ProjectileSpell
     [SerializeField]
     private LayerMask _collisionLayer;
 
-    public override void Cast(MagicSpell fireball)
+    public override void Cast(MagicSpell spell, GameObject caster)
     {
-        base.Cast(fireball);
+        base.Cast(spell, caster);
     }
 
     public override void Impact(Collider2D collision, GameObject projectile)
@@ -30,7 +30,6 @@ public class Fireball : ProjectileSpell
             if (cibles[i].gameObject.tag == "Mob" || cibles[i].gameObject.tag == "Player")
                 cibles[i].GetComponent<StatsManager>().SetLife(-_damage);
         }
-            //Debug.Log("Explosion");
     }
 }
 //SerializedReference

@@ -424,9 +424,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dd56254374732b458b6887ac88c0164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 100
+  _speed: 200
   _jumpForce: 300
   _maxHP: 10
+  _HP: 0
   _armor: 0
 --- !u!1 &249156107
 GameObject:
@@ -521,7 +522,7 @@ RectTransform:
   m_Children:
   - {fileID: 495354921}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2427,12 +2428,12 @@ GameObject:
   - component: {fileID: 856976021}
   - component: {fileID: 856976020}
   m_Layer: 6
-  m_Name: Goblin 1 (1)
+  m_Name: Goblin 2
   m_TagString: Mob
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &856976020
 Rigidbody2D:
   serializedVersion: 4
@@ -2497,6 +2498,7 @@ MonoBehaviour:
   _speed: 100
   _jumpForce: 300
   _maxHP: 10
+  _HP: 0
   _armor: 0
 --- !u!212 &856976024
 SpriteRenderer:
@@ -2921,7 +2923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1808783805
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2985,7 +2987,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &1808783807
 CapsuleCollider2D:
@@ -3018,6 +3020,7 @@ MonoBehaviour:
   _speed: 100
   _jumpForce: 300
   _maxHP: 10
+  _HP: 0
   _armor: 0
 --- !u!50 &1808783809
 Rigidbody2D:

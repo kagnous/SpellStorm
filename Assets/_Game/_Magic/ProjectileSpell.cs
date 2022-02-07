@@ -14,24 +14,40 @@ public class ProjectileSpell : MagicSpell
     [SerializeField]
     protected GameObject defaultProjectile;
 
-    [SerializeField]
-    protected Transform originCast;
-
-    public override void Cast(MagicSpell projectileSpell)
+    public override void Cast(MagicSpell spell, GameObject caster)
     {
-        if(originCast == null) originCast = FindObjectOfType<CharacterMovement>().transform.Find("CastSpawn");
+        //CharacterCasting characterCasting = caster.GetComponent<CharacterCasting>();
+        //if (characterCasting.CanCast)
+        {
+            Transform originCast = caster.transform.Find("CastSpawn");
 
-        GameObject projectile = Instantiate(defaultProjectile);
-        projectile.transform.position = originCast.position;
-        if(spellSprite != null) projectile.GetComponent<SpriteRenderer>().sprite = spellSprite;
-        Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-        rb.AddForce(originCast.transform.right * -1 * _speed);
+            GameObject projectile = Instantiate(defaultProjectile);
+            projectile.transform.position = originCast.position;
+            if (spellSprite != null) projectile.GetComponent<SpriteRenderer>().sprite = spellSprite;
+            Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
+            rb.AddForce(originCast.transform.right * -1 * _speed);
 
-        projectile.GetComponent<ProjectileController>().ProjectileSpell = (ProjectileSpell)projectileSpell;
+            ProjectileController controller = projectile.GetComponent<ProjectileController>();
+            controller.ProjectileSpell = (ProjectileSpell)spell;
+            controller.Caster = caster;
+
+            //characterCasting.CanCast = false;
+        }
     }
 
+    /// <summary>
+    /// Fonction appelée par le ProjectileController en cas d'impact avec autre chose que les tags Player et Magic
+    /// </summary>
+    /// <param name="collision">La collision rapportée par le projectile</param>
+    /// <param name="projectile">L'object projectile lui même</param>
     virtual public void Impact(Collider2D collision, GameObject projectile)
     {
-        Debug.Log("Impact");
+
+    }
+
+    public override void EndSpell(MagicSpell projectileSpell, GameObject caster)
+    {
+        //caster.GetComponent<CharacterCasting>().CanCast = true;
+        //Debug.Log("Tir ok");
     }
 }

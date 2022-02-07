@@ -5,14 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewSelfSpell", menuName = "Magic/SpecialSpell/DefaultSelfSpell")]
 public class SelfSpell : MagicSpell
 {
-    [SerializeField, Tooltip("Durée de l'effet")]
-    protected float _duration; public float Duration => _duration;
-
-    protected GameObject player;
-
-    public override void Cast(MagicSpell selfSpell)
+    public override void Cast(MagicSpell spell, GameObject caster)
     {
-        base.Cast(selfSpell);
-        if(player == null) player = FindObjectOfType<CharacterMovement>().gameObject;
+        base.Cast(spell, caster);
     }
 }

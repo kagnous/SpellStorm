@@ -8,9 +8,23 @@ public class ProjectileController : MonoBehaviour
     private ProjectileSpell _projectileSpell;
     public ProjectileSpell ProjectileSpell { get { return _projectileSpell; } set { _projectileSpell = value; } }
 
-    [SerializeField]
-    private int test;
-    public int Test { get { return test; } set { test = value; } }
+    private GameObject _caster;
+    public GameObject Caster { get { return _caster; } set { _caster = value; } }
+
+    private Vector3 origin;
+
+    private void Start()
+    {
+        origin = _caster.transform.position;
+    }
+
+    private void FixedUpdate()
+    {
+        if((transform.position - origin).magnitude > _projectileSpell.Range)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -24,6 +38,7 @@ public class ProjectileController : MonoBehaviour
         }
     }
 
+    // Pour la range de l'effet FireBall
     /*private void OnDrawGizmos()
     {
             Gizmos.color = Color.red;

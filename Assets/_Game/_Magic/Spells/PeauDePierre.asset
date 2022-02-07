@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15a1772a6e5a73e409802c3276bd6dc4, type: 3}
   m_Name: PeauDePierre
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  spellSprite: {fileID: 0}
   form: {fileID: 11400000, guid: 44decae1939f73d4180ac31111284741, type: 2}
   element: {fileID: 11400000, guid: 952ed4e098074e84d818ba79eb74fd39, type: 2}
   _mana: 0
-  _duration: 0
+  _duration: 5
+  _armorBonus: 2

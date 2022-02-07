@@ -15,8 +15,23 @@ abstract public class MagicSpell : ScriptableObject
     [SerializeField, Tooltip("Coût en Mana")]
     protected int _mana; public int Mana => _mana;
 
-    virtual public void Cast(MagicSpell magicSpell)
+    [SerializeField, Tooltip("Durée du sort ou du blocage avant de prochain tir")]
+    protected float _duration; public float Duration => _duration;
+
+    /// <summary>
+    /// Fonction appelée à l'invocation du sort
+    /// </summary>
+    /// <param name="spell">Le sort concerné</param>
+    /// <param name="caster">L'objet qui a lancé le sort</param>
+    virtual public void Cast(MagicSpell spell, GameObject caster)
     {
         Debug.Log($"Cast {name} : {form} + {element} !");
     }
+
+    /// <summary>
+    /// Fonction appelée après un temps égal à " _duration "
+    /// </summary>
+    /// <param name="spell">Le sort concerné</param>
+    /// <param name="caster">L'objet qui a lancé le sort</param>
+    virtual public void EndSpell(MagicSpell spell, GameObject caster) { }
 }

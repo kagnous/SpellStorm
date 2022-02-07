@@ -16,11 +16,8 @@ MonoBehaviour:
   form: {fileID: 11400000, guid: 86148e1df34da1744b6287f0c8a635ce, type: 2}
   element: {fileID: 11400000, guid: 952ed4e098074e84d818ba79eb74fd39, type: 2}
   _mana: 0
-  _range: 0
-  _speed: 100
+  _duration: 0
+  _range: 100
+  _speed: 200
   defaultProjectile: {fileID: 4887801425270820831, guid: 433bdeba78aca8b45b411492e9830648, type: 3}
-  originCast: {fileID: 0}
   _damage: 5
-  _collisionLayer:
-    serializedVersion: 2
-    m_Bits: 72

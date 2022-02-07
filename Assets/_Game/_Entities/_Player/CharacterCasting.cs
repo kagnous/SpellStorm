@@ -15,6 +15,8 @@ public class CharacterCasting : MonoBehaviour
     private MagicElement actualElement;
     private int actualElementIndex = 0;
 
+    private bool _canCast = true; public bool CanCast { get { return _canCast; } set { _canCast = value; } }
+
     #region Grimoire
     [Header("Grimoire :")]
     [SerializeField, Tooltip("Liste de forme")]
@@ -62,7 +64,8 @@ public class CharacterCasting : MonoBehaviour
         {
             if (spells[i].Form == actualForm && spells[i].Element == actualElement)
             {
-                spells[i].Cast(spells[i]);
+                spells[i].Cast(spells[i], gameObject);
+                StartCoroutine(EndSpellCoroutine(spells[i].Duration, spells[i]));
                 return;
             }
         }
@@ -75,7 +78,7 @@ public class CharacterCasting : MonoBehaviour
         else actualFormIndex++;
 
         actualForm = forms[actualFormIndex];
-        Debug.Log(forms[actualFormIndex].name);
+        //Debug.Log(forms[actualFormIndex].name);
         _spellBookDisplayer.DisplaySpellBook(actualForm, actualElement);
     }
 
@@ -85,7 +88,13 @@ public class CharacterCasting : MonoBehaviour
         else actualElementIndex++;
 
         actualElement = elements[actualElementIndex];
-        Debug.Log(elements[actualElementIndex].name);
+        //Debug.Log(elements[actualElementIndex].name);
         _spellBookDisplayer.DisplaySpellBook(actualForm, actualElement);
+    }
+
+    IEnumerator EndSpellCoroutine(float duration, MagicSpell spell)
+    {
+        yield return new WaitForSeconds(duration);
+        spell.EndSpell(spell, gameObject);
     }
 }
