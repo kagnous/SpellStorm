@@ -14,11 +14,6 @@ public class Fireball : ProjectileSpell
     [SerializeField]
     private LayerMask _collisionLayer;
 
-    public override void Cast(MagicSpell spell, GameObject caster)
-    {
-        base.Cast(spell, caster);
-    }
-
     public override void Impact(Collider2D collision, GameObject projectile)
     {
         // Cibles dans la zone d'explosion

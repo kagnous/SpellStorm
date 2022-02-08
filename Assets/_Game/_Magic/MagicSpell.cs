@@ -15,6 +15,7 @@ abstract public class MagicSpell : ScriptableObject
     [SerializeField, Tooltip("Coût en Mana")]
     protected int _mana; public int Mana => _mana;
 
+    // A confirmer...
     [SerializeField, Tooltip("Durée du sort ou du blocage avant de prochain tir")]
     protected float _duration; public float Duration => _duration;
 
@@ -25,7 +26,7 @@ abstract public class MagicSpell : ScriptableObject
     /// <param name="caster">L'objet qui a lancé le sort</param>
     virtual public void Cast(MagicSpell spell, GameObject caster)
     {
-        Debug.Log($"Cast {name} : {form} + {element} !");
+        Debug.Log($"{name} ({form.name} + {element.name}) !");
     }
 
     /// <summary>
