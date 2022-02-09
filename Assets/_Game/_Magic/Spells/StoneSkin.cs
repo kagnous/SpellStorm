@@ -8,10 +8,14 @@ public class StoneSkin : SelfSpell
     [SerializeField]
     private int _bonusArmor = 2;
 
+    [SerializeField]
+    private TokenEffect effect;
+
     /////////////////////////////// Trouver un moyen de savoir que la cible est déjà affectée par peau de pierre pour ne l'appliquer que si c'est pas déjà le cas ///////////
 
     public override void Cast(MagicSpell spell, GameObject caster)
     {
+        /*
         // On récupère et modifie le sprite du caster
         caster.GetComponent<SpriteRenderer>().color = new Color(0.2f, 0.2f, 0.2f, 1);
 
@@ -26,10 +30,15 @@ public class StoneSkin : SelfSpell
         // On augmente son armure
         casterStats.Armor += _bonusArmor;
         Debug.Log("Peau de pierre !");
+        */
+
+        StatsManager casterStats = caster.GetComponent<StatsManager>();
+        //casterStats.AddEffect(effect);
     }
 
     public override void EndSpell(MagicSpell spell, GameObject caster)
     {
+        /*
         // On refait tout les effets de Cast dans l'autre sens
         caster.GetComponent<SpriteRenderer>().color = Color.white;
         caster.GetComponent<Rigidbody2D>().gravityScale /= 2;
@@ -37,5 +46,6 @@ public class StoneSkin : SelfSpell
         casterStats.Speed *= 2;
                                                                                 //casterStats.JumpForce *= 2;
         casterStats.Armor -= _bonusArmor;
+        */
     }
 }

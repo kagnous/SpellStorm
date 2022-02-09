@@ -16,7 +16,7 @@ MonoBehaviour:
   form: {fileID: 11400000, guid: 86148e1df34da1744b6287f0c8a635ce, type: 2}
   element: {fileID: 11400000, guid: 17079359766ae9f4592ade91df9fda6d, type: 2}
   _mana: 0
-  _duration: 3
+  _duration: 0
   _range: 8
   _speed: 300
   defaultProjectile: {fileID: 4887801425270820831, guid: 433bdeba78aca8b45b411492e9830648, type: 3}

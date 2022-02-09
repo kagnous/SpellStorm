@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e6c07c1590e0574a99e74c5fd7cf84e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeOffset: 0.2
+  _timeOffset: 0
   _posOffset: {x: 1, y: 1, z: -10}
 --- !u!1 &156019272
 GameObject:
@@ -423,10 +423,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1ee09b89e63a40044b9d9ed714bc3fa5, type: 2}
   - {fileID: 11400000, guid: f9f746a203b89d140ae5517c41e9b68d, type: 2}
   - {fileID: 11400000, guid: fb9c828339376294ead0051a92767097, type: 2}
-  - {fileID: 11400000, guid: e6d8872460acd0847a33b84e4c71cd8f, type: 2}
+  - {fileID: 11400000, guid: d409a577350c3dc4aa0019f98714667f, type: 2}
   - {fileID: 11400000, guid: dcd5eac31cbcb0d458ab84f1e45f7340, type: 2}
   - {fileID: 11400000, guid: 64e7fc5bab503b8458a8ed2de5d85854, type: 2}
-  _spellBookDisplayer: {fileID: 0}
 --- !u!114 &156019279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,6 +443,7 @@ MonoBehaviour:
   _maxHP: 10
   _HP: 0
   _armor: 0
+  _effects: []
 --- !u!1 &249156107
 GameObject:
   m_ObjectHideFlags: 0
@@ -2515,6 +2515,7 @@ MonoBehaviour:
   _maxHP: 10
   _HP: 0
   _armor: 0
+  _effects: []
 --- !u!212 &856976024
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2938,7 +2939,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1808783805
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3037,6 +3038,7 @@ MonoBehaviour:
   _maxHP: 10
   _HP: 0
   _armor: 0
+  _effects: []
 --- !u!50 &1808783809
 Rigidbody2D:
   serializedVersion: 4

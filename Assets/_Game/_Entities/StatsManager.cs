@@ -15,13 +15,24 @@ public class StatsManager : MonoBehaviour
     [SerializeField]
     private int _HP; public int HP { get { return _HP; } set { _HP = value; } }
 
-    [SerializeField]
+    [SerializeField, Tooltip("Réduction de dégâts physiques")]
     private int _armor; public int Armor { get { return _armor; } set { _armor = value; } }
+
+    [SerializeField, Tooltip("Tout les effets qui affectent l'entité")]
+    List<TokenEffect> _effects; public List<TokenEffect> Effects { get { return _effects; } set { _effects = value; } }
 
     private void Awake()
     {
         _HP = _maxHP;
+        _effects = new List<TokenEffect>();
     }
+
+    /*public void AddEffect(TokenEffect effect)
+    {
+        _effects.Add(effect);
+        Debug.Log("Appliqué");
+        effect.Apply(this);
+    }*/
 
     virtual public void SetLife(int modifLife)
     {
