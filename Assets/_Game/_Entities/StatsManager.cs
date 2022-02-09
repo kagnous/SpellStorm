@@ -15,24 +15,37 @@ public class StatsManager : MonoBehaviour
     [SerializeField]
     private int _HP; public int HP { get { return _HP; } set { _HP = value; } }
 
+    [SerializeField]
+    private int _maxMana = 100; public int MaxMana { get { return _maxMana; } set { _maxMana = value; } }
+    [SerializeField]
+    private int _mana; public int Mana { get { return _mana; } set { _mana = value; } }
+
     [SerializeField, Tooltip("Réduction de dégâts physiques")]
     private int _armor; public int Armor { get { return _armor; } set { _armor = value; } }
 
     [SerializeField, Tooltip("Tout les effets qui affectent l'entité")]
-    List<TokenEffect> _effects; public List<TokenEffect> Effects { get { return _effects; } set { _effects = value; } }
+    List<EffectMother> _effects; public List<EffectMother> Effects { get { return _effects; } set { _effects = value; } }
 
     private void Awake()
     {
         _HP = _maxHP;
-        _effects = new List<TokenEffect>();
+        _mana = _maxMana;
+        _effects = new List<EffectMother>();
     }
 
-    /*public void AddEffect(TokenEffect effect)
+    public void AddEffect(EffectMother effect)
     {
+        for (int i = 0; i < _effects.Count; i++)
+        {
+            if (effect == _effects[i])
+            {
+                /////////////////////////// Trouver comment refresh l'effet (sachant qu'on accès qu'au TokenEffect et que c'est l'Object effect)/////////////////////
+                return;
+            }
+        }
         _effects.Add(effect);
-        Debug.Log("Appliqué");
         effect.Apply(this);
-    }*/
+    }
 
     virtual public void SetLife(int modifLife)
     {

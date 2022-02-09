@@ -19,7 +19,7 @@ public class CameraFollow : MonoBehaviour
         _player = FindObjectOfType<CharacterMovement>().gameObject;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if(_player != null)
         transform.position = Vector3.SmoothDamp(transform.position, _player.transform.position + _posOffset, ref velocity, _timeOffset);

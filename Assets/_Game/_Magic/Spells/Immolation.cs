@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewPeauDePierre", menuName = "Magic/SpecialSpell/PeauDePierre")]
-public class StoneSkin : SelfSpell
+[CreateAssetMenu(fileName = "NewImmolation", menuName = "Magic/SpecialSpell/Immolation")]
+public class Immolation : SelfSpell
 {
     [SerializeField]
     private EffectMother effect;
@@ -11,9 +9,9 @@ public class StoneSkin : SelfSpell
     public override void Cast(MagicSpell spell, GameObject caster)
     {
         // On récupère et modifie le sprite du caster
-        //caster.GetComponent<SpriteRenderer>().color = new Color(0.2f, 0.2f, 0.2f, 1);
+        //caster.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0, 1);
 
-        Debug.Log("Peau de pierre !");
+        Debug.Log("Immolation !");
 
         StatsManager casterStats = caster.GetComponent<StatsManager>();
         casterStats.AddEffect(effect);

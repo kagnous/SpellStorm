@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5c877e77027f804fbb8dad2856b3baf, type: 3}
+  m_Script: {fileID: 11500000, guid: da13300cdc9872d44a115c2709195649, type: 3}
   m_Name: Immolation
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  spellSprite: {fileID: 0}
   form: {fileID: 11400000, guid: 44decae1939f73d4180ac31111284741, type: 2}
   element: {fileID: 11400000, guid: 17079359766ae9f4592ade91df9fda6d, type: 2}
   _mana: 0
   _duration: 0
+  effect: {fileID: 11400000, guid: 3b45d5fcc2cbb484e8438bfe7b3c6147, type: 2}

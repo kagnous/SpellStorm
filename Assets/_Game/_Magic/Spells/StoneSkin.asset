@@ -17,5 +17,4 @@ MonoBehaviour:
   element: {fileID: 11400000, guid: 952ed4e098074e84d818ba79eb74fd39, type: 2}
   _mana: 0
   _duration: 5
-  _bonusArmor: 2
-  effect: {fileID: 11400000, guid: 00b47be2577dfbe46b9e1f8ee7ee94f8, type: 2}
+  effect: {fileID: 11400000, guid: 0fea2a302b1618445b9797728cef00fa, type: 2}

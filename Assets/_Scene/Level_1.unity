@@ -413,12 +413,12 @@ MonoBehaviour:
   actualForm: {fileID: 0}
   actualElement: {fileID: 0}
   forms:
-  - {fileID: 11400000, guid: 86148e1df34da1744b6287f0c8a635ce, type: 2}
   - {fileID: 11400000, guid: 44decae1939f73d4180ac31111284741, type: 2}
+  - {fileID: 11400000, guid: 86148e1df34da1744b6287f0c8a635ce, type: 2}
   elements:
+  - {fileID: 11400000, guid: 952ed4e098074e84d818ba79eb74fd39, type: 2}
   - {fileID: 11400000, guid: 17079359766ae9f4592ade91df9fda6d, type: 2}
   - {fileID: 11400000, guid: 8686245202f637e4a80ccb199c594d4a, type: 2}
-  - {fileID: 11400000, guid: 952ed4e098074e84d818ba79eb74fd39, type: 2}
   spells:
   - {fileID: 11400000, guid: 1ee09b89e63a40044b9d9ed714bc3fa5, type: 2}
   - {fileID: 11400000, guid: f9f746a203b89d140ae5517c41e9b68d, type: 2}
@@ -442,6 +442,8 @@ MonoBehaviour:
   _jumpForce: 300
   _maxHP: 10
   _HP: 0
+  _maxMana: 100
+  _mana: 100
   _armor: 0
   _effects: []
 --- !u!1 &249156107
@@ -2514,6 +2516,8 @@ MonoBehaviour:
   _jumpForce: 300
   _maxHP: 10
   _HP: 0
+  _maxMana: 100
+  _mana: 100
   _armor: 0
   _effects: []
 --- !u!212 &856976024
@@ -3037,6 +3041,8 @@ MonoBehaviour:
   _jumpForce: 300
   _maxHP: 10
   _HP: 0
+  _maxMana: 100
+  _mana: 100
   _armor: 0
   _effects: []
 --- !u!50 &1808783809
