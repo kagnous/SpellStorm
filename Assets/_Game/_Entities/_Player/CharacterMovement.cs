@@ -58,10 +58,14 @@ public class CharacterMovement : MonoBehaviour
     private void FixedUpdate()
     {
         #region Move
-        // Calcul de la velocité en fonction du mouvement player sur x, la speed et le temps
-        Vector3 targetVelocity = new Vector2(_directionMovment.x * _playerStats.Speed * Time.deltaTime, rb.velocity.y);
-        // Mouvement en fonction de la velocité calculée ci-desssus
-        rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocity, 0.05f);
+        // Garder le if pour affecter la friction des physics materials au player (sinon stop/move full raccord aux inputs
+        //if(_directionMovment != Vector2.zero)
+        {
+            // Calcul de la velocité en fonction du mouvement player sur x, la speed et le temps
+            Vector3 targetVelocity = new Vector2(_directionMovment.x * _playerStats.Speed * Time.deltaTime, rb.velocity.y);
+            // Mouvement en fonction de la velocité calculée ci-desssus
+            rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocity, 0.05f);
+        }
         #endregion
 
         Flip(rb.velocity.x);

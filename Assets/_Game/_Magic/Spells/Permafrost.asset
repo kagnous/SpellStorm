@@ -9,11 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5c877e77027f804fbb8dad2856b3baf, type: 3}
-  m_Name: CoucheGlace
+  m_Script: {fileID: 11500000, guid: d6b043038b4a08a43a03f637042075cd, type: 3}
+  m_Name: Permafrost
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  spellSprite: {fileID: 0}
   form: {fileID: 11400000, guid: 44decae1939f73d4180ac31111284741, type: 2}
   element: {fileID: 11400000, guid: 8686245202f637e4a80ccb199c594d4a, type: 2}
   _mana: 0
   _duration: 0
+  effects:
+  - {fileID: 11400000, guid: 3c0f18aea0bccf740bcc25a7469af3c5, type: 2}

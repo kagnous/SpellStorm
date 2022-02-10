@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d6b043038b4a08a43a03f637042075cd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - spellSprite: {instanceID: 0}
+  - form: {fileID: 11400000, guid: 44decae1939f73d4180ac31111284741, type: 2}
+  - element: {fileID: 11400000, guid: 8686245202f637e4a80ccb199c594d4a, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

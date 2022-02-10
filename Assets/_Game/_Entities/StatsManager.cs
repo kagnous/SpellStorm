@@ -43,6 +43,18 @@ public class StatsManager : MonoBehaviour
                 return;
             }
         }
+        if(effect.TypeOfTheEffect == EffectMother.TypeEffect.Cold)
+        {
+            for (int i = 0; i < _effects.Count; i++)
+            {
+                if (_effects[i].TypeOfTheEffect == EffectMother.TypeEffect.Fire)
+                {
+                    //_effects[i].EndEffect();
+                    return;
+                }
+            }
+        }
+
         _effects.Add(effect);
         effect.Apply(this);
     }

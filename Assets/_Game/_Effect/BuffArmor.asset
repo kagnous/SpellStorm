@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d56090fa40edc8745948cc76715ec415, type: 3}
-  m_Name: Peau de pierre
+  m_Name: BuffArmor
   m_EditorClassIdentifier: 
+  affectedValue: 2
   EffectPrefab: {fileID: 2196069545264108467, guid: 98c5026abce13e743a038c9fbeea4795, type: 3}
   _duration: 5
+  value: 5

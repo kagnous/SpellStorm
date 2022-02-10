@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e6c07c1590e0574a99e74c5fd7cf84e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeOffset: 0
+  _timeOffset: 0.2
   _posOffset: {x: 1, y: 1, z: -10}
 --- !u!1 &156019272
 GameObject:
@@ -336,7 +336,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156019272}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5500001, y: -0.823, z: 0}
+  m_LocalPosition: {x: 1.39, y: -0.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 415434260}
@@ -413,11 +413,11 @@ MonoBehaviour:
   actualForm: {fileID: 0}
   actualElement: {fileID: 0}
   forms:
-  - {fileID: 11400000, guid: 44decae1939f73d4180ac31111284741, type: 2}
   - {fileID: 11400000, guid: 86148e1df34da1744b6287f0c8a635ce, type: 2}
+  - {fileID: 11400000, guid: 44decae1939f73d4180ac31111284741, type: 2}
   elements:
-  - {fileID: 11400000, guid: 952ed4e098074e84d818ba79eb74fd39, type: 2}
   - {fileID: 11400000, guid: 17079359766ae9f4592ade91df9fda6d, type: 2}
+  - {fileID: 11400000, guid: 952ed4e098074e84d818ba79eb74fd39, type: 2}
   - {fileID: 11400000, guid: 8686245202f637e4a80ccb199c594d4a, type: 2}
   spells:
   - {fileID: 11400000, guid: 1ee09b89e63a40044b9d9ed714bc3fa5, type: 2}
@@ -425,7 +425,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fb9c828339376294ead0051a92767097, type: 2}
   - {fileID: 11400000, guid: d409a577350c3dc4aa0019f98714667f, type: 2}
   - {fileID: 11400000, guid: dcd5eac31cbcb0d458ab84f1e45f7340, type: 2}
-  - {fileID: 11400000, guid: 64e7fc5bab503b8458a8ed2de5d85854, type: 2}
+  - {fileID: 11400000, guid: 98cee2480baf7f44f8cbb1f71c96dabb, type: 2}
 --- !u!114 &156019279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2943,7 +2943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1808783805
 SpriteRenderer:
   m_ObjectHideFlags: 0

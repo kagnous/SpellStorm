@@ -21,14 +21,7 @@ public class EffectRepeatController : EffectController
             yield return new WaitForSeconds(cadence);
             effet.Effect(target);
         }
-        Debug.Log("Fin de l'effet");
-
-        for (int i = 0; i < target.Effects.Count; i++)
-        {
-            if (target.Effects[i] == effet)
-                target.Effects.RemoveAt(i);
-        }
-        Destroy(gameObject);
+        EndEffect();
     }
 
     public override void RefreshEffect()

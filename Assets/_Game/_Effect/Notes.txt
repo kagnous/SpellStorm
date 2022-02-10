@@ -1,3 +1,0 @@
-Tout ce qui finis par Controller = Monobehaviours créés et appliqués à l'object
-
-Les autres sont des Scriptables qui créent les Controllers et leur préfab, et leur aplliquent leur comportement
