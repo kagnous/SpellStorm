@@ -11,34 +11,52 @@ public class ProjectileSpell : MagicSpell
     [SerializeField, Tooltip("Vitesse de déplacement du sort")]
     protected float _speed; public float Speed => _speed;
 
-    [SerializeField]
+    [SerializeField, Tooltip("Prefab de projectile magique")]
     protected GameObject defaultProjectile;
 
-    [SerializeField]
-    protected Transform originCast;
-
-    private void Awake()
+    public override void Cast(GameObject caster)
     {
-        // ATTENTION, NE CE FAIT QUE LORS DE LA CREATION DU SCRIPTABLE (Trouver un meilleurs moyen d'être sûr sans à faire le if ci-dessous à chaque Cast ?)
-        Debug.Log("Awake");
-        originCast = FindObjectOfType<CharacterMovement>().transform.Find("CastSpawn");
-    }
+        //On récupère les coordonnées d'invocation du sort
+        Transform originCast = caster.transform.Find("CastSpawn");
 
-    public override void Cast()
-    {
-        if(originCast == null) originCast = FindObjectOfType<CharacterMovement>().transform.Find("CastSpawn");
-
+        //On instancie le projectile et on le place au point d'invocation
         GameObject projectile = Instantiate(defaultProjectile);
         projectile.transform.position = originCast.position;
-        Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-        rb.AddForce(originCast.transform.right * -1 * _speed);
 
-        // EN COURS DE DEV
-        //projectile.GetComponent<ProjectileController>().ProjectileSpell = { LUI MEME };
+        // On récupère son sprite, on le set on le met dans le bon sens
+        if (spellSprite != null) projectile.GetComponent<SpriteRenderer>().sprite = spellSprite;
+        if (caster.transform.localScale.x < 0) projectile.transform.localScale = new Vector3(-projectile.transform.localScale.x, projectile.transform.localScale.y, projectile.transform.localScale.z);
+
+        // On ajoute une force au Rigidbody2D pour l'envoyer correctement (axe * sens, intensité)
+        projectile.GetComponent<Rigidbody2D>().AddForce(originCast.transform.right * Mathf.Sign(-caster.transform.localScale.x) * _speed);
+                //Debug.Log(originCast.transform.right);
+
+        // On set le Controller du projectile
+        ProjectileController controller = projectile.GetComponent<ProjectileController>();
+        controller.ProjectileSpell = this;
+        controller.Caster = caster;
+
+        // On appelle une fonction potentiellement override par une classe fille si des modifications doivent être faites sur le projectile
+        PostCast(projectile);
     }
 
-    virtual public void Impact()
+    /// <summary>
+    /// Fonction appelée par le ProjectileController en cas d'impact avec autre chose que les tags Player et Magic
+    /// </summary>
+    /// <param name="collision">La collision rapportée par le projectile</param>
+    /// <param name="projectile">L'object projectile lui même</param>
+    virtual public void Impact(Collider2D collision, GameObject projectile) { }
+
+    /// <summary>
+    /// Pour des actions supplémentaires à faire sur le projectile dans la fille (Classe du sort)
+    /// </summary>
+    /// <param name="projectile">Le projectile créé</param>
+    virtual public void PostCast(GameObject projectile) { }
+
+    public override void EndSpell(MagicSpell projectileSpell, GameObject caster)
     {
-        Debug.Log("Impact");
+                    // Antispam
+                    //caster.GetComponent<CharacterCasting>().CanCast = true;
+                    //Debug.Log("Tir ok");
     }
 }
