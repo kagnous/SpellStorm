@@ -69,7 +69,6 @@ public class CharacterMovement : MonoBehaviour
         #endregion
 
         Flip(rb.velocity.x);
-
     }
 
     /// <summary>
@@ -90,6 +89,8 @@ public class CharacterMovement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, collisionLayer);
         // Si oui on applique une force vers le haut en fonction de la JumpForce du player
         if(isGrounded)  rb.AddForce(new Vector2(0f, _playerStats.JumpForce));
+
+                //Debug.Log("Jump");
     }
 
     /// <summary>

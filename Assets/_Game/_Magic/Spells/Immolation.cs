@@ -6,7 +6,7 @@ public class Immolation : SelfSpell
     [SerializeField]
     private EffectMother effect;
 
-    public override void Cast(MagicSpell spell, GameObject caster)
+    public override void Cast(GameObject caster)
     {
         // On récupère et modifie le sprite du caster
         //caster.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0, 1);

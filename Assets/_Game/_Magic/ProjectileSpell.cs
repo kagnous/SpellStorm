@@ -14,36 +14,30 @@ public class ProjectileSpell : MagicSpell
     [SerializeField, Tooltip("Prefab de projectile magique")]
     protected GameObject defaultProjectile;
 
-    public override void Cast(MagicSpell spell, GameObject caster)
+    public override void Cast(GameObject caster)
     {
-                    // Système antispam (pas finis...)
-                    //CharacterCasting characterCasting = caster.GetComponent<CharacterCasting>();
-                    //if (characterCasting.CanCast)
-        {
-            //On récupère les coordonnées d'invocation du sort
-            Transform originCast = caster.transform.Find("CastSpawn");
+        //On récupère les coordonnées d'invocation du sort
+        Transform originCast = caster.transform.Find("CastSpawn");
 
-            //On instancie le projectile et on le place au point d'invocation
-            GameObject projectile = Instantiate(defaultProjectile);
-            projectile.transform.position = originCast.position;
+        //On instancie le projectile et on le place au point d'invocation
+        GameObject projectile = Instantiate(defaultProjectile);
+        projectile.transform.position = originCast.position;
 
-            // On récupère son sprite, on le set on le met dans le bon sens
-            if (spellSprite != null) projectile.GetComponent<SpriteRenderer>().sprite = spellSprite;
-            if(caster.transform.localScale.x < 0)   projectile.transform.localScale = new Vector3(-projectile.transform.localScale.x, projectile.transform.localScale.y, projectile.transform.localScale.z);
-           
-            // On ajoute une force au Rigidbody2D pour l'envoyer correctement (axe, sens, intensité)
-            projectile.GetComponent<Rigidbody2D>().AddForce(originCast.transform.right * -caster.transform.localScale.x * _speed);
+        // On récupère son sprite, on le set on le met dans le bon sens
+        if (spellSprite != null) projectile.GetComponent<SpriteRenderer>().sprite = spellSprite;
+        if (caster.transform.localScale.x < 0) projectile.transform.localScale = new Vector3(-projectile.transform.localScale.x, projectile.transform.localScale.y, projectile.transform.localScale.z);
 
-            // On set le Controller du projectile
-            ProjectileController controller = projectile.GetComponent<ProjectileController>();
-            controller.ProjectileSpell = (ProjectileSpell)spell;
-            controller.Caster = caster;
+        // On ajoute une force au Rigidbody2D pour l'envoyer correctement (axe * sens, intensité)
+        projectile.GetComponent<Rigidbody2D>().AddForce(originCast.transform.right * Mathf.Sign(-caster.transform.localScale.x) * _speed);
+                //Debug.Log(originCast.transform.right);
 
-            // On appelle une fonction potentiellement override par une classe fille si des modifications doivent être faites sur le projectile
-            PostCast(projectile);
+        // On set le Controller du projectile
+        ProjectileController controller = projectile.GetComponent<ProjectileController>();
+        controller.ProjectileSpell = this;
+        controller.Caster = caster;
 
-                        //characterCasting.CanCast = false;
-        }
+        // On appelle une fonction potentiellement override par une classe fille si des modifications doivent être faites sur le projectile
+        PostCast(projectile);
     }
 
     /// <summary>

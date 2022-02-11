@@ -26,6 +26,7 @@ public class EffectRepeatController : EffectController
 
     public override void RefreshEffect()
     {
-        actualCoup = coup;
+        Debug.Log("Refresh" + effet.name);
+        actualCoup = 0;
     }
 }

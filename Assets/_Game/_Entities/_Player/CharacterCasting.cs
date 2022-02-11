@@ -72,7 +72,7 @@ public class CharacterCasting : MonoBehaviour
             if (spells[i].Form == actualForm && spells[i].Element == actualElement)
             {
                 // On appelle la fonction Cast du sort en question et la coroutine de fin de spell
-                spells[i].Cast(spells[i], gameObject);
+                spells[i].Cast(gameObject);
                 StartCoroutine(EndSpellCoroutine(spells[i].Duration, spells[i]));
                 return;
             }

@@ -9,18 +9,19 @@ public class EffectConstantController : EffectController
     void Start()
     {
         StartCoroutine(ApplyCoroutine());
+        effet.Effect(Target);
     }
 
     IEnumerator ApplyCoroutine()
     {
-        effet.Effect(Target);
-
         yield return new WaitForSeconds(duration);
+        Debug.Log("Fin coroutine");
         EndEffect();
     }
 
     public override void RefreshEffect()
     {
+        //Debug.Log("Refresh" + effet.name);
         // A trouver
     }
 }

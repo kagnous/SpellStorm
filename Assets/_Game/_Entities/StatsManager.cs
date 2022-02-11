@@ -11,9 +11,9 @@ public class StatsManager : MonoBehaviour
     private float _jumpForce = 300; public float JumpForce { get { return _jumpForce; } set { _jumpForce = value; } }
 
     [SerializeField]
-    private int _maxHP = 10; public int MaxHP { get { return _maxHP; } set { _maxHP = value; } }
+    protected int _maxHP = 10; public int MaxHP { get { return _maxHP; } set { _maxHP = value; } }
     [SerializeField]
-    private int _HP; public int HP { get { return _HP; } set { _HP = value; } }
+    protected int _HP; public int HP { get { return _HP; } set { _HP = value; } }
 
     [SerializeField]
     private int _maxMana = 100; public int MaxMana { get { return _maxMana; } set { _maxMana = value; } }
@@ -24,22 +24,22 @@ public class StatsManager : MonoBehaviour
     private int _armor; public int Armor { get { return _armor; } set { _armor = value; } }
 
     [SerializeField, Tooltip("Tout les effets qui affectent l'entité")]
-    List<EffectMother> _effects; public List<EffectMother> Effects { get { return _effects; } set { _effects = value; } }
+    List<EffectController> _effects; public List<EffectController> Effects { get { return _effects; } set { _effects = value; } }
 
-    private void Awake()
+    protected virtual void Awake()
     {
         _HP = _maxHP;
         _mana = _maxMana;
-        _effects = new List<EffectMother>();
+        _effects = new List<EffectController>();
     }
 
     public void AddEffect(EffectMother effect)
     {
         for (int i = 0; i < _effects.Count; i++)
         {
-            if (effect == _effects[i])
+            if (effect == _effects[i].Effet)
             {
-                /////////////////////////// Trouver comment refresh l'effet (sachant qu'on accès qu'au TokenEffect et que c'est l'Object effect)/////////////////////
+                _effects[i].RefreshEffect();
                 return;
             }
         }
@@ -49,26 +49,31 @@ public class StatsManager : MonoBehaviour
             {
                 if (_effects[i].TypeOfTheEffect == EffectMother.TypeEffect.Fire)
                 {
-                    //_effects[i].EndEffect();
+                    Debug.Log("Froid enlève feu");
+                    _effects[i].EndEffect();
+                    return;
+                }
+            }
+        }
+        else if (effect.TypeOfTheEffect == EffectMother.TypeEffect.Fire)
+        {
+            for (int i = 0; i < _effects.Count; i++)
+            {
+                if (_effects[i].TypeOfTheEffect == EffectMother.TypeEffect.Cold)
+                {
+                    Debug.Log("Feu enlève froid");
+                    _effects[i].EndEffect();
                     return;
                 }
             }
         }
 
-        _effects.Add(effect);
-        effect.Apply(this);
+        GameObject effectObject = effect.Apply(this);
+        _effects.Add(effectObject.GetComponent<EffectController>());
     }
 
-    virtual public void SetLife(int modifLife)
+    public virtual void SetLife(int modifLife)
     {
-        if(modifLife < 0)
-        {
-            modifLife += _armor;
-            if(modifLife >= 0)
-            {
-                modifLife = -1;
-            }
-        }
         _HP += modifLife;
         if(_HP <= 0)
         {
@@ -80,5 +85,25 @@ public class StatsManager : MonoBehaviour
             _HP = _maxHP;
         }
         Debug.Log($"{name} a {_HP} hp");
+    }
+
+    public void PhysicalDamage(int damage)
+    {
+        damage -= _armor;
+        if (damage <= 0)
+        {
+            damage = 1;
+        }
+        SetLife(-damage);
+    }
+
+    public void ElementalDamage(int damage)
+    {
+        SetLife(-damage);
+    }
+
+    public void Heal(int heal)
+    {
+        SetLife(-heal);
     }
 }

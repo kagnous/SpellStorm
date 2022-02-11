@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d56090fa40edc8745948cc76715ec415, type: 3}
   m_Name: Ralentissement
   m_EditorClassIdentifier: 
+  typeEffect: 0
+  colorEffect: {r: 0, g: 0, b: 0, a: 0}
+  effectPrefab: {fileID: 7410336885811642170, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
   affectedValue: 3
-  EffectPrefab: {fileID: 2196069545264108467, guid: 98c5026abce13e743a038c9fbeea4795, type: 3}
-  _duration: 5
   value: -100
+  _duration: 5

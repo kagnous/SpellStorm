@@ -23,7 +23,7 @@ public class Fireball : ProjectileSpell
         for (int i = 0; i < cibles.Length; i++)
         {
             if (cibles[i].gameObject.tag == "Mob" || cibles[i].gameObject.tag == "Player")
-                cibles[i].GetComponent<StatsManager>().SetLife(-_damage);
+                cibles[i].GetComponent<StatsManager>().ElementalDamage(_damage);
         }
     }
 }

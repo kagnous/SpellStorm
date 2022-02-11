@@ -24,7 +24,7 @@ abstract public class MagicSpell : ScriptableObject
     /// </summary>
     /// <param name="spell">Le sort concerné</param>
     /// <param name="caster">L'objet qui a lancé le sort</param>
-    virtual public void Cast(MagicSpell spell, GameObject caster)
+    virtual public void Cast(GameObject caster)
     {
         Debug.Log($"{name} ({form.name} + {element.name}) !");
     }

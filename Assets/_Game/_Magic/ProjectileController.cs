@@ -38,7 +38,7 @@ public class ProjectileController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Si la collision n'est ni avec Player ou Magic...
-        if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "Magic")
+        if (collision.gameObject.tag != "Magic" && collision.gameObject != _caster)
         {
             // On appelle la fonction Impact du spell correspondant (si il est assigné)
             if (_projectileSpell != null)   _projectileSpell.Impact(collision, gameObject);

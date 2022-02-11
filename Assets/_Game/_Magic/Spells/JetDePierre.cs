@@ -15,8 +15,8 @@ public class JetDePierre : ProjectileSpell
 
     public override void Impact(Collider2D collision, GameObject projectile)
     {
-        if (collision.gameObject.tag == "Mob")
-            collision.GetComponent<StatsManager>().SetLife(-_damage);
+        if (collision.gameObject.tag == "Mob" || collision.gameObject.tag == "Player")
+            collision.GetComponent<StatsManager>().PhysicalDamage(_damage);
     }
 }
 //SerializedReference
