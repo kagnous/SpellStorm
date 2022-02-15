@@ -39,7 +39,7 @@ public class CharacterCasting : MonoBehaviour
     private void Start()
     {
         // Initialisation des assets et du visuel du grimoire
-        actualForm = forms[0];  actualElement = elements[0];
+        actualForm = forms[0]; actualElement = elements[0];
         _spellBookDisplayer = FindObjectOfType<SpellBookDisplayer>();
         _spellBookDisplayer.DisplaySpellBook(actualForm, actualElement);
     }
@@ -73,7 +73,6 @@ public class CharacterCasting : MonoBehaviour
             {
                 // On appelle la fonction Cast du sort en question et la coroutine de fin de spell
                 spells[i].Cast(gameObject);
-                StartCoroutine(EndSpellCoroutine(spells[i].Duration, spells[i]));
                 return;
             }
         }
@@ -86,13 +85,13 @@ public class CharacterCasting : MonoBehaviour
     private void RollForm(InputAction.CallbackContext context)
     {
         // On incrémente ou on remet à 0 l'index de la liste des formes
-        if (actualFormIndex >= forms.Count -1) actualFormIndex = 0;
+        if (actualFormIndex >= forms.Count - 1) actualFormIndex = 0;
         else actualFormIndex++;
 
         // On met à jours les assets et le visuel du grimoire
         actualForm = forms[actualFormIndex];
         _spellBookDisplayer.DisplaySpellBook(actualForm, actualElement);
-                                    //Debug.Log(forms[actualFormIndex].name);
+        //Debug.Log(forms[actualFormIndex].name);
     }
 
     /// <summary>
@@ -101,23 +100,12 @@ public class CharacterCasting : MonoBehaviour
     private void RollElement(InputAction.CallbackContext context)
     {
         // On incrémente ou on remet à 0 l'index de la liste des éléments
-        if (actualElementIndex >= elements.Count -1) actualElementIndex = 0;
+        if (actualElementIndex >= elements.Count - 1) actualElementIndex = 0;
         else actualElementIndex++;
 
         // On met à jours les assets et le visuel du grimoire
         actualElement = elements[actualElementIndex];
         _spellBookDisplayer.DisplaySpellBook(actualForm, actualElement);
-                                    //Debug.Log(elements[actualElementIndex].name);
-    }
-
-    /// <summary>
-    /// Appelle après un temps la fonction EndSpell du sort
-    /// </summary>
-    /// <param name="duration">Durée avant l'appel de EndSpell</param>
-    /// <param name="spell">Asset du sort concerné</param>
-    IEnumerator EndSpellCoroutine(float duration, MagicSpell spell)
-    {
-        yield return new WaitForSeconds(duration);
-        spell.EndSpell(spell, gameObject);
+        //Debug.Log(elements[actualElementIndex].name);
     }
 }

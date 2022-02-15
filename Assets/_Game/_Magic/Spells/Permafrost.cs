@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewPermafrost", menuName = "Magic/SpecialSpell/Permafrost")]
+[CreateAssetMenu(fileName = "NewPermafrost", menuName = "Magic/Spell/Permafrost")]
 public class Permafrost : SelfSpell
 {
     [SerializeField]

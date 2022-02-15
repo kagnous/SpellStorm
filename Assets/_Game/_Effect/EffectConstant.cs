@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewEffectConstant", menuName = "Game/EffectConstant")]
 public class EffectConstant : EffectMother
 {
-    [SerializeField]
+    [SerializeField, Tooltip("Durée de l'application de l'effet")]
     private float _duration;
 
     // Pour quand le Property drawer fonctionnera
@@ -16,6 +16,7 @@ public class EffectConstant : EffectMother
         effectController.Duaration = _duration;
     }
 
+    // Refait Apply() à l'envert pour dissiper le modificateur activé
     public override void EndEffect(StatsManager target)
     {
         switch (affectedValue)

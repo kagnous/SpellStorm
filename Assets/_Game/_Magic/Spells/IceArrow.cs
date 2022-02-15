@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewIceArrow", menuName = "Magic/SpecialSpell/IceArrow")]
+[CreateAssetMenu(fileName = "NewIceArrow", menuName = "Magic/Spell/IceArrow")]
 public class IceArrow : ProjectileSpell
 {
     [SerializeField]

@@ -3,9 +3,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewEffectRepeat", menuName = "Game/EffectRepeat")]
 public class EffectRepeat : EffectMother
 {
-    [SerializeField]
+    [SerializeField, Tooltip("Nombre de fois que l'effet va être appliqué")]
     private int coup = 10;
-    [SerializeField]
+    [SerializeField, Tooltip("Intervalle de temps entre les application")]
     private int cadence = 1;
 
     public override void AddEffectController(GameObject effect)

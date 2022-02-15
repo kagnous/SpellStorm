@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewGustOfWind", menuName = "Magic/SpecialSpell/GustOfWind")]
+[CreateAssetMenu(fileName = "NewGustOfWind", menuName = "Magic/Spell/GustOfWind")]
 public class GustOfWind : ProjectileSpell
 {
     [SerializeField]

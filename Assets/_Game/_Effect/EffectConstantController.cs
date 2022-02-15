@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class EffectConstantController : EffectController
 {
+    // Durée de l'effet
     private float duration; public float Duaration { get { return duration; } set { duration = value; } }
 
     void Start()
     {
-        StartCoroutine(ApplyCoroutine());
+        // Applique l'effet dès le début
         effet.Effect(Target);
+        StartCoroutine(ApplyCoroutine());
     }
 
+    // Attend X secondes avant de mettre fin à l'effet
     IEnumerator ApplyCoroutine()
     {
         yield return new WaitForSeconds(duration);

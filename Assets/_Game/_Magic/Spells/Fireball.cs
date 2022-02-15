@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewFireball", menuName = "Magic/SpecialSpell/Fireball")]
+[CreateAssetMenu(fileName = "NewFireball", menuName = "Magic/Spell/Fireball")]
 public class Fireball : ProjectileSpell
 {
     [SerializeField, Tooltip("Dégâts infligés")]

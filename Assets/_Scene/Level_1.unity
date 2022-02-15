@@ -421,7 +421,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8686245202f637e4a80ccb199c594d4a, type: 2}
   - {fileID: 11400000, guid: 3ff4ef181a8ec8a4fb00d275a21e8758, type: 2}
   spells:
-  - {fileID: 11400000, guid: 1ee09b89e63a40044b9d9ed714bc3fa5, type: 2}
+  - {fileID: 11400000, guid: ef9eeff9649a06549b7ddc21cf929504, type: 2}
   - {fileID: 11400000, guid: f9f746a203b89d140ae5517c41e9b68d, type: 2}
   - {fileID: 11400000, guid: fb9c828339376294ead0051a92767097, type: 2}
   - {fileID: 11400000, guid: d409a577350c3dc4aa0019f98714667f, type: 2}
@@ -915,39 +915,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7410336885811642170, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7410336885811642171, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
       propertyPath: m_RootOrder
       value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7410336885811642171, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7410336885811642171, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7410336885811642171, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7410336885811642171, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7410336885811642171, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7410336885811642171, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7410336885811642171, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7410336885811642171, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2795,7 +2767,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1295123897
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2877,7 +2849,7 @@ MonoBehaviour:
   cadenceCast: 2
   spells:
   - {fileID: 11400000, guid: dcd5eac31cbcb0d458ab84f1e45f7340, type: 2}
-  - {fileID: 11400000, guid: 1ee09b89e63a40044b9d9ed714bc3fa5, type: 2}
+  - {fileID: 11400000, guid: ef9eeff9649a06549b7ddc21cf929504, type: 2}
 --- !u!1 &1367529712
 GameObject:
   m_ObjectHideFlags: 0

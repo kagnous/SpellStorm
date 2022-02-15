@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewProjectile", menuName = "Magic/SpecialSpell/DefaultProjectile")]
 public class ProjectileSpell : MagicSpell
 {
     [SerializeField, Tooltip("Portée max du sort")]
@@ -52,11 +51,4 @@ public class ProjectileSpell : MagicSpell
     /// </summary>
     /// <param name="projectile">Le projectile créé</param>
     virtual public void PostCast(GameObject projectile) { }
-
-    public override void EndSpell(MagicSpell projectileSpell, GameObject caster)
-    {
-                    // Antispam
-                    //caster.GetComponent<CharacterCasting>().CanCast = true;
-                    //Debug.Log("Tir ok");
-    }
 }

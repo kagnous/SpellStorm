@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewJetDePierre", menuName = "Magic/SpecialSpell/JetDePierre")]
-public class JetDePierre : ProjectileSpell
+[CreateAssetMenu(fileName = "NewStoneThrow", menuName = "Magic/Spell/StoneThrow")]
+public class StoneThrow : ProjectileSpell
 {
     [SerializeField, Tooltip("Dégâts infligés")]
     private int _damage; public int Damage => _damage;

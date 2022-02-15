@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    //L'objet à suivre
     private GameObject _player;
 
     [SerializeField, Tooltip("Latence entre le mouvement de la caméra et du player")]

@@ -13,7 +13,7 @@ public class StatsPlayerManager : StatsManager
         healthBar.SetMaxHealth(_maxHP);
     }
 
-    public override void SetLife(int modifLife)
+    protected override void SetLife(int modifLife)
     {
         base.SetLife(modifLife);
         healthBar.SetHealth(_HP);

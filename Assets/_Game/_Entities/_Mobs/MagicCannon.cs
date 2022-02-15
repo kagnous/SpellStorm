@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class MagicCannon : MonoBehaviour
 {
-    [SerializeField]
+    [SerializeField, Tooltip("Durée entre les tirs")]
     private float cadenceCast;
 
-    [SerializeField]
+    [SerializeField, Tooltip("Liste des spells lancés par l'objet")]
     private List<MagicSpell> spells;
 
     void Start()
@@ -15,6 +15,7 @@ public class MagicCannon : MonoBehaviour
         StartCoroutine(CastCoroutine());
     }
 
+    // Toute les X secondes, caster un sort random de la liste
     IEnumerator CastCoroutine()
     {
         while(true)
