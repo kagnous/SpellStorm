@@ -11,7 +11,9 @@ public class GoblinController : MonoBehaviour
     [SerializeField]
     private List<Transform> waypoints;
     private Transform target;
-    private int destpoint = 0;
+    //private int destpoint = 0;
+
+    private bool _isFreeze; public bool IsFreeze { get { return _isFreeze; } set { _isFreeze = value; } }
 
     private void Awake()
     {
@@ -37,7 +39,8 @@ public class GoblinController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<StatsManager>().PhysicalDamage(-3);
+            if(!_isFreeze)
+            collision.gameObject.GetComponent<StatsManager>().PhysicalDamage(3);
         }
     }
 }

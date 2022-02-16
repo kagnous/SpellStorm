@@ -37,14 +37,8 @@ public class EffectMother : ScriptableObject
     [SerializeField, Tooltip("Prefab de l'objet pour les effets")]
     protected GameObject effectPrefab;
 
-    [SerializeField, Tooltip("Stat affectée par l'effet")]
-    protected AffectedValue affectedValue;
-
-    [SerializeField, Tooltip("Modificateur de la stat (dégâts/bonus, pas la durée)")]
-    protected int value;
-
     [SerializeField]
-    protected ModifyStatEffect[] effectsNewVer;
+    protected ModifyStatEffect[] effects;
 
     /// <summary>
     /// Crée et applique un GameObject d'effet à la cible
@@ -65,8 +59,8 @@ public class EffectMother : ScriptableObject
         effectController.Effet = this;
         effectController.TypeOfTheEffect = typeEffect;
 
-        effectController.ParticleSystemEffect.startColor = colorEffect; // A corriger
-        //effectController.ParticleSystemEffect.main = new ParticleSystem.MainModule();   // = colorEffect;
+        ParticleSystem.MainModule newMainModule = effectController.ParticleSystemEffect.main;
+        newMainModule.startColor = colorEffect;
 
         return effect;
     }
@@ -86,40 +80,51 @@ public class EffectMother : ScriptableObject
     /// <param name="target">StatsManager de la cible de l'effet</param>
     public virtual void Effect(StatsManager target)
     {
-        switch (affectedValue)
+        for (int i = 0; i < effects.Length; i++)
         {
-            case AffectedValue.HP:
-                target.ElementalDamage(value);
-                Debug.Log($"+{value} HP");
-                break;
-            case AffectedValue.Mana:
-                target.Mana += value;
-                Debug.Log($"+{value} Mana");
-                break;
-            case AffectedValue.Armor:
-                target.Armor += value;
-                Debug.Log($"+{value} armor");
-                break;
-            case AffectedValue.Speed:
-                target.Speed += value;
-                Debug.Log($"+{value} speed");
-                break;
-            case AffectedValue.Jump:
-                target.JumpForce += value;
-                Debug.Log($"+{value} jump");
-                break;
-            case AffectedValue.GravityScale:
-                target.gameObject.GetComponent<Rigidbody2D>().gravityScale += value;
-                Debug.Log($"+{value} gravityScale");
-                break;
-            case AffectedValue.Paralyse:
-                // La value ne change absolument rien ici
-                target.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
-                //target.GetComponent<CharacterMovement>() // Desactive
-                Debug.Log($"Paralyse on X axis");
-                break;
-            default:
-                break;
+            switch (effects[i].affectedValue)
+            {
+                case AffectedValue.HP:
+                    target.ElementalDamage(effects[i].value);
+                    Debug.Log($"-{effects[i].value} HP");
+                    break;
+                case AffectedValue.Mana:
+                    target.Mana += effects[i].value;
+                    Debug.Log($"+{effects[i].value} Mana");
+                    break;
+                case AffectedValue.Armor:
+                    target.Armor += effects[i].value;
+                    Debug.Log($"+{effects[i].value} armor");
+                    break;
+                case AffectedValue.Speed:
+                    target.Speed += effects[i].value;
+                    Debug.Log($"+{effects[i].value} speed");
+                    break;
+                case AffectedValue.Jump:
+                    target.JumpForce += effects[i].value;
+                    Debug.Log($"+{effects[i].value} jump");
+                    break;
+                case AffectedValue.GravityScale:
+                    target.gameObject.GetComponent<Rigidbody2D>().gravityScale += effects[i].value;
+                    Debug.Log($"+{effects[i].value} gravityScale");
+                    break;
+                case AffectedValue.Paralyse:
+                    // Propetry Drawer pour masquer la value qui sert à rien ici
+                    if (target.gameObject.tag == "Player")
+                    {
+                        target.GetComponent<CharacterMovement>().enabled = false;
+                        target.GetComponent<CharacterMovement>().DirectionMovment = Vector2.zero;
+                    }
+                    else if(target.gameObject.tag == "Mob")
+                    {
+                        Debug.Log($"Paralyse Goblin");
+                        target.GetComponent<GoblinController>().IsFreeze = true;
+                    }
+                    Debug.Log($"Paralyse");
+                    break;
+                default:
+                    break;
+            }
         }
     }
 
@@ -136,6 +141,6 @@ public class EffectMother : ScriptableObject
 [System.Serializable]
 public struct ModifyStatEffect
 {
-    public EffectMother.AffectedValue typeValue;
-    public float value;
+    public EffectMother.AffectedValue affectedValue;
+    public int value;
 }

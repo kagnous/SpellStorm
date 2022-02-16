@@ -15,8 +15,7 @@ MonoBehaviour:
   spellSprite: {fileID: 21300000, guid: 1096e9a0d15d42340ac2571c8f97350e, type: 3}
   form: {fileID: 11400000, guid: 86148e1df34da1744b6287f0c8a635ce, type: 2}
   element: {fileID: 11400000, guid: 3ff4ef181a8ec8a4fb00d275a21e8758, type: 2}
-  _mana: 0
-  _duration: 0
+  _mana: 10
   _range: 30
   _speed: 600
   defaultProjectile: {fileID: 4887801425270820831, guid: 433bdeba78aca8b45b411492e9830648, type: 3}

@@ -7,6 +7,8 @@ public class CharacterCasting : MonoBehaviour
 {
     private GameInput _inputsInstance = null;
 
+    private StatsManager _casterStats;
+
     [SerializeField, Tooltip("Forme actuellement sélectionnée dans le grimoire")]
     private MagicForm actualForm;
     private int actualFormIndex = 0;
@@ -14,8 +16,6 @@ public class CharacterCasting : MonoBehaviour
     [SerializeField, Tooltip("Element actuellement sélectionnée dans le grimoire")]
     private MagicElement actualElement;
     private int actualElementIndex = 0;
-
-    private bool _canCast = true; public bool CanCast { get { return _canCast; } set { _canCast = value; } }
 
     #region Grimoire
     [Header("Grimoire :")]
@@ -35,6 +35,15 @@ public class CharacterCasting : MonoBehaviour
     private void Awake()
     {
         _inputsInstance = new GameInput();
+
+        if(gameObject.tag == "Player")
+        {
+            _casterStats = GetComponent<StatsPlayerManager>();
+        }
+        else
+        {
+            _casterStats = GetComponent<StatsManager>();
+        }
     }
     private void Start()
     {
@@ -71,12 +80,55 @@ public class CharacterCasting : MonoBehaviour
             // Si la forme et l'élément sélectionné correspondent...
             if (spells[i].Form == actualForm && spells[i].Element == actualElement)
             {
-                // On appelle la fonction Cast du sort en question et la coroutine de fin de spell
-                spells[i].Cast(gameObject);
+                // On vérifie si on peut bien caster ce sort
+                if(CanCast(spells[i]))
+                {
+                    // On appelle la fonction Cast du sort en question
+                    spells[i].Cast(gameObject);
+                    // On enlève le mana correspondant au caster (s'il en a)
+                    if (_casterStats != null)
+                    {
+                        _casterStats.SetMana(-spells[i].Mana);
+                    }
+                }
                 return;
             }
         }
         Debug.Log("Aucun sort correspondant trouvé");
+    }
+
+    /// <summary>
+    /// Test si le sort peu bien être casté
+    /// </summary>
+    /// <param name="spell">Le sort en question</param>
+    /// <returns>Si le sort peut être casté</returns>
+    private bool CanCast(MagicSpell spell)
+    {
+        // On compare le mana du sort et du caster (si pas de stats, cast)
+        if(_casterStats != null)
+        {
+            if(spell.Mana > _casterStats.Mana)
+            {
+                return false;
+            }
+        }
+
+        // On vérifie si le caster (player uniquement) est freeze
+        if(gameObject.tag == "Player")
+        {
+            CharacterMovement playerMovment = GetComponent<CharacterMovement>();
+            // Si freeze, on vérifie si le sort casté est personnel, sinon on retourne false
+            if (!playerMovment.isActiveAndEnabled)
+            {
+                if (spell.Form.name != "FormePersonnelle")
+                {
+                    return false;
+                }
+            }
+        }
+
+        // Si tout les test on été passés avec succès, on peut bien caster le sort
+        return true;
     }
 
     /// <summary>

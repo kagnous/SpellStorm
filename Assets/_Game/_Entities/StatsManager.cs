@@ -16,9 +16,9 @@ public class StatsManager : MonoBehaviour
     protected int _HP; public int HP { get { return _HP; } set { _HP = value; } }
 
     [SerializeField]
-    private int _maxMana = 100; public int MaxMana { get { return _maxMana; } set { _maxMana = value; } }
+    protected int _maxMana = 100; public int MaxMana { get { return _maxMana; } set { _maxMana = value; } }
     [SerializeField]
-    private int _mana; public int Mana { get { return _mana; } set { _mana = value; } }
+    protected int _mana; public int Mana { get { return _mana; } set { _mana = value; } }
 
     [SerializeField, Tooltip("Réduction de dégâts physiques")]
     private int _armor; public int Armor { get { return _armor; } set { _armor = value; } }
@@ -126,5 +126,18 @@ public class StatsManager : MonoBehaviour
     public void Heal(int heal)
     {
         SetLife(heal);
+    }
+
+    public virtual void SetMana(int mana)
+    {
+        _mana += mana;
+        if(_mana > _maxMana)
+        {
+            _mana = _maxMana;
+        }
+        else if(_mana < 0)
+        {
+            _mana = 0;
+        }
     }
 }

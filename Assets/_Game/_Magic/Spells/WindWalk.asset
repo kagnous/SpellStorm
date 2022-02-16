@@ -15,8 +15,6 @@ MonoBehaviour:
   spellSprite: {fileID: 21300000, guid: 1096e9a0d15d42340ac2571c8f97350e, type: 3}
   form: {fileID: 11400000, guid: 44decae1939f73d4180ac31111284741, type: 2}
   element: {fileID: 11400000, guid: 3ff4ef181a8ec8a4fb00d275a21e8758, type: 2}
-  _mana: 0
-  _duration: 0
+  _mana: 15
   effects:
-  - {fileID: 11400000, guid: a8416124d7d16a847817422ddc8b1c89, type: 2}
-  - {fileID: 11400000, guid: 4baf90d1e0dfeba4dac84157c737f977, type: 2}
+  - {fileID: 11400000, guid: 6d13edb7e55c79f4ab85c7c58db1e468, type: 2}
