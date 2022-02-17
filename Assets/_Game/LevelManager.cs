@@ -13,20 +13,28 @@ public class LevelManager : MonoBehaviour
         _gameOverPanel.SetActive(false);
     }
 
+    /// <summary>
+    /// Lance le Game Over
+    /// </summary>
     public void GameOver()
     {
         Debug.Log("GAME OVER");
         _gameOverPanel.SetActive(true);
     }
 
+    /// <summary>
+    /// Recharge le premier niveau
+    /// </summary>
     public void ReloadGame()
     {
         SceneManager.LoadScene("Level_1");
     }
 
+    /// <summary>
+    /// Ramene au Main Menu
+    /// </summary>
     public void Quit()
     {
-        Application.Quit();
-        Debug.Log("Application quittée");
+        SceneManager.LoadScene("MainMenu");
     }
 }
