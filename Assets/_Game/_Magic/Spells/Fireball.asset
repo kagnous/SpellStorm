@@ -15,13 +15,14 @@ MonoBehaviour:
   spellSprite: {fileID: 21300000, guid: a74a75ed89eb0ed4a95ea96fa290b843, type: 3}
   form: {fileID: 11400000, guid: 86148e1df34da1744b6287f0c8a635ce, type: 2}
   element: {fileID: 11400000, guid: 17079359766ae9f4592ade91df9fda6d, type: 2}
-  _mana: 0
-  _duration: 0
+  _mana: 10
   _range: 8
   _speed: 300
   defaultProjectile: {fileID: 4887801425270820831, guid: 433bdeba78aca8b45b411492e9830648, type: 3}
   _damage: 2
   _damageRange: 2
+  _explosion: {fileID: 7158826703393369548, guid: c0ce8230161bb1f43ae0c6fa378c98cc, type: 3}
+  _explosionDuration: 2
   _collisionLayer:
     serializedVersion: 2
     m_Bits: 72

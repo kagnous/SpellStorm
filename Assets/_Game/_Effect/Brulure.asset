@@ -15,7 +15,8 @@ MonoBehaviour:
   typeEffect: 1
   colorEffect: {r: 1, g: 0, b: 0, a: 1}
   effectPrefab: {fileID: 7410336885811642170, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
-  affectedValue: 0
-  value: 1
+  effects:
+  - affectedValue: 0
+    value: 1
   coup: 3
   cadence: 1

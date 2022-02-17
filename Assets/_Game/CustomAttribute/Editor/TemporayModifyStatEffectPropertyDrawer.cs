@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+/*
 using UnityEngine;
 using UnityEditor;
 
@@ -37,4 +36,4 @@ public class TemporayModifyEffectPropertyDrawer : PropertyDrawer
         subProperty = property.FindPropertyRelative("value");
         subProperty.floatValue = EditorGUI.FloatField(rect, subProperty.displayName, subProperty.floatValue);
     }
-}
+}*/

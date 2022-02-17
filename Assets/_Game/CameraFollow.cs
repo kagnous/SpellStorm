@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    //L'objet à suivre
     private GameObject _player;
 
     [SerializeField, Tooltip("Latence entre le mouvement de la caméra et du player")]
@@ -17,10 +16,12 @@ public class CameraFollow : MonoBehaviour
     private void Start()
     {
         _player = FindObjectOfType<CharacterMovement>().gameObject;
+        transform.position = _player.transform.position + _posOffset;
     }
 
     void Update()
     {
+        // Si le player existe : on fait un mouvement (SmoothDamp) de la position actuelle vers sa position + le décalage, à sa vélocité, avec un décalage de temps donné
         if(_player != null)
         transform.position = Vector3.SmoothDamp(transform.position, _player.transform.position + _posOffset, ref velocity, _timeOffset);
     }

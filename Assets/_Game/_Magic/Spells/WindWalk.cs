@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-[CreateAssetMenu(fileName = "NewWindWalk", menuName = "Magic/SpecialSpell/WindWalk")]
+[CreateAssetMenu(fileName = "NewWindWalk", menuName = "Magic/Spell/WindWalk")]
 public class WindWalk : SelfSpell
 {
     [SerializeField]

@@ -10,11 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d56090fa40edc8745948cc76715ec415, type: 3}
-  m_Name: SuperSpeed
+  m_Name: StoneSkinEffect
   m_EditorClassIdentifier: 
   typeEffect: 0
-  colorEffect: {r: 1, g: 1, b: 1, a: 0}
+  colorEffect: {r: 0, g: 0, b: 0, a: 1}
   effectPrefab: {fileID: 7410336885811642170, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
-  affectedValue: 3
-  value: 50
-  _duration: 7
+  effects:
+  - affectedValue: 2
+    value: 5
+  - affectedValue: 3
+    value: -100
+  - affectedValue: 4
+    value: -200
+  _duration: 5

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewImmolation", menuName = "Magic/SpecialSpell/Immolation")]
+[CreateAssetMenu(fileName = "NewImmolation", menuName = "Magic/Spell/Immolation")]
 public class Immolation : SelfSpell
 {
     [SerializeField]

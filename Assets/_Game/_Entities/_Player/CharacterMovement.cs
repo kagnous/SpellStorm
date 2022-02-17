@@ -32,7 +32,7 @@ public class CharacterMovement : MonoBehaviour
     /// <summary>
     /// Vecteur de la direction du player 
     /// </summary>
-    private Vector2 _directionMovment;
+    private Vector2 _directionMovment; public Vector2 DirectionMovment { get { return _directionMovment; } set { _directionMovment = value; } }
 
     private void Awake()
     {

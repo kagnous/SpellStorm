@@ -16,9 +16,9 @@ public class StatsManager : MonoBehaviour
     protected int _HP; public int HP { get { return _HP; } set { _HP = value; } }
 
     [SerializeField]
-    private int _maxMana = 100; public int MaxMana { get { return _maxMana; } set { _maxMana = value; } }
+    protected int _maxMana = 100; public int MaxMana { get { return _maxMana; } set { _maxMana = value; } }
     [SerializeField]
-    private int _mana; public int Mana { get { return _mana; } set { _mana = value; } }
+    protected int _mana; public int Mana { get { return _mana; } set { _mana = value; } }
 
     [SerializeField, Tooltip("Réduction de dégâts physiques")]
     private int _armor; public int Armor { get { return _armor; } set { _armor = value; } }
@@ -33,8 +33,10 @@ public class StatsManager : MonoBehaviour
         _effects = new List<EffectController>();
     }
 
+    // Ajoute un effet à l'entité
     public void AddEffect(EffectMother effect)
     {
+        // Teste si l'effet est pas déjà actif
         for (int i = 0; i < _effects.Count; i++)
         {
             if (effect == _effects[i].Effet)
@@ -43,7 +45,9 @@ public class StatsManager : MonoBehaviour
                 return;
             }
         }
-        if(effect.TypeOfTheEffect == EffectMother.TypeEffect.Cold)
+
+        #region Test type contraires
+        if (effect.TypeOfTheEffect == EffectMother.TypeEffect.Cold)
         {
             for (int i = 0; i < _effects.Count; i++)
             {
@@ -67,12 +71,17 @@ public class StatsManager : MonoBehaviour
                 }
             }
         }
+        #endregion
 
         GameObject effectObject = effect.Apply(this);
         _effects.Add(effectObject.GetComponent<EffectController>());
     }
 
-    public virtual void SetLife(int modifLife)
+    /// <summary>
+    /// Met a jour la vie après être passée par les modificateurs armure/éléments
+    /// </summary>
+    /// <param name="modifLife">La valeur a appliquer à la vie</param>
+    protected virtual void SetLife(int modifLife)
     {
         _HP += modifLife;
         if(_HP <= 0)
@@ -87,6 +96,10 @@ public class StatsManager : MonoBehaviour
         Debug.Log($"{name} a {_HP} hp");
     }
 
+    /// <summary>
+    /// Calcule les dégâts physiques reçus en fonction de l'armure
+    /// </summary>
+    /// <param name="damage">Dégâts reçus</param>
     public void PhysicalDamage(int damage)
     {
         damage -= _armor;
@@ -97,13 +110,34 @@ public class StatsManager : MonoBehaviour
         SetLife(-damage);
     }
 
+    /// <summary>
+    /// Calcule les dégâts élémentaire selon les résistances
+    /// </summary>
+    /// <param name="damage">Dégâts reçus</param>
     public void ElementalDamage(int damage)
     {
         SetLife(-damage);
     }
 
+    /// <summary>
+    /// Calcule la quantité de soin gagné
+    /// </summary>
+    /// <param name="heal">Soin reçus</param>
     public void Heal(int heal)
     {
-        SetLife(-heal);
+        SetLife(heal);
+    }
+
+    public virtual void SetMana(int mana)
+    {
+        _mana += mana;
+        if(_mana > _maxMana)
+        {
+            _mana = _maxMana;
+        }
+        else if(_mana < 0)
+        {
+            _mana = 0;
+        }
     }
 }

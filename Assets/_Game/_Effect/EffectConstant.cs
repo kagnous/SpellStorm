@@ -3,12 +3,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewEffectConstant", menuName = "Game/EffectConstant")]
 public class EffectConstant : EffectMother
 {
-    [SerializeField]
+    [SerializeField, Tooltip("Durée de l'application de l'effet")]
     private float _duration;
-
-    // Pour quand le Property drawer fonctionnera
-    //[SerializeField]
-    //private TemporaryModifyStatEffect effect;
 
     public override void AddEffectController(GameObject effect)
     {
@@ -16,40 +12,53 @@ public class EffectConstant : EffectMother
         effectController.Duaration = _duration;
     }
 
+    // Refait Apply() à l'envert pour dissiper le modificateur activé
     public override void EndEffect(StatsManager target)
     {
-        switch (affectedValue)
+        for (int i = 0; i < effects.Length; i++)
         {
-            case AffectedValue.HP:
-                target.HP -= value;
-                Debug.Log($"-{value} HP");
-                break;
-            case AffectedValue.Mana:
-                target.Mana -= value;
-                Debug.Log($"-{value} Mana");
-                break;
-            case AffectedValue.Armor:
-                target.Armor -= value;
-                Debug.Log($"-{value} armor");
-                break;
-            case AffectedValue.Speed:
-                target.Speed -= value;
-                Debug.Log($"-{value} speed");
-                break;
-            case AffectedValue.Jump:
-                target.JumpForce -= value;
-                Debug.Log($"-{value} jump");
-                break;
-            case AffectedValue.GravityScale:
-                target.gameObject.GetComponent<Rigidbody2D>().gravityScale -= value;
-                Debug.Log($"-{value} gravityScale");
-                break;
-            case AffectedValue.Paralyse:
-                target.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-                Debug.Log($"Freeze axe X");
-                break;
-            default:
-                break;
+            switch (effects[i].affectedValue)
+            {
+                case AffectedValue.HP:
+                    target.Heal(effects[i].value);
+                    Debug.Log($"-{effects[i].value} HP");
+                    break;
+                case AffectedValue.Mana:
+                    target.Mana -= effects[i].value;
+                    Debug.Log($"-{effects[i].value} Mana");
+                    break;
+                case AffectedValue.Armor:
+                    target.Armor -= effects[i].value;
+                    Debug.Log($"-{effects[i].value} armor");
+                    break;
+                case AffectedValue.Speed:
+                    target.Speed -= effects[i].value;
+                    Debug.Log($"-{effects[i].value} speed");
+                    break;
+                case AffectedValue.Jump:
+                    target.JumpForce -= effects[i].value;
+                    Debug.Log($"-{effects[i].value} jump");
+                    break;
+                case AffectedValue.GravityScale:
+                    target.gameObject.GetComponent<Rigidbody2D>().gravityScale -= effects[i].value;
+                    Debug.Log($"-{effects[i].value} gravityScale");
+                    break;
+                case AffectedValue.Paralyse:
+                    // La value ne change absolument rien ici
+                    if (target.gameObject.tag == "Player")
+                    {
+                        target.GetComponent<CharacterMovement>().enabled = true;
+                        target.GetComponent<CharacterMovement>().DirectionMovment = Vector2.zero;
+                    }
+                    else if (target.gameObject.tag == "Mob")
+                    {
+                        target.GetComponent<GoblinController>().IsFreeze = false;
+                    }
+                    Debug.Log($"End paralyse");
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
