@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c6832e9a211a741adf5ad8c500658c, type: 3}
+  m_Name: IceArrow
+  m_EditorClassIdentifier: 
+  spellSprite: {fileID: 21300000, guid: e70f0340b9cae364a8bd5b1856a4a900, type: 3}
+  form: {fileID: 11400000, guid: 86148e1df34da1744b6287f0c8a635ce, type: 2}
+  element: {fileID: 11400000, guid: 8686245202f637e4a80ccb199c594d4a, type: 2}
+  _mana: 7
+  _range: 15
+  _speed: 400
+  defaultProjectile: {fileID: 4887801425270820831, guid: 433bdeba78aca8b45b411492e9830648, type: 3}
+  effect:
+  - {fileID: 11400000, guid: 3c0f18aea0bccf740bcc25a7469af3c5, type: 2}
