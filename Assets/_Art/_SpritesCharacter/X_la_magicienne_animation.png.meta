@@ -1,0 +1,912 @@
+fileFormatVersion: 2
+guid: 03efc7a1481cd50489bbe44d1627b16b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3601023907554529595
+    second: X_la_magicienne_animation_0
+  - first:
+      213: 4063791281039012297
+    second: X_la_magicienne_animation_1
+  - first:
+      213: -555444319809942387
+    second: X_la_magicienne_animation_2
+  - first:
+      213: -2570857465002722225
+    second: X_la_magicienne_animation_3
+  - first:
+      213: 5660026808635005781
+    second: X_la_magicienne_animation_4
+  - first:
+      213: -424150605138469451
+    second: X_la_magicienne_animation_5
+  - first:
+      213: -7536979433248228027
+    second: X_la_magicienne_animation_6
+  - first:
+      213: 5202793991933770746
+    second: X_la_magicienne_animation_7
+  - first:
+      213: -2733546450849554841
+    second: X_la_magicienne_animation_8
+  - first:
+      213: 8819999821681917610
+    second: X_la_magicienne_animation_9
+  - first:
+      213: 2446005330149091647
+    second: X_la_magicienne_animation_10
+  - first:
+      213: -5716586422833671476
+    second: X_la_magicienne_animation_11
+  - first:
+      213: -6834238517944526038
+    second: X_la_magicienne_animation_12
+  - first:
+      213: -1604869933694740524
+    second: X_la_magicienne_animation_13
+  - first:
+      213: -138799522107742238
+    second: X_la_magicienne_animation_14
+  - first:
+      213: 3274791604223899535
+    second: X_la_magicienne_animation_15
+  - first:
+      213: -1123148438729329497
+    second: X_la_magicienne_animation_16
+  - first:
+      213: -3869453404044813551
+    second: X_la_magicienne_animation_17
+  - first:
+      213: -8482958556156617605
+    second: X_la_magicienne_animation_18
+  - first:
+      213: -8535874511312161914
+    second: X_la_magicienne_animation_19
+  - first:
+      213: -2011850449618681173
+    second: X_la_magicienne_animation_20
+  - first:
+      213: 9095036379294021282
+    second: X_la_magicienne_animation_21
+  - first:
+      213: -8965566668006801378
+    second: X_la_magicienne_animation_22
+  - first:
+      213: -6521124816319491366
+    second: X_la_magicienne_animation_23
+  - first:
+      213: -8454209976044737270
+    second: X_la_magicienne_animation_24
+  - first:
+      213: 4033833365336414927
+    second: X_la_magicienne_animation_25
+  - first:
+      213: -6296425074485774139
+    second: X_la_magicienne_animation_26
+  - first:
+      213: -4317458606158393526
+    second: X_la_magicienne_animation_27
+  - first:
+      213: 8068038520520341839
+    second: X_la_magicienne_animation_28
+  - first:
+      213: 5976474227567044968
+    second: X_la_magicienne_animation_29
+  - first:
+      213: -3248913514503511441
+    second: X_la_magicienne_animation_30
+  - first:
+      213: -4467331167151578407
+    second: X_la_magicienne_animation_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 91
+        width: 24
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b311a753a2869f130800000000000000
+      internalID: 3601023907554529595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 91
+        width: 24
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1f8a3a3ac756830800000000000000
+      internalID: 4063791281039012297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 91
+        width: 24
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c4831855aaa48f0800000000000000
+      internalID: -555444319809942387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 91
+        width: 24
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4cf95ea1ca725cd0800000000000000
+      internalID: -2570857465002722225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 91
+        width: 24
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b90e3f4647c8e40800000000000000
+      internalID: 5660026808635005781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 91
+        width: 24
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd5479954d1d1af0800000000000000
+      internalID: -424150605138469451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_6
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 91
+        width: 24
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d70d95325476790800000000000000
+      internalID: -7536979433248228027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_7
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 91
+        width: 24
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbbfb0f199043840800000000000000
+      internalID: 5202793991933770746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_8
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 91
+        width: 24
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e15146cfd701ad0800000000000000
+      internalID: -2733546450849554841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_9
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 91
+        width: 24
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaefb528b1fe66a70800000000000000
+      internalID: 8819999821681917610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_10
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 91
+        width: 24
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39af3663e4f1f120800000000000000
+      internalID: 2446005330149091647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_11
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 91
+        width: 24
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc29d2bafea9aa0b0800000000000000
+      internalID: -5716586422833671476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_12
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 91
+        width: 34
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2bdf9bf648e721a0800000000000000
+      internalID: -6834238517944526038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_13
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 91
+        width: 34
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d79b6b5c4b5ab9e0800000000000000
+      internalID: -1604869933694740524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_14
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 91
+        width: 34
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e726cde192e21ef0800000000000000
+      internalID: -138799522107742238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_16
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 72
+        width: 32
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4f0871276c960f0800000000000000
+      internalID: -1123148438729329497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_17
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 46
+        width: 20
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b9bf851a0fc4ac0800000000000000
+      internalID: -3869453404044813551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_18
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 46
+        width: 20
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c9ce7432a764a80800000000000000
+      internalID: -8482958556156617605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_19
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 46
+        width: 20
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6837de16b5b7a8980800000000000000
+      internalID: -8535874511312161914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_20
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 46
+        width: 20
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2c441eca87414e0800000000000000
+      internalID: -2011850449618681173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_21
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 46
+        width: 20
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6331f366f083e70800000000000000
+      internalID: 9095036379294021282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_22
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 46
+        width: 20
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e104f57fd98e39380800000000000000
+      internalID: -8965566668006801378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_23
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 46
+        width: 28
+        height: 39
+      alignment: 9
+      pivot: {x: 0.6169586, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2da4ba78f4085a0800000000000000
+      internalID: -6521124816319491366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_24
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 47
+        width: 35
+        height: 37
+      alignment: 9
+      pivot: {x: 0.7172093, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d2a41b1dc9caa80800000000000000
+      internalID: -8454209976044737270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_25
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 46
+        width: 33
+        height: 41
+      alignment: 9
+      pivot: {x: 0.6949315, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcadef7d21e0bf730800000000000000
+      internalID: 4033833365336414927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_26
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 46
+        width: 33
+        height: 41
+      alignment: 9
+      pivot: {x: 0.6949315, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8b96031ca9e98a0800000000000000
+      internalID: -6296425074485774139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_27
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 46
+        width: 32
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fc977c54e4514c0800000000000000
+      internalID: -4317458606158393526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 35
+        height: 42
+      alignment: 9
+      pivot: {x: 0.7095199, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4978c1c94e67ff60800000000000000
+      internalID: 8068038520520341839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_29
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 20
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869296f25a3b0f250800000000000000
+      internalID: 5976474227567044968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_30
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 35
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f626d0e3f5a89e2d0800000000000000
+      internalID: -3248913514503511441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_31
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0
+        width: 25
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d226efe8f9d002c0800000000000000
+      internalID: -4467331167151578407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_la_magicienne_animation_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 74
+        width: 17
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87723b0d95627d20800000000000000
+      internalID: 3274791604223899535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6c323e8eba17d4b4eb78f1a6160f99f3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

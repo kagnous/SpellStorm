@@ -19,7 +19,7 @@ public class GustOfWind : ProjectileSpell
             if (collision.gameObject.tag == "Player")
             {
                 collision.GetComponent<StatsManager>().AddEffect(effect);
-                collision.GetComponent<CharacterMovement>().DirectionMovment = Vector2.zero;
+                collision.GetComponent<PlayerController>().DirectionMovment = Vector2.zero;
             }
         }
     }

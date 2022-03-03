@@ -47,8 +47,8 @@ public class EffectConstant : EffectMother
                     // La value ne change absolument rien ici
                     if (target.gameObject.tag == "Player")
                     {
-                        target.GetComponent<CharacterMovement>().enabled = true;
-                        target.GetComponent<CharacterMovement>().DirectionMovment = Vector2.zero;
+                        target.GetComponent<PlayerController>().enabled = true;
+                        target.GetComponent<PlayerController>().DirectionMovment = Vector2.zero;
                     }
                     else if (target.gameObject.tag == "Mob")
                     {

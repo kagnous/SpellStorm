@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class CharacterCasting : MonoBehaviour
+[DisallowMultipleComponent]
+public class PlayerCasting : MonoBehaviour
 {
+    private bool _isCasting = false;
+
     private GameInput _inputsInstance = null;
 
     private StatsManager _casterStats;
@@ -31,6 +34,10 @@ public class CharacterCasting : MonoBehaviour
     // Script de la gestion graphique du grimoire (UI)
     private SpellBookDisplayer _spellBookDisplayer;
     #endregion
+
+    // Event
+    public delegate void SpellDelegate(MagicSpell spell);
+    public event SpellDelegate eventCast;
 
     private void Awake()
     {
@@ -60,6 +67,8 @@ public class CharacterCasting : MonoBehaviour
         _inputsInstance.Player.Cast.performed += Cast;
         _inputsInstance.Player.RollForm.performed += RollForm;
         _inputsInstance.Player.RollElement.performed += RollElement;
+
+        _inputsInstance.Player.Test.performed += NewCast;
     }
     private void OnDisable()
     {
@@ -90,6 +99,8 @@ public class CharacterCasting : MonoBehaviour
                     {
                         _casterStats.SetMana(-spells[i].Mana);
                     }
+                    eventCast(spells[i]);
+
                 }
                 return;
             }
@@ -116,7 +127,7 @@ public class CharacterCasting : MonoBehaviour
         // On vérifie si le caster (player uniquement) est freeze
         if(gameObject.tag == "Player")
         {
-            CharacterMovement playerMovment = GetComponent<CharacterMovement>();
+            PlayerController playerMovment = GetComponent<PlayerController>();
             // Si freeze, on vérifie si le sort casté est personnel, sinon on retourne false
             if (!playerMovment.isActiveAndEnabled)
             {
@@ -159,5 +170,41 @@ public class CharacterCasting : MonoBehaviour
         actualElement = elements[actualElementIndex];
         _spellBookDisplayer.DisplaySpellBook(actualForm, actualElement);
         //Debug.Log(elements[actualElementIndex].name);
+    }
+
+    public void StopCastInput()
+    {
+        // Désassignation des fonctions aux Inputs
+        _inputsInstance.Player.Cast.performed -= Cast;
+        _inputsInstance.Player.RollForm.performed -= RollForm;
+        _inputsInstance.Player.RollElement.performed -= RollElement;
+    }
+
+    public void ResumeCastInput()
+    {
+        // Réassignation des fonctions aux Inputs
+        _inputsInstance.Player.Cast.performed += Cast;
+        _inputsInstance.Player.RollForm.performed += RollForm;
+        _inputsInstance.Player.RollElement.performed += RollElement;
+    }
+
+    public void NewCast(InputAction.CallbackContext context)
+    {
+        _isCasting = !_isCasting;
+        Debug.Log(_isCasting);
+        if(_isCasting)
+        StartCoroutine(CastingCoroutine());
+    }
+
+    IEnumerator CastingCoroutine()
+    {
+        float timer = 0;
+        while(_isCasting)
+        {
+            yield return null;
+            timer += Time.deltaTime;
+        }
+        Debug.Log(timer);
+        //Cast(timer);
     }
 }

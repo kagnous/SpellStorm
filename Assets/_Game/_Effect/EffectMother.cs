@@ -24,6 +24,7 @@ public class EffectMother : ScriptableObject
     public enum TypeEffect
     {
         None,
+        Physical,
         Fire,
         Cold
     }
@@ -112,8 +113,8 @@ public class EffectMother : ScriptableObject
                     // Propetry Drawer pour masquer la value qui sert à rien ici
                     if (target.gameObject.tag == "Player")
                     {
-                        target.GetComponent<CharacterMovement>().enabled = false;
-                        target.GetComponent<CharacterMovement>().DirectionMovment = Vector2.zero;
+                        target.GetComponent<PlayerController>().enabled = false;
+                        target.GetComponent<PlayerController>().DirectionMovment = Vector2.zero;
                     }
                     else if(target.gameObject.tag == "Mob")
                     {

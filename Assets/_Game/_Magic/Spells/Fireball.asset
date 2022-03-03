@@ -20,9 +20,10 @@ MonoBehaviour:
   _speed: 300
   defaultProjectile: {fileID: 4887801425270820831, guid: 433bdeba78aca8b45b411492e9830648, type: 3}
   _damage: 2
+  _typeDamage: 2
   _damageRange: 2
   _explosion: {fileID: 7158826703393369548, guid: c0ce8230161bb1f43ae0c6fa378c98cc, type: 3}
   _explosionDuration: 2
   _collisionLayer:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 73

@@ -8,6 +8,9 @@ public class Fireball : ProjectileSpell
     [SerializeField, Tooltip("Dégâts infligés")]
     private int _damage; public int Damage => _damage;
 
+    [SerializeField, Tooltip("Type de dégâts infligés")]
+    private EffectMother.TypeEffect _typeDamage;
+
     [SerializeField, Tooltip("Rayon d'explosion")]
     private float _damageRange; public float DamageRange => _damageRange;
 
@@ -24,16 +27,19 @@ public class Fireball : ProjectileSpell
     {
         // Cibles dans la zone d'explosion
         Collider2D[] cibles =  Physics2D.OverlapCircleAll(projectile.transform.position, _damageRange, _collisionLayer);
-        GameObject explosionToken = Instantiate(_explosion, projectile.transform.position, projectile.transform.rotation);
-        Destroy(explosionToken, _explosionDuration);
-        //projectile.GetComponent<SpriteRenderer>().sprite = _explosionSprite;
 
-        Debug.Log("Nombre de cibles : " + cibles.Length);
         for (int i = 0; i < cibles.Length; i++)
         {
             if (cibles[i].gameObject.tag == "Mob" || cibles[i].gameObject.tag == "Player")
                 cibles[i].GetComponent<StatsManager>().ElementalDamage(_damage);
+            else if (cibles[i].gameObject.tag == "Reactive")
+            {
+                cibles[i].GetComponent<ReactiveManager>().SufferEffect(_typeDamage);
+            }
         }
+        // Graphisme d'explosion
+        GameObject explosionToken = Instantiate(_explosion, projectile.transform.position, projectile.transform.rotation);
+        Destroy(explosionToken, _explosionDuration);
     }
 }
 //SerializedReference

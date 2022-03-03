@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50dd1a702b4230b479e166827146902e, type: 3}
   m_Name: Brulure
   m_EditorClassIdentifier: 
-  typeEffect: 1
+  typeEffect: 2
   colorEffect: {r: 1, g: 0, b: 0, a: 1}
   effectPrefab: {fileID: 7410336885811642170, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
   effects:

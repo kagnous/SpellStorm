@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewPeauDePierre", menuName = "Magic/Spell/PeauDePierre")]
+[CreateAssetMenu(fileName = "NewStoneSkin", menuName = "Magic/Spell/StoneSkin")]
 public class StoneSkin : SelfSpell
 {
     [SerializeField]

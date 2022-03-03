@@ -71,6 +71,24 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interract"",
+                    ""type"": ""Button"",
+                    ""id"": ""97d1b0f4-c8fd-4e04-ba6b-9604973b7108"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Test"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""28b2b103-9ef1-4e9f-afeb-bf7ccd9b7893"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -282,6 +300,39 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                     ""action"": ""RollElement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""85d91b31-fcc4-439a-9cc0-bae51d4e0667"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interract"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""68cdfc15-c28a-4fb9-8018-3ae1f93cc7dd"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interract"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6bacb3f6-e4d9-431a-91ae-f0cee514aeb9"",
+                    ""path"": ""<Keyboard>/b"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Test"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -334,6 +385,8 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
         m_Player_Cast = m_Player.FindAction("Cast", throwIfNotFound: true);
         m_Player_RollForm = m_Player.FindAction("RollForm", throwIfNotFound: true);
         m_Player_RollElement = m_Player.FindAction("RollElement", throwIfNotFound: true);
+        m_Player_Interract = m_Player.FindAction("Interract", throwIfNotFound: true);
+        m_Player_Test = m_Player.FindAction("Test", throwIfNotFound: true);
         // Game
         m_Game = asset.FindActionMap("Game", throwIfNotFound: true);
         m_Game_Pause = m_Game.FindAction("Pause", throwIfNotFound: true);
@@ -401,6 +454,8 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Cast;
     private readonly InputAction m_Player_RollForm;
     private readonly InputAction m_Player_RollElement;
+    private readonly InputAction m_Player_Interract;
+    private readonly InputAction m_Player_Test;
     public struct PlayerActions
     {
         private @GameInput m_Wrapper;
@@ -410,6 +465,8 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
         public InputAction @Cast => m_Wrapper.m_Player_Cast;
         public InputAction @RollForm => m_Wrapper.m_Player_RollForm;
         public InputAction @RollElement => m_Wrapper.m_Player_RollElement;
+        public InputAction @Interract => m_Wrapper.m_Player_Interract;
+        public InputAction @Test => m_Wrapper.m_Player_Test;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -434,6 +491,12 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                 @RollElement.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRollElement;
                 @RollElement.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRollElement;
                 @RollElement.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRollElement;
+                @Interract.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInterract;
+                @Interract.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInterract;
+                @Interract.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInterract;
+                @Test.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTest;
+                @Test.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTest;
+                @Test.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTest;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -453,6 +516,12 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
                 @RollElement.started += instance.OnRollElement;
                 @RollElement.performed += instance.OnRollElement;
                 @RollElement.canceled += instance.OnRollElement;
+                @Interract.started += instance.OnInterract;
+                @Interract.performed += instance.OnInterract;
+                @Interract.canceled += instance.OnInterract;
+                @Test.started += instance.OnTest;
+                @Test.performed += instance.OnTest;
+                @Test.canceled += instance.OnTest;
             }
         }
     }
@@ -497,6 +566,8 @@ public partial class @GameInput : IInputActionCollection2, IDisposable
         void OnCast(InputAction.CallbackContext context);
         void OnRollForm(InputAction.CallbackContext context);
         void OnRollElement(InputAction.CallbackContext context);
+        void OnInterract(InputAction.CallbackContext context);
+        void OnTest(InputAction.CallbackContext context);
     }
     public interface IGameActions
     {

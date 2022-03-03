@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0e9c9ffdd8415e4bb1b919b66592df5, type: 3}
   m_Name: GustOfWind
   m_EditorClassIdentifier: 
-  spellSprite: {fileID: 21300000, guid: 1096e9a0d15d42340ac2571c8f97350e, type: 3}
+  spellSprite: {fileID: 21300000, guid: 31f34d2bec0620d43b0f908773a54d9f, type: 3}
   form: {fileID: 11400000, guid: 86148e1df34da1744b6287f0c8a635ce, type: 2}
   element: {fileID: 11400000, guid: 3ff4ef181a8ec8a4fb00d275a21e8758, type: 2}
   _mana: 10

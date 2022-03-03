@@ -15,7 +15,7 @@ public class CameraFollow : MonoBehaviour
 
     private void Start()
     {
-        _player = FindObjectOfType<CharacterMovement>().gameObject;
+        _player = FindObjectOfType<PlayerController>().gameObject;
         transform.position = _player.transform.position + _posOffset;
     }
 

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d56090fa40edc8745948cc76715ec415, type: 3}
   m_Name: Freeze
   m_EditorClassIdentifier: 
-  typeEffect: 2
+  typeEffect: 3
   colorEffect: {r: 0, g: 0.7285204, b: 1, a: 1}
   effectPrefab: {fileID: 7410336885811642170, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
   effects:
