@@ -24,6 +24,7 @@ public class EffectMother : ScriptableObject
     public enum TypeEffect
     {
         None,
+        Physical,
         Fire,
         Cold
     }
@@ -112,13 +113,14 @@ public class EffectMother : ScriptableObject
                     // Propetry Drawer pour masquer la value qui sert à rien ici
                     if (target.gameObject.tag == "Player")
                     {
-                        target.GetComponent<CharacterMovement>().enabled = false;
-                        target.GetComponent<CharacterMovement>().DirectionMovment = Vector2.zero;
+                        target.GetComponent<Animator>().enabled = false;
+                        target.GetComponent<PlayerController>().StopMoveInput();
+                        target.GetComponent<SpriteRenderer>().color = new Color(0, 138, 255, 255);
                     }
                     else if(target.gameObject.tag == "Mob")
                     {
                         Debug.Log($"Paralyse Goblin");
-                        target.GetComponent<GoblinController>().IsFreeze = true;
+                        target.GetComponent<EnnemiController>().State = EnnemiController.EnnemiState.freeze;
                     }
                     Debug.Log($"Paralyse");
                     break;
@@ -137,7 +139,6 @@ public class EffectMother : ScriptableObject
 
 
 // Pour compacter la valeur affectée et le nombre, afin de pouvoir avoir une list de ça et donc des effets qui touchent plusieurs valeurs d'un coup
-// (terminer le custom inspector pour être mieux utilisable)
 [System.Serializable]
 public struct ModifyStatEffect
 {

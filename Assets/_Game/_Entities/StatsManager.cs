@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[DisallowMultipleComponent]
 public class StatsManager : MonoBehaviour
 {
+    [Header("Movment")]
     [SerializeField, Tooltip("Speed")]
     private float _speed = 100; public float Speed { get { return _speed; } set { _speed = value; } }
 
     [SerializeField, Tooltip("Jump intensity")]
     private float _jumpForce = 300; public float JumpForce { get { return _jumpForce; } set { _jumpForce = value; } }
 
+    [Header("Stats")]
     [SerializeField]
     protected int _maxHP = 10; public int MaxHP { get { return _maxHP; } set { _maxHP = value; } }
     [SerializeField]
@@ -23,6 +26,7 @@ public class StatsManager : MonoBehaviour
     [SerializeField, Tooltip("Réduction de dégâts physiques")]
     private int _armor; public int Armor { get { return _armor; } set { _armor = value; } }
 
+    [Header("")]
     [SerializeField, Tooltip("Tout les effets qui affectent l'entité")]
     List<EffectController> _effects; public List<EffectController> Effects { get { return _effects; } set { _effects = value; } }
 
@@ -33,7 +37,10 @@ public class StatsManager : MonoBehaviour
         _effects = new List<EffectController>();
     }
 
-    // Ajoute un effet à l'entité
+    /// <summary>
+    /// Ajoute un effet à l'entité
+    /// </summary>
+    /// <param name="effect">Effet appliqué</param>
     public void AddEffect(EffectMother effect)
     {
         // Teste si l'effet est pas déjà actif
@@ -128,6 +135,10 @@ public class StatsManager : MonoBehaviour
         SetLife(heal);
     }
 
+    /// <summary>
+    /// Met à jours le mana
+    /// </summary>
+    /// <param name="mana">Mana ajouté</param>
     public virtual void SetMana(int mana)
     {
         _mana += mana;

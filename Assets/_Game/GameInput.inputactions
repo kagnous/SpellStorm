@@ -25,12 +25,12 @@
                 },
                 {
                     "name": "Cast",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "d8a756c4-6526-4de7-8094-732f91b1e1be",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "RollForm",
@@ -45,6 +45,15 @@
                     "name": "RollElement",
                     "type": "Button",
                     "id": "d66ce795-4de1-4def-8c58-10859de50826",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Interract",
+                    "type": "Button",
+                    "id": "97d1b0f4-c8fd-4e04-ba6b-9604973b7108",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -258,6 +267,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "RollElement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "85d91b31-fcc4-439a-9cc0-bae51d4e0667",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interract",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "68cdfc15-c28a-4fb9-8018-3ae1f93cc7dd",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interract",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
