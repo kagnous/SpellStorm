@@ -47,12 +47,13 @@ public class EffectConstant : EffectMother
                     // La value ne change absolument rien ici
                     if (target.gameObject.tag == "Player")
                     {
-                        target.GetComponent<PlayerController>().enabled = true;
-                        target.GetComponent<PlayerController>().DirectionMovment = Vector2.zero;
+                        target.GetComponent<Animator>().enabled = true;
+                        target.GetComponent<PlayerController>().ResumeMoveInput();
+                        target.GetComponent<SpriteRenderer>().color = Color.white;
                     }
                     else if (target.gameObject.tag == "Mob")
                     {
-                        target.GetComponent<GoblinController>().IsFreeze = false;
+                        target.GetComponent<EnnemiController>().State = target.GetComponent<EnnemiController>().DefaultState;
                     }
                     Debug.Log($"End paralyse");
                     break;

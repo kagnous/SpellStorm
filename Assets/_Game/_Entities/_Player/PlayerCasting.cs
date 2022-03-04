@@ -29,7 +29,7 @@ public class PlayerCasting : MonoBehaviour
     private List<MagicElement> elements = new List<MagicElement>();
 
     [SerializeField, Tooltip("Liste sorts")]
-    private List<MagicSpell> spells = new List<MagicSpell>();
+    private List<PackageSpell> spells = new List<PackageSpell>();
 
     // Script de la gestion graphique du grimoire (UI)
     private SpellBookDisplayer _spellBookDisplayer;
@@ -64,43 +64,53 @@ public class PlayerCasting : MonoBehaviour
     {
         // Assignation des fonctions aux Inputs
         _inputsInstance.Player.Enable();
-        _inputsInstance.Player.Cast.performed += Cast;
+        _inputsInstance.Player.Cast.performed += Casting;
         _inputsInstance.Player.RollForm.performed += RollForm;
         _inputsInstance.Player.RollElement.performed += RollElement;
-
-        _inputsInstance.Player.Test.performed += NewCast;
     }
     private void OnDisable()
     {
         // Désassignation des fonctions aux Inputs
-        _inputsInstance.Player.Cast.performed -= Cast;
+        _inputsInstance.Player.Cast.performed -= Casting;
         _inputsInstance.Player.RollForm.performed -= RollForm;
         _inputsInstance.Player.RollElement.performed -= RollElement;
     }
 
     /// <summary>
+    /// Charge le sort ou le lance si il était déjà en train de charger
+    /// </summary>
+    public void Casting(InputAction.CallbackContext context)
+    {
+        _isCasting = !_isCasting;
+        if(_isCasting)
+        StartCoroutine(CastingCoroutine());
+    }
+
+    /// <summary>
     /// Cast du sort correspondant à la forme/élément selectionné
     /// </summary>
-    private void Cast(InputAction.CallbackContext context)
+    private void Cast(float power)
     {
         //Pour chaque sort connu dans le grimoire...
         for (int i = 0; i < spells.Count; i++)
         {
             // Si la forme et l'élément sélectionné correspondent...
-            if (spells[i].Form == actualForm && spells[i].Element == actualElement)
+            if (spells[i].Spells[0].Form == actualForm && spells[i].Spells[0].Element == actualElement)
             {
+                MagicSpell spell = spells[i].GetGoodSpell(power);
+
                 // On vérifie si on peut bien caster ce sort
-                if(CanCast(spells[i]))
+                if(CanCast(spell))
                 {
                     // On appelle la fonction Cast du sort en question
-                    spells[i].Cast(gameObject);
+                    spell.Cast(gameObject);
                     // On enlève le mana correspondant au caster (s'il en a)
                     if (_casterStats != null)
                     {
-                        _casterStats.SetMana(-spells[i].Mana);
+                        _casterStats.SetMana(-spell.Mana);
                     }
-                    eventCast(spells[i]);
-
+                    // On prévient l'event de Cast
+                    eventCast?.Invoke(spell);
                 }
                 return;
             }
@@ -172,30 +182,31 @@ public class PlayerCasting : MonoBehaviour
         //Debug.Log(elements[actualElementIndex].name);
     }
 
+    /// <summary>
+    /// Désative les Input de Cast
+    /// </summary>
     public void StopCastInput()
     {
         // Désassignation des fonctions aux Inputs
-        _inputsInstance.Player.Cast.performed -= Cast;
+        _inputsInstance.Player.Cast.performed -= Casting;
         _inputsInstance.Player.RollForm.performed -= RollForm;
         _inputsInstance.Player.RollElement.performed -= RollElement;
     }
 
+    /// <summary>
+    /// Réactive les Input de Cast
+    /// </summary>
     public void ResumeCastInput()
     {
         // Réassignation des fonctions aux Inputs
-        _inputsInstance.Player.Cast.performed += Cast;
+        _inputsInstance.Player.Cast.performed += Casting;
         _inputsInstance.Player.RollForm.performed += RollForm;
         _inputsInstance.Player.RollElement.performed += RollElement;
     }
 
-    public void NewCast(InputAction.CallbackContext context)
-    {
-        _isCasting = !_isCasting;
-        Debug.Log(_isCasting);
-        if(_isCasting)
-        StartCoroutine(CastingCoroutine());
-    }
-
+    /// <summary>
+    /// Accumule le temps entre l'Input tenu et laché, puis appelle Cast() quand laché
+    /// </summary>
     IEnumerator CastingCoroutine()
     {
         float timer = 0;
@@ -204,7 +215,7 @@ public class PlayerCasting : MonoBehaviour
             yield return null;
             timer += Time.deltaTime;
         }
-        Debug.Log(timer);
-        //Cast(timer);
+        //Debug.Log(timer);
+        Cast(timer);
     }
 }

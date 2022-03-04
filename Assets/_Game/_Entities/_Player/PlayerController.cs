@@ -104,7 +104,7 @@ public class PlayerController : MonoBehaviour
     private void Interract(InputAction.CallbackContext context)
     {
         Debug.Log("Interraction");
-        eventInterract();
+        eventInterract?.Invoke();
     }
 
     /// <summary>

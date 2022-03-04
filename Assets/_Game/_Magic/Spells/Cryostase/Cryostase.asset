@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6b043038b4a08a43a03f637042075cd, type: 3}
-  m_Name: Permafrost
+  m_Name: Cryostase
   m_EditorClassIdentifier: 
   spellSprite: {fileID: 0}
   form: {fileID: 11400000, guid: 44decae1939f73d4180ac31111284741, type: 2}

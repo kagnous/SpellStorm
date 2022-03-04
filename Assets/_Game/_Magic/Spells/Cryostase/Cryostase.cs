@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewPermafrost", menuName = "Magic/Spell/Permafrost")]
-public class Permafrost : SelfSpell
+[CreateAssetMenu(fileName = "NewCryostase", menuName = "Magic/Spell/Cryostase")]
+public class Cryostase : SelfSpell
 {
     [SerializeField]
     private List<EffectMother> effects;

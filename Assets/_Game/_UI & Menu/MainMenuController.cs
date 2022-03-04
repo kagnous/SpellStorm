@@ -14,6 +14,7 @@ public class MainMenuController : MonoBehaviour
     [SerializeField, Tooltip("Page de confirmation de Quit")]
     private GameObject closeWindow;
 
+    #region EventSystemFirstSelected
     [Header("First selected")]
     [SerializeField, Tooltip("Boutton selectionné à l'apparition de la scène")]
     private GameObject loadFirstButton;
@@ -25,6 +26,7 @@ public class MainMenuController : MonoBehaviour
     private GameObject quitFirstButton;
     [SerializeField, Tooltip("Boutton selectionné en quittant le quit")]
     private GameObject quitCloseButton;
+    #endregion
 
     private void Awake()
     {

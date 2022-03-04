@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4b30ed917039c4784a32f71c140f6f, type: 3}
+  m_Name: FireballPack
+  m_EditorClassIdentifier: 
+  _spells:
+  - {fileID: 11400000, guid: dcd5eac31cbcb0d458ab84f1e45f7340, type: 2}
+  - {fileID: 11400000, guid: 0f46e7280de2099439d0da1b0dadb45e, type: 2}
+  - {fileID: 11400000, guid: 5ad858ba6769bf24286c3e148ffe0ccb, type: 2}
+  _powerGap:
+  - 1
+  - 3

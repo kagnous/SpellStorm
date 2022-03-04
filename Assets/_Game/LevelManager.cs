@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 [DisallowMultipleComponent]
 public class LevelManager : MonoBehaviour
@@ -10,6 +11,9 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField, Tooltip("Panel de game over")]
     private GameObject _gameOverPanel;
+
+    [SerializeField, Tooltip("Bouton par défaut pour le panneau GameOver")]
+    private GameObject _firtGameOverButton;
 
     // La seule et unique instance de Level Manager
     public static LevelManager instance;
@@ -37,6 +41,11 @@ public class LevelManager : MonoBehaviour
         Debug.Log("GAME OVER");
         player.SetActive(false);
         _gameOverPanel.SetActive(true);
+
+        Debug.Log("là !");
+        // Place le controller sur le premier boutton
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(_firtGameOverButton);
     }
 
     /// <summary>
@@ -44,6 +53,7 @@ public class LevelManager : MonoBehaviour
     /// </summary>
     public void ReloadGame()
     {
+        EventSystem.current.SetSelectedGameObject(null);
         SceneManager.LoadScene("Level_1");
     }
 
@@ -52,6 +62,7 @@ public class LevelManager : MonoBehaviour
     /// </summary>
     public void Quit()
     {
+        EventSystem.current.SetSelectedGameObject(null);
         SceneManager.LoadScene("MainMenu");
     }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterAnimator : MonoBehaviour
+public class PlayerAnimator : MonoBehaviour
 {
     private Animator _animator;
     private Rigidbody2D rb;

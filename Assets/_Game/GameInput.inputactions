@@ -25,12 +25,12 @@
                 },
                 {
                     "name": "Cast",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "d8a756c4-6526-4de7-8094-732f91b1e1be",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "RollForm",
@@ -54,15 +54,6 @@
                     "name": "Interract",
                     "type": "Button",
                     "id": "97d1b0f4-c8fd-4e04-ba6b-9604973b7108",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Test",
-                    "type": "PassThrough",
-                    "id": "28b2b103-9ef1-4e9f-afeb-bf7ccd9b7893",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -298,17 +289,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Interract",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "6bacb3f6-e4d9-431a-91ae-f0cee514aeb9",
-                    "path": "<Keyboard>/b",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Test",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
