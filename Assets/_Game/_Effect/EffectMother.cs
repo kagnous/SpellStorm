@@ -119,8 +119,9 @@ public class EffectMother : ScriptableObject
                     }
                     else if(target.gameObject.tag == "Mob")
                     {
-                        Debug.Log($"Paralyse Goblin");
                         target.GetComponent<EnnemiController>().State = EnnemiController.EnnemiState.freeze;
+                        target.GetComponent<Animator>().enabled = false;
+                        target.GetComponent<SpriteRenderer>().color = new Color(0, 138, 255, 255);
                     }
                     Debug.Log($"Paralyse");
                     break;

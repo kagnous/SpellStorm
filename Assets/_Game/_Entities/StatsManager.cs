@@ -30,6 +30,10 @@ public class StatsManager : MonoBehaviour
     [SerializeField, Tooltip("Tout les effets qui affectent l'entité")]
     List<EffectController> _effects; public List<EffectController> Effects { get { return _effects; } set { _effects = value; } }
 
+    // Event
+    public delegate void DamageDelegate();
+    public event DamageDelegate eventDamage;
+
     protected virtual void Awake()
     {
         _HP = _maxHP;
@@ -91,12 +95,15 @@ public class StatsManager : MonoBehaviour
     protected virtual void SetLife(int modifLife)
     {
         _HP += modifLife;
+
         if(_HP <= 0)
         {
             Debug.Log(name + " meurt !");
             Destroy(gameObject);
-        }
-        else if(_HP > _maxHP)
+        } else if(modifLife < 0)
+        {
+            eventDamage?.Invoke();
+        } else if(_HP > _maxHP)
         {
             _HP = _maxHP;
         }

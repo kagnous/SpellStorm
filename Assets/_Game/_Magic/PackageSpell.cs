@@ -23,12 +23,12 @@ public class PackageSpell : ScriptableObject
             if (power >= _powerGap[i-1])
             {
                 // Si oui on retourne le spell en question
-                Debug.Log($"Cast sort de niv{i+1}");
+                    //Debug.Log($"Cast sort de niv{i+1}");
                 return _spells[i];
             }
         }
         // Si aucun gab ne correspond, alors on retourne la version du sort la plus faible
-        Debug.Log($"Cast sort de niv 1");
+            //Debug.Log($"Cast sort de niv 1");
         return _spells[0];
     }
 }

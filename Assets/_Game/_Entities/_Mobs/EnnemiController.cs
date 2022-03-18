@@ -16,7 +16,7 @@ public class EnnemiController : MonoBehaviour
         freeze
     }
 
-    protected StatsManager _goblinStats;
+    protected StatsManager _mobStats;
     protected PlayerController _player;
     private Rigidbody2D rb;
 
@@ -29,18 +29,23 @@ public class EnnemiController : MonoBehaviour
     #region Patrouille
     [SerializeField, Tooltip("Points de passage de la patrouille (si il y a)")]
     private List<Transform> waypoints;
-    private Transform target;
     private int destpoint = 0;
     #endregion
+
+    private Transform target; public Transform Target { get { return target; } set { target = value; } }
 
     [SerializeField, Tooltip("Etat de l'ennemi par défaut")]
     protected EnnemiState _defaultState; public EnnemiState DefaultState { get { return _defaultState; } set { _defaultState = value; } }
 
     protected EnnemiState _state; public EnnemiState State { get { return _state; } set { _state = value; } }
 
+    // Event
+    public delegate void AttackDelegate();
+    public event AttackDelegate eventAttack;
+
     private void Awake()
     {
-        _goblinStats = GetComponent<StatsManager>();
+        _mobStats = GetComponent<StatsManager>();
         _player = FindObjectOfType<PlayerController>();
         rb = GetComponent<Rigidbody2D>();
 
@@ -74,13 +79,14 @@ public class EnnemiController : MonoBehaviour
             default:
                 break;
         }
+        Flip();
     }
 
     private void Patrol()
     {
         // Se dirige vers son point de ronde
         Vector3 dir = target.position - transform.position;
-        transform.Translate(dir.normalized * _goblinStats.Speed * Time.fixedDeltaTime, Space.World);
+        transform.Translate(dir.normalized * _mobStats.Speed * Time.fixedDeltaTime, Space.World);
 
         // Si il l'a atteint (marge de sécurité si les points sont pas à la même hauteur ou autre connerie
         if (Vector3.Distance(transform.position, target.position) < 0.3f)
@@ -99,7 +105,7 @@ public class EnnemiController : MonoBehaviour
         // On récupère la valeur en int du layer "Player"
         LayerMask mask = LayerMask.GetMask("Player");
         // On trace un raycast de soi même jusqu'à la limite du champs de vision vers la droite, en cherchant le layer "PLayer uniquement"
-        RaycastHit2D raycast = Physics2D.Raycast(transform.position, transform.right, _fieldOfView, mask);
+        RaycastHit2D raycast = Physics2D.Raycast(transform.position, transform.right * transform.localScale.x, _fieldOfView, mask);
         // Si on a trouvé quelque chose (donc fondamentalement le joueur)
         if (raycast.collider != null)
         {
@@ -116,7 +122,7 @@ public class EnnemiController : MonoBehaviour
     /// </summary>
     protected virtual void Attack()
     {
-
+        eventAttack?.Invoke();
     }
 
     // En cas de collision...
@@ -131,7 +137,26 @@ public class EnnemiController : MonoBehaviour
                 collision.gameObject.GetComponent<StatsPlayerManager>().PhysicalDamage(_damage);
 
                 // Il passe à l'attaque
+                target = _player.transform;
                 _state = EnnemiState.attack;
+            }
+        }
+    }
+
+    /// <summary>
+    /// Teste le sens du mob et inverse son scale si besoin pour être tourné vers sa target
+    /// </summary>
+    private void Flip()
+    {
+        if(target != null)
+        {
+            if (transform.position.x - target.transform.position.x > 0)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+            else //if (transform.position.x - target.transform.position.x < 0)
+            {
+                transform.localScale = new Vector3(1, 1, 1);
             }
         }
     }

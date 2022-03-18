@@ -14,7 +14,9 @@ public class EffectConstantController : EffectController
         StartCoroutine(ApplyCoroutine());
     }
 
-    // Attend X secondes avant de mettre fin à l'effet
+    /// <summary>
+    /// Attend X secondes avant de mettre fin à l'effet
+    /// </summary>
     IEnumerator ApplyCoroutine()
     {
         yield return new WaitForSeconds(duration);
@@ -24,7 +26,8 @@ public class EffectConstantController : EffectController
 
     public override void RefreshEffect()
     {
-        //Debug.Log("Refresh" + effet.name);
-        // A trouver
+        Debug.Log("Refresh" + effet.name);
+        StopAllCoroutines();
+        StartCoroutine(ApplyCoroutine());
     }
 }

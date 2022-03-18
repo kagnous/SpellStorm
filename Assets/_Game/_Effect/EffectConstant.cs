@@ -53,7 +53,10 @@ public class EffectConstant : EffectMother
                     }
                     else if (target.gameObject.tag == "Mob")
                     {
+                        target.GetComponent<EnnemiController>().Target = null;
                         target.GetComponent<EnnemiController>().State = target.GetComponent<EnnemiController>().DefaultState;
+                        target.GetComponent<Animator>().enabled = true;
+                        target.GetComponent<SpriteRenderer>().color = Color.white;
                     }
                     Debug.Log($"End paralyse");
                     break;

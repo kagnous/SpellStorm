@@ -1,0 +1,3888 @@
+fileFormatVersion: 2
+guid: 3e8db5d67612e7d49ab8a49e2380d8dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6054706742965587279
+    second: Guerrier_Boss_0
+  - first:
+      213: -1340728920774422228
+    second: Guerrier_Boss_1
+  - first:
+      213: 5446641397914640671
+    second: Guerrier_Boss_2
+  - first:
+      213: -1269609953387689259
+    second: Guerrier_Boss_3
+  - first:
+      213: -6682625700952839423
+    second: Guerrier_Boss_4
+  - first:
+      213: -8350508223785674399
+    second: Guerrier_Boss_5
+  - first:
+      213: -8574814843421141855
+    second: Guerrier_Boss_6
+  - first:
+      213: 5536293631810211158
+    second: Guerrier_Boss_7
+  - first:
+      213: 4030780519622730409
+    second: Guerrier_Boss_8
+  - first:
+      213: 290441402873084594
+    second: Guerrier_Boss_9
+  - first:
+      213: -5929783079100457619
+    second: Guerrier_Boss_10
+  - first:
+      213: 2412113988219089827
+    second: Guerrier_Boss_11
+  - first:
+      213: 3538714543882940355
+    second: Guerrier_Boss_12
+  - first:
+      213: 5999949593485748451
+    second: Guerrier_Boss_13
+  - first:
+      213: 4002306237299156661
+    second: Guerrier_Boss_14
+  - first:
+      213: -2930365560206020950
+    second: Guerrier_Boss_15
+  - first:
+      213: -2540416202660218379
+    second: Guerrier_Boss_16
+  - first:
+      213: 2379120881495805523
+    second: Guerrier_Boss_17
+  - first:
+      213: -8939681221423357558
+    second: Guerrier_Boss_18
+  - first:
+      213: -5851591518167885042
+    second: Guerrier_Boss_19
+  - first:
+      213: -610255766941654805
+    second: Guerrier_Boss_20
+  - first:
+      213: -6442299568761893834
+    second: Guerrier_Boss_21
+  - first:
+      213: -259611058470435420
+    second: Guerrier_Boss_22
+  - first:
+      213: 622536595434931979
+    second: Guerrier_Boss_23
+  - first:
+      213: -4874960171538116148
+    second: Guerrier_Boss_24
+  - first:
+      213: 5389574667993328503
+    second: Guerrier_Boss_25
+  - first:
+      213: 8914131878676739782
+    second: Guerrier_Boss_26
+  - first:
+      213: 3218900781330258523
+    second: Guerrier_Boss_27
+  - first:
+      213: -8992559778012753327
+    second: Guerrier_Boss_28
+  - first:
+      213: -4078362172309765678
+    second: Guerrier_Boss_29
+  - first:
+      213: 3215574649301849342
+    second: Guerrier_Boss_30
+  - first:
+      213: -4333196307026889897
+    second: Guerrier_Boss_31
+  - first:
+      213: 7061200654651106356
+    second: Guerrier_Boss_32
+  - first:
+      213: 686460464959639174
+    second: Guerrier_Boss_33
+  - first:
+      213: 1338263939224670347
+    second: Guerrier_Boss_34
+  - first:
+      213: 1040660336825711752
+    second: Guerrier_Boss_35
+  - first:
+      213: 2298554456448497314
+    second: Guerrier_Boss_36
+  - first:
+      213: -7519824489082248078
+    second: Guerrier_Boss_37
+  - first:
+      213: -2850657125511351092
+    second: Guerrier_Boss_38
+  - first:
+      213: 8752577153566059896
+    second: Guerrier_Boss_39
+  - first:
+      213: 4651389898705286811
+    second: Guerrier_Boss_40
+  - first:
+      213: 8447210754840624850
+    second: Guerrier_Boss_41
+  - first:
+      213: 5386178229636535582
+    second: Guerrier_Boss_42
+  - first:
+      213: 2027610087322783654
+    second: Guerrier_Boss_43
+  - first:
+      213: 2002252443873282903
+    second: Guerrier_Boss_44
+  - first:
+      213: 5892079137692730132
+    second: Guerrier_Boss_45
+  - first:
+      213: -5247608590058835475
+    second: Guerrier_Boss_46
+  - first:
+      213: 2662440655146998818
+    second: Guerrier_Boss_47
+  - first:
+      213: 4112273571546652448
+    second: Guerrier_Boss_48
+  - first:
+      213: 991525511111829980
+    second: Guerrier_Boss_49
+  - first:
+      213: -6259928989277319905
+    second: Guerrier_Boss_50
+  - first:
+      213: 4945966424854713081
+    second: Guerrier_Boss_51
+  - first:
+      213: 5830427366320015385
+    second: Guerrier_Boss_52
+  - first:
+      213: -3148699626564395945
+    second: Guerrier_Boss_53
+  - first:
+      213: -8541675718801666191
+    second: Guerrier_Boss_54
+  - first:
+      213: 8706164749680484826
+    second: Guerrier_Boss_55
+  - first:
+      213: -1884055813087793670
+    second: Guerrier_Boss_56
+  - first:
+      213: -8358467675676664169
+    second: Guerrier_Boss_57
+  - first:
+      213: -4709949709444325612
+    second: Guerrier_Boss_58
+  - first:
+      213: -8842435909746547961
+    second: Guerrier_Boss_59
+  - first:
+      213: -3943144337790719172
+    second: Guerrier_Boss_60
+  - first:
+      213: 7278029808381033406
+    second: Guerrier_Boss_61
+  - first:
+      213: 4763061019637336927
+    second: Guerrier_Boss_62
+  - first:
+      213: 8602296374691341571
+    second: Guerrier_Boss_63
+  - first:
+      213: -8909862769396281792
+    second: Guerrier_Boss_64
+  - first:
+      213: -4453166722668706465
+    second: Guerrier_Boss_65
+  - first:
+      213: 8585065222348861525
+    second: Guerrier_Boss_66
+  - first:
+      213: -2157810846525622572
+    second: Guerrier_Boss_67
+  - first:
+      213: -7790070583016347685
+    second: Guerrier_Boss_68
+  - first:
+      213: 8756706746983502993
+    second: Guerrier_Boss_69
+  - first:
+      213: -3374367839142001271
+    second: Guerrier_Boss_70
+  - first:
+      213: -1772720628786467924
+    second: Guerrier_Boss_71
+  - first:
+      213: 9116749379770432075
+    second: Guerrier_Boss_72
+  - first:
+      213: 5195353478919317167
+    second: Guerrier_Boss_73
+  - first:
+      213: -2768851929241757793
+    second: Guerrier_Boss_74
+  - first:
+      213: 4824212116943186592
+    second: Guerrier_Boss_75
+  - first:
+      213: 1276800973377058601
+    second: Guerrier_Boss_76
+  - first:
+      213: 3107558743590418007
+    second: Guerrier_Boss_77
+  - first:
+      213: 5267036842248649257
+    second: Guerrier_Boss_78
+  - first:
+      213: -254949322568452902
+    second: Guerrier_Boss_79
+  - first:
+      213: -5211320990244001938
+    second: Guerrier_Boss_80
+  - first:
+      213: 1090309973891640696
+    second: Guerrier_Boss_81
+  - first:
+      213: 368703722489802355
+    second: Guerrier_Boss_82
+  - first:
+      213: -2215663999315233857
+    second: Guerrier_Boss_83
+  - first:
+      213: -7030828829774209296
+    second: Guerrier_Boss_84
+  - first:
+      213: 619845900404697828
+    second: Guerrier_Boss_85
+  - first:
+      213: 6867382247625613262
+    second: Guerrier_Boss_86
+  - first:
+      213: 4799167619595412918
+    second: Guerrier_Boss_87
+  - first:
+      213: -4530857522350003543
+    second: Guerrier_Boss_88
+  - first:
+      213: -6115448223110126169
+    second: Guerrier_Boss_89
+  - first:
+      213: -5274646688221880118
+    second: Guerrier_Boss_90
+  - first:
+      213: 6534091885909968750
+    second: Guerrier_Boss_91
+  - first:
+      213: 5367300098781765668
+    second: Guerrier_Boss_92
+  - first:
+      213: -439774635225894405
+    second: Guerrier_Boss_93
+  - first:
+      213: -6995273396852817919
+    second: Guerrier_Boss_94
+  - first:
+      213: 4803091796494957021
+    second: Guerrier_Boss_95
+  - first:
+      213: 9052215817532260888
+    second: Guerrier_Boss_96
+  - first:
+      213: 1811959501771125329
+    second: Guerrier_Boss_97
+  - first:
+      213: -9183791028108443952
+    second: Guerrier_Boss_98
+  - first:
+      213: -8868935306454932642
+    second: Guerrier_Boss_99
+  - first:
+      213: -5323382092335674570
+    second: Guerrier_Boss_100
+  - first:
+      213: -1570739488547610580
+    second: Guerrier_Boss_101
+  - first:
+      213: 3017660508288786044
+    second: Guerrier_Boss_102
+  - first:
+      213: -9018653298343072150
+    second: Guerrier_Boss_103
+  - first:
+      213: 1824573552014698903
+    second: Guerrier_Boss_104
+  - first:
+      213: -1730208316527634071
+    second: Guerrier_Boss_105
+  - first:
+      213: 6441079144601438398
+    second: Guerrier_Boss_106
+  - first:
+      213: -7326127402586846321
+    second: Guerrier_Boss_107
+  - first:
+      213: -7619062330759592984
+    second: Guerrier_Boss_108
+  - first:
+      213: -6881687661958181462
+    second: Guerrier_Boss_109
+  - first:
+      213: -3617871486793360821
+    second: Guerrier_Boss_110
+  - first:
+      213: -262481226612323091
+    second: Guerrier_Boss_111
+  - first:
+      213: 6704574971327653994
+    second: Guerrier_Boss_112
+  - first:
+      213: -3220406372363685570
+    second: Guerrier_Boss_113
+  - first:
+      213: 3632740102217431983
+    second: Guerrier_Boss_114
+  - first:
+      213: -8970028164965295805
+    second: Guerrier_Boss_115
+  - first:
+      213: -3620567084433884052
+    second: Guerrier_Boss_116
+  - first:
+      213: 5749733213588369431
+    second: Guerrier_Boss_117
+  - first:
+      213: -5659535873795428418
+    second: Guerrier_Boss_118
+  - first:
+      213: -4298730878391163759
+    second: Guerrier_Boss_119
+  - first:
+      213: -3815889655140228454
+    second: Guerrier_Boss_120
+  - first:
+      213: 6835567406108395940
+    second: Guerrier_Boss_121
+  - first:
+      213: 8684521668638249485
+    second: Guerrier_Boss_122
+  - first:
+      213: 1906277644321279897
+    second: Guerrier_Boss_123
+  - first:
+      213: -2504228723645501165
+    second: Guerrier_Boss_124
+  - first:
+      213: 6479101772583660132
+    second: Guerrier_Boss_125
+  - first:
+      213: 2709186318112661585
+    second: Guerrier_Boss_126
+  - first:
+      213: -3220463628205851413
+    second: Guerrier_Boss_127
+  - first:
+      213: -4744905339037964944
+    second: Guerrier_Boss_128
+  - first:
+      213: 3876024210602669723
+    second: Guerrier_Boss_129
+  - first:
+      213: 8609516419515275245
+    second: Guerrier_Boss_130
+  - first:
+      213: 5834988411418020101
+    second: Guerrier_Boss_131
+  - first:
+      213: 561984513328611060
+    second: Guerrier_Boss_132
+  - first:
+      213: -7964286991062883137
+    second: Guerrier_Boss_133
+  - first:
+      213: -6760013746377468459
+    second: Guerrier_Boss_134
+  - first:
+      213: 6018214788969824961
+    second: Guerrier_Boss_135
+  - first:
+      213: 3736161660730970385
+    second: Guerrier_Boss_136
+  - first:
+      213: 7464929559005153247
+    second: Guerrier_Boss_137
+  - first:
+      213: 5064092153237308390
+    second: Guerrier_Boss_138
+  - first:
+      213: -1981596582190803625
+    second: Guerrier_Boss_139
+  - first:
+      213: 6483578469168060465
+    second: Guerrier_Boss_140
+  - first:
+      213: -1927398683910167604
+    second: Guerrier_Boss_141
+  - first:
+      213: -8917618611104397142
+    second: Guerrier_Boss_142
+  - first:
+      213: 8802746130012764735
+    second: Guerrier_Boss_143
+  - first:
+      213: -6498355236789943907
+    second: Guerrier_Boss_144
+  - first:
+      213: 1856613567188387578
+    second: Guerrier_Boss_145
+  - first:
+      213: 2693184800998679401
+    second: Guerrier_Boss_146
+  - first:
+      213: -744987993650184837
+    second: Guerrier_Boss_147
+  - first:
+      213: 8443044453071242363
+    second: Guerrier_Boss_148
+  - first:
+      213: -181102804692969866
+    second: Guerrier_Boss_149
+  - first:
+      213: -2418115942711961057
+    second: Guerrier_Boss_150
+  - first:
+      213: -7138546389937832255
+    second: Guerrier_Boss_151
+  - first:
+      213: -7051004852255614895
+    second: Guerrier_Boss_152
+  - first:
+      213: 7588051126909509369
+    second: Guerrier_Boss_153
+  - first:
+      213: 6631186913583958210
+    second: Guerrier_Boss_154
+  - first:
+      213: 7474190987962278742
+    second: Guerrier_Boss_155
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Guerrier_Boss_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 321
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2bf56eb4c59fba0800000000000000
+      internalID: -6054706742965587279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 321
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21d5296626c46de0800000000000000
+      internalID: -1340728920774422228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_2
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 321
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11a3ad6e7b569b40800000000000000
+      internalID: 5446641397914640671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_3
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 321
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dac60d5970716ee0800000000000000
+      internalID: -1269609953387689259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 330
+        width: 19
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5185185}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b6fcfb45b8243a0800000000000000
+      internalID: -6682625700952839423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_5
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 330
+        width: 19
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5185185}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169d64b63090d1c80800000000000000
+      internalID: -8350508223785674399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_6
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 330
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4d22bc453200980800000000000000
+      internalID: -8574814843421141855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_7
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 330
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d0e40c9bdd4dc40800000000000000
+      internalID: 5536293631810211158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_8
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 321
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a26dafc68530f730800000000000000
+      internalID: 4030780519622730409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_9
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 323
+        width: 31
+        height: 34
+      alignment: 9
+      pivot: {x: 0.30739322, y: 0.4117647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2baf056caead70400800000000000000
+      internalID: 290441402873084594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_10
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 319
+        width: 30
+        height: 38
+      alignment: 9
+      pivot: {x: 0.3844508, y: 0.36842105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d5817f4bd25bda0800000000000000
+      internalID: -5929783079100457619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_11
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 325
+        width: 46
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5542576, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3bc8174ec897120800000000000000
+      internalID: 2412113988219089827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_12
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 326
+        width: 47
+        height: 31
+      alignment: 9
+      pivot: {x: 0.56490374, y: 0.4516129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cfa6a5f02a0c1130800000000000000
+      internalID: 3538714543882940355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_13
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 326
+        width: 40
+        height: 31
+      alignment: 9
+      pivot: {x: 0.6594574, y: 0.4516129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8a7fdbd5a144350800000000000000
+      internalID: 5999949593485748451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_14
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 326
+        width: 39
+        height: 31
+      alignment: 9
+      pivot: {x: 0.6795459, y: 0.4516129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6eb84515c0b8730800000000000000
+      internalID: 4002306237299156661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_15
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 325
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6582133, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaea1e97c004557d0800000000000000
+      internalID: -2930365560206020950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 283
+        width: 38
+        height: 34
+      alignment: 9
+      pivot: {x: 0.69912356, y: 0.4117647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f97ac26ce0aebcd0800000000000000
+      internalID: -2540416202660218379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_17
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 281
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e854b26d5540120800000000000000
+      internalID: 2379120881495805523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 283
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81a4d72b4fdfe380800000000000000
+      internalID: -8939681221423357558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_19
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 279
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b1aec6488facea0800000000000000
+      internalID: -5851591518167885042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_20
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 285
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be02f4dfc9fe787f0800000000000000
+      internalID: -610255766941654805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_21
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 286
+        width: 47
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c8b4bccaa5896a0800000000000000
+      internalID: -6442299568761893834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_22
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 286
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a54b182e1da56cf0800000000000000
+      internalID: -259611058470435420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_23
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 286
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0784963cb1b3a800800000000000000
+      internalID: 622536595434931979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_24
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 285
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc11b497d89a85cb0800000000000000
+      internalID: -4874960171538116148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_25
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 283
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77baf28fa9d9bca40800000000000000
+      internalID: 5389574667993328503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_26
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 282
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6338de6bb55bb70800000000000000
+      internalID: 8914131878676739782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_27
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 283
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ada66c435dbac20800000000000000
+      internalID: 3218900781330258523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_28
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 283
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152951ac682043380800000000000000
+      internalID: -8992559778012753327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_29
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 282
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1061e563fb667c0800000000000000
+      internalID: -4078362172309765678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_30
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 282
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef453605b1400ac20800000000000000
+      internalID: 3215574649301849342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_31
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 243
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753b0a1cae46dd3c0800000000000000
+      internalID: -4333196307026889897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_32
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 243
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4342c34659c6ef160800000000000000
+      internalID: 7061200654651106356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_33
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 242
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ec446e72cc68900800000000000000
+      internalID: 686460464959639174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_34
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 241
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80933956f7729210800000000000000
+      internalID: 1338263939224670347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_35
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 242
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88cb55c001b217e00800000000000000
+      internalID: 1040660336825711752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_36
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 243
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6f081991b16ef10800000000000000
+      internalID: 2298554456448497314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_37
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 243
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27428fa087734a790800000000000000
+      internalID: -7519824489082248078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_38
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 243
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4b571a27e6078d0800000000000000
+      internalID: -2850657125511351092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_39
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 243
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d218b4c86677970800000000000000
+      internalID: 8752577153566059896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_40
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 241
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b963b20087e0d8040800000000000000
+      internalID: 4651389898705286811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_41
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 242
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de72212d658a3570800000000000000
+      internalID: 8447210754840624850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_42
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 243
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e159d6a009c8fba40800000000000000
+      internalID: 5386178229636535582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_43
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 243
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af8fd5b1a4832c10800000000000000
+      internalID: 2027610087322783654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_44
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 243
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b89b34dfd69cb10800000000000000
+      internalID: 2002252443873282903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_45
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 243
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4134aa612ced4c150800000000000000
+      internalID: 5892079137692730132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_46
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 243
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de131455acfbc27b0800000000000000
+      internalID: -5247608590058835475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_47
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 245
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c589d6ba3e2f420800000000000000
+      internalID: 2662440655146998818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_48
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 245
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02fd34b860bb11930800000000000000
+      internalID: 4112273571546652448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_49
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 246
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9ee83f23b92cd00800000000000000
+      internalID: 991525511111829980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_50
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 246
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d84f230c34029a0800000000000000
+      internalID: -6259928989277319905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_51
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 208
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f25970324a93a440800000000000000
+      internalID: 4945966424854713081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_52
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 207
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918883a7cc6d9e050800000000000000
+      internalID: 5830427366320015385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_53
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 205
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c59364f529d44d0800000000000000
+      internalID: -3148699626564395945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_54
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 205
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f4f32803fd57980800000000000000
+      internalID: -8541675718801666191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_55
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 207
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1abbc66b282d870800000000000000
+      internalID: 8706164749680484826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_56
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 207
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd64eb583d7ad5e0800000000000000
+      internalID: -1884055813087793670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_57
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 208
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e15bc1fe1c00c80800000000000000
+      internalID: -8358467675676664169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_58
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 208
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41fdd9291b5e2aeb0800000000000000
+      internalID: -4709949709444325612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_59
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 208
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703266aa36b594580800000000000000
+      internalID: -8842435909746547961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_60
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 207
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b24efcd132749c0800000000000000
+      internalID: -3943144337790719172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_61
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 205
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb7141dc81c00560800000000000000
+      internalID: 7278029808381033406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_62
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 207
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b4ef6f2cac91240800000000000000
+      internalID: 4763061019637336927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_63
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 207
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305ab12d9fe716770800000000000000
+      internalID: 8602296374691341571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_64
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 204
+        width: 22
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e08a8840fc95480800000000000000
+      internalID: -8909862769396281792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_65
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 204
+        width: 22
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55cdb9a57c2332c0800000000000000
+      internalID: -4453166722668706465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_66
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 204
+        width: 23
+        height: 35
+      alignment: 9
+      pivot: {x: 0.478, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550f9a78557442770800000000000000
+      internalID: 8585065222348861525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_67
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 204
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6fa58b77aed02e0800000000000000
+      internalID: -2157810846525622572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_68
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 204
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7271c041c14e390800000000000000
+      internalID: -7790070583016347685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_69
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 204
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194d7303462168970800000000000000
+      internalID: 8756706746983502993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_70
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 203
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98540761456db21d0800000000000000
+      internalID: -3374367839142001271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_71
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 165
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabec2bfaf70667e0800000000000000
+      internalID: -1772720628786467924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_72
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 165
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4aba7f1243358e70800000000000000
+      internalID: 9116749379770432075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_73
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 165
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa66391867a991840800000000000000
+      internalID: 5195353478919317167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_74
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 165
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97d3e127df0399d0800000000000000
+      internalID: -2768851929241757793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_75
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 165
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aaa88f4c5b03f240800000000000000
+      internalID: 4824212116943186592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_76
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 165
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927330378bb18b110800000000000000
+      internalID: 1276800973377058601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_77
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 165
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756bd567634402b20800000000000000
+      internalID: 3107558743590418007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_78
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 165
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a30212a16481940800000000000000
+      internalID: 5267036842248649257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_79
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 165
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4b49021fc367cf0800000000000000
+      internalID: -254949322568452902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_80
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 165
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6728fd8b2bada7b0800000000000000
+      internalID: -5211320990244001938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_81
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 165
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d60e0052f812f00800000000000000
+      internalID: 1090309973891640696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_82
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 166
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e6e560516ed1500800000000000000
+      internalID: 368703722489802355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_83
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 166
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3b13be4516041e0800000000000000
+      internalID: -2215663999315233857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_84
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 166
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe9bb42e6a7d6e90800000000000000
+      internalID: -7030828829774209296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_85
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 166
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eaaa15ff822a9800800000000000000
+      internalID: 619845900404697828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_86
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 165
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf5c8ee4c7dd4f50800000000000000
+      internalID: 6867382247625613262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_87
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 165
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5aa8fd5811a9240800000000000000
+      internalID: 4799167619595412918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_88
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 165
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aaeb64c6192f11c0800000000000000
+      internalID: -4530857522350003543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_89
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 165
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a52a3bfd30912ba0800000000000000
+      internalID: -6115448223110126169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_90
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 165
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac028d888c0bcc6b0800000000000000
+      internalID: -5274646688221880118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_91
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 165
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e670d6d73f1cdaa50800000000000000
+      internalID: 6534091885909968750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_92
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 147
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4206ecea00b7c7a40800000000000000
+      internalID: 5367300098781765668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_93
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 147
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1322e9c4b95e9f0800000000000000
+      internalID: -439774635225894405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_94
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 127
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10009d978ebcbee90800000000000000
+      internalID: -6995273396852817919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_95
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 127
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9bca18a8208a240800000000000000
+      internalID: 4803091796494957021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_96
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 122
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812ce2a435eef9d70800000000000000
+      internalID: 9052215817532260888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_97
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 122
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1523672119f552910800000000000000
+      internalID: 1811959501771125329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_98
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 127
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de3d2eb7be9c8080800000000000000
+      internalID: -9183791028108443952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_99
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 129
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5365d214563be480800000000000000
+      internalID: -8868935306454932642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_100
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 123
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b08a6013c8f16b0800000000000000
+      internalID: -5323382092335674570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_101
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 122
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20e07ed1cc933ae0800000000000000
+      internalID: -1570739488547610580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_102
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 122
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e17497e32e0e920800000000000000
+      internalID: 3017660508288786044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_103
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 127
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e2bd7ab9e47d280800000000000000
+      internalID: -9018653298343072150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_104
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 129
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799a8628aff225910800000000000000
+      internalID: 1824573552014698903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_105
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 123
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96991f104b01df7e0800000000000000
+      internalID: -1730208316527634071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_106
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 79
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb845201b5f436950800000000000000
+      internalID: 6441079144601438398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_107
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 79
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b4e8d51fd545a90800000000000000
+      internalID: -7326127402586846321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_108
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 86
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3c38d7d27a34690800000000000000
+      internalID: -7619062330759592984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_109
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 84
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad4bcd38855f70a0800000000000000
+      internalID: -6881687661958181462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_110
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 83
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4adaa21d0dbacdc0800000000000000
+      internalID: -3617871486793360821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_111
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 86
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec409f07ba7b5cf0800000000000000
+      internalID: -262481226612323091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_112
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 84
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68a5fff96f6b0d50800000000000000
+      internalID: 6704574971327653994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_113
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 83
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31bbde7771de43d0800000000000000
+      internalID: -3220406372363685570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_114
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 86
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab7cf930e51a6230800000000000000
+      internalID: 3632740102217431983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_115
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 85
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3499ef1c8ee048380800000000000000
+      internalID: -8970028164965295805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_116
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 84
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cb8d65b6921cdc0800000000000000
+      internalID: -3620567084433884052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_117
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 86
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7103335f4e72bcf40800000000000000
+      internalID: 5749733213588369431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_118
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 85
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfe7d8bb1a4571b0800000000000000
+      internalID: -5659535873795428418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_119
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 84
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194ed70ba07d754c0800000000000000
+      internalID: -4298730878391163759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_120
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 85
+        width: 25
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92674b739c3b0bc0800000000000000
+      internalID: -3815889655140228454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_121
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 84
+        width: 23
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3888889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a94457e650dcde50800000000000000
+      internalID: 6835567406108395940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_122
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 83
+        width: 21
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3783784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d029d5fe17e958870800000000000000
+      internalID: 8684521668638249485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_123
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 86
+        width: 23
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4117647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fc909ea65747a10800000000000000
+      internalID: 1906277644321279897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_124
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 85
+        width: 24
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311b7ca6e313f3dd0800000000000000
+      internalID: -2504228723645501165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_125
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 84
+        width: 21
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3888889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ae3720cb46ae950800000000000000
+      internalID: 6479101772583660132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_126
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 42
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15024793a96f89520800000000000000
+      internalID: 2709186318112661585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_127
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 41
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec79b4946d9e43d0800000000000000
+      internalID: -3220463628205851413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_128
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 40
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075a9c5dbb5b62eb0800000000000000
+      internalID: -4744905339037964944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_129
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 43
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9639c5cb776ac530800000000000000
+      internalID: 3876024210602669723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_130
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 42
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7d91181952b7770800000000000000
+      internalID: 8609516419515275245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_131
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 41
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509871b8b0b0af050800000000000000
+      internalID: 5834988411418020101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_132
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 41
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fef836ffe19cc700800000000000000
+      internalID: 561984513328611060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_133
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 41
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4ae60ad2b297190800000000000000
+      internalID: -7964286991062883137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_134
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 41
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5d962505b9f22a0800000000000000
+      internalID: -6760013746377468459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_135
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 41
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c28c86f67ef48350800000000000000
+      internalID: 6018214788969824961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_136
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 41
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1119d434c3389d330800000000000000
+      internalID: 3736161660730970385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_137
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 41
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7c0dd02e1c89760800000000000000
+      internalID: 7464929559005153247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_138
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 41
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e38d8f8bf4474640800000000000000
+      internalID: 5064092153237308390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_139
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 41
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 755936e4864ff74e0800000000000000
+      internalID: -1981596582190803625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_140
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 41
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1381228244c4af950800000000000000
+      internalID: 6483578469168060465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_141
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 41
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3aaf8db118045e0800000000000000
+      internalID: -1927398683910167604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_142
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 41
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8c5baee114e3480800000000000000
+      internalID: -8917618611104397142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_143
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 41
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3afa5f57f2a92a70800000000000000
+      internalID: 8802746130012764735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_144
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 42
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9106d6875431d5a0800000000000000
+      internalID: -6498355236789943907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_145
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 41
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af64f6dd33404c910800000000000000
+      internalID: 1856613567188387578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_146
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 41
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963e102be4d106520800000000000000
+      internalID: 2693184800998679401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_147
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 42
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7dbc8ced5549a5f0800000000000000
+      internalID: -744987993650184837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_148
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74c4286238bb2570800000000000000
+      internalID: 8443044453071242363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_149
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 2
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676d27a65f79c7df0800000000000000
+      internalID: -181102804692969866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_150
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 3
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ad1f0ac50217ed0800000000000000
+      internalID: -2418115942711961057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_151
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 2
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cebb1741e9ceec90800000000000000
+      internalID: -7138546389937832255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_152
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 2
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1589fb7d17cc52e90800000000000000
+      internalID: -7051004852255614895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_153
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 3
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe91f4fb4c2e4960800000000000000
+      internalID: 7588051126909509369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_154
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c804674d55b60c50800000000000000
+      internalID: 6631186913583958210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_Boss_155
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 2
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 653eae48a19a9b760800000000000000
+      internalID: 7474190987962278742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fe2f0cba73bbd264d8f5579d2d797bb4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

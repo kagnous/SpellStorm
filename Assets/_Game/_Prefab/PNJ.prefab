@@ -49,8 +49,9 @@ MonoBehaviour:
     name: "H\xE9l\xE9na"
     sentences:
     - Tu peux lancer des sorts avec ton click droit ou le boutons de gauche
-    - "Change de forme et d'\xE9l\xE9ments pour ton sort avec A et E ou les gach\xEAttes
+    - "Change de forme et d'\xE9l\xE9ment pour ton sort avec A et E ou les gachettes
       arri\xE8res"
+    - "Utilise les diff\xE9rents sorts pour avancer"
 --- !u!61 &1984739433469381995
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -148,7 +149,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -5761662777375553323, guid: a088ef9c271cdc649821cfbaf5791882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1

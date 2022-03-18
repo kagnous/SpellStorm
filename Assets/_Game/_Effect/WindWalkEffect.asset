@@ -19,5 +19,5 @@ MonoBehaviour:
   - affectedValue: 3
     value: 100
   - affectedValue: 4
-    value: 200
+    value: 150
   _duration: 7

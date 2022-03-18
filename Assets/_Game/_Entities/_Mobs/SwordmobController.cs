@@ -10,14 +10,20 @@ public class SwordmobController : EnnemiController
         if (Vector3.Distance(transform.position, _player.transform.position) < 1.5)
         {
             // Il attaque
-            //Debug.Log("attack");
+            base.Attack();
+            
         }
         // Sinon...
         else
         {
             // Se dirige vers le player
             Vector3 dir = _player.transform.position - transform.position;
-            transform.Translate(dir.normalized * _goblinStats.Speed * Time.fixedDeltaTime, Space.World);
+            transform.Translate(dir.normalized * _mobStats.Speed * Time.fixedDeltaTime, Space.World);
         }
+    }
+
+    public void ApplyDamage()
+    {
+        Debug.Log("attack");
     }
 }
