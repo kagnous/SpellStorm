@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class SwordmobController : EnnemiController
 {
+    [SerializeField, Tooltip("Layer détectés pour la vérification du dégât")]
+    private LayerMask collisionLayer;
+
+    [SerializeField, Tooltip("Range de dégâts")]
+    private Vector2 _range = new Vector2(1.5f, 1);
+
     protected override void Attack()
     {
         // Si il est à proximité du player
@@ -22,8 +28,19 @@ public class SwordmobController : EnnemiController
         }
     }
 
-    public void ApplyDamage()
+    private void ApplyDamage()
     {
-        Debug.Log("attack");
+            //Debug.Log("attack");
+        if(Physics2D.OverlapBox(transform.position + new Vector3(1,0, 0) * transform.localScale.x, _range, 0, collisionLayer))
+        {
+                //Debug.Log("Damage");
+            _player.GetComponent<StatsPlayerManager>().PhysicalDamage(_damage);
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = new Color(1,0,0,0.5f);
+        Gizmos.DrawCube(transform.position + new Vector3(1, 0, 0) * transform.localScale.x, _range);
     }
 }

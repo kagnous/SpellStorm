@@ -9,6 +9,7 @@ TagManager:
   - Reactive
   - Interractible
   - Projectile
+  - PlayerSpawn
   layers:
   - Default
   - TransparentFX

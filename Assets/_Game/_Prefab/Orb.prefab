@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _orbValue: 1
+  _mana: 10
 --- !u!58 &6195386048665469070
 CircleCollider2D:
   m_ObjectHideFlags: 0

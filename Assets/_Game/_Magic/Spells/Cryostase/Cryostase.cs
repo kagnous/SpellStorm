@@ -13,7 +13,7 @@ public class Cryostase : SelfSpell
         // On récupère et modifie le sprite du caster
         //caster.GetComponent<SpriteRenderer>().color = new Color(0.2f, 0.2f, 0.2f, 1);
 
-        Debug.Log("Permafrost !");
+            //Debug.Log("Permafrost !");
 
         StatsManager casterStats = caster.GetComponent<StatsManager>();
         for (int i = 0; i < effects.Count; i++)

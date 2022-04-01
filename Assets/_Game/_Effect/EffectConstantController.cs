@@ -20,7 +20,7 @@ public class EffectConstantController : EffectController
     IEnumerator ApplyCoroutine()
     {
         yield return new WaitForSeconds(duration);
-        Debug.Log("Fin coroutine");
+            //Debug.Log("Fin coroutine");
         EndEffect();
     }
 

@@ -9,15 +9,15 @@ public class EnnemiController : MonoBehaviour
     /// </summary>
     public enum EnnemiState
     {
-        none,
-        patrol,
-        search,
-        attack,
-        freeze
+        None,
+        Patrol,
+        Search,
+        Attack,
+        Freeze
     }
 
     protected StatsManager _mobStats;
-    protected PlayerController _player;
+    protected PlayerController _player; public PlayerController Player => _player;
     private Rigidbody2D rb;
 
     [SerializeField, Tooltip("Dégâts infligés")]
@@ -25,6 +25,9 @@ public class EnnemiController : MonoBehaviour
 
     [SerializeField, Tooltip("Portée du champ de vision")]
     private float _fieldOfView = 5;
+
+    [SerializeField, Tooltip("Distance à laquelle il oublie le joueur")]
+    private float _forgetRange = 15;
 
     #region Patrouille
     [SerializeField, Tooltip("Points de passage de la patrouille (si il y a)")]
@@ -55,25 +58,43 @@ public class EnnemiController : MonoBehaviour
         if(waypoints.Count > 0) target = waypoints[0];
     }
 
+    private void OnEnable()
+    {
+        _mobStats.eventDamage += TakeDamage;
+    }
+    private void OnDisable()
+    {
+        _mobStats.eventDamage -= TakeDamage;
+    }
+    private void TakeDamage()
+    {
+        if(_state != EnnemiState.Freeze)
+        {
+            target = _player.transform;
+            _state = EnnemiState.Attack;
+        }
+    }
+
     private void FixedUpdate()
     {
         switch(_state)
         {
             // Si en mode attaque, il attaque
-            case EnnemiState.attack:
+            case EnnemiState.Attack:
                 Attack();
+                TestForget();
                 break;
             // Si il est en mode patrouille, il se déplace et cherche le Player
-            case EnnemiState.patrol:
+            case EnnemiState.Patrol:
                 Patrol();
                 SearchPlayer();
                 break;
             // Si reste juste à chercher
-            case EnnemiState.search:
+            case EnnemiState.Search:
                 SearchPlayer();
                 break;
             // Si freeze, on pète de suite l'update
-            case EnnemiState.freeze:
+            case EnnemiState.Freeze:
                 return;
             // Si none il reste là à rien faire
             default:
@@ -104,17 +125,36 @@ public class EnnemiController : MonoBehaviour
     {
         // On récupère la valeur en int du layer "Player"
         LayerMask mask = LayerMask.GetMask("Player");
-        // On trace un raycast de soi même jusqu'à la limite du champs de vision vers la droite, en cherchant le layer "PLayer uniquement"
-        RaycastHit2D raycast = Physics2D.Raycast(transform.position, transform.right * transform.localScale.x, _fieldOfView, mask);
-        // Si on a trouvé quelque chose (donc fondamentalement le joueur)
+
+        // On regarde devant
+        TraceRaycast(transform.right * transform.localScale.x, mask);
+        // On regarde en haut
+        TraceRaycast((new Vector2(transform.localScale.x, 1)), mask);
+        TraceRaycast((new Vector2(transform.localScale.x, 0.75f)), mask);
+        TraceRaycast((new Vector2(transform.localScale.x, 0.5f)), mask);
+        TraceRaycast((new Vector2(transform.localScale.x, 0.25f)), mask);
+        // On regarde en bas
+        TraceRaycast((new Vector2(transform.localScale.x, -1)) , mask);
+        TraceRaycast((new Vector2(transform.localScale.x, -0.75f)), mask);
+        TraceRaycast((new Vector2(transform.localScale.x, -0.5f)), mask);
+        TraceRaycast((new Vector2(transform.localScale.x, -0.25f)), mask);
+    }
+
+    private void TraceRaycast(Vector2 direction, LayerMask mask)
+    {
+
+        // On trace un raycast de soi même jusqu'à la limite du champs de vision dans le sens du mob, en cherchant le layer "Player uniquement"
+        RaycastHit2D raycast = Physics2D.Raycast(transform.position + new Vector3(0, 0.5f, 0), direction, _fieldOfView, mask);
+        // Si on a trouvé quelque chose (donc fondamentalement le joueur, vu qu'on ne cherche que son Layer)
         if (raycast.collider != null)
         {
             Debug.Log("VU !");
             // On fait de sa transform la nouvelle cible
             target = raycast.collider.transform;
             // On passe en mode attaque
-            _state = EnnemiState.attack;
+            _state = EnnemiState.Attack;
         }
+        
     }
 
     /// <summary>
@@ -131,14 +171,14 @@ public class EnnemiController : MonoBehaviour
         // Avec le Player...
         if (collision.gameObject.tag == "Player")
         {
-            if(_state != EnnemiState.freeze)
+            if(_state != EnnemiState.Freeze)
             {
                 // On applique les dégâts (rappel : même à 0 les dégâts sont minimisés à 1 pour le player)
-                collision.gameObject.GetComponent<StatsPlayerManager>().PhysicalDamage(_damage);
+                //collision.gameObject.GetComponent<StatsPlayerManager>().PhysicalDamage(_damage);
 
                 // Il passe à l'attaque
                 target = _player.transform;
-                _state = EnnemiState.attack;
+                _state = EnnemiState.Attack;
             }
         }
     }
@@ -160,4 +200,31 @@ public class EnnemiController : MonoBehaviour
             }
         }
     }
+
+    /// <summary>
+    /// Teste si le joueur est encore à portée d'hositilité
+    /// </summary>
+    private void TestForget()
+    {
+        if(Vector2.Distance(transform.position, _player.transform.position) > _forgetRange)
+        {
+            Debug.Log("Oublié");
+            State = DefaultState;
+        }
+
+    }
+
+    // Pour afficher le champs de vision
+    /*private void OnDrawGizmos()
+    {
+    Gizmos.color = Color.green;
+    Gizmos.DrawRay(new Ray(transform.position + new Vector3(0, 0.5f, 0), new Vector2(transform.localScale.x, 1)));
+    Gizmos.DrawRay(new Ray(transform.position + new Vector3(0, 0.5f, 0), new Vector2(transform.localScale.x, 0.75f)));
+    Gizmos.DrawRay(new Ray(transform.position + new Vector3(0, 0.5f, 0), new Vector2(transform.localScale.x, 0.5f)));
+    Gizmos.DrawRay(new Ray(transform.position + new Vector3(0, 0.5f, 0), new Vector2(transform.localScale.x, 0.25f)));
+    Gizmos.DrawRay(new Ray(transform.position + new Vector3(0, 0.5f, 0), new Vector2(transform.localScale.x, -1)));
+    Gizmos.DrawRay(new Ray(transform.position + new Vector3(0, 0.5f, 0), new Vector2(transform.localScale.x, -0.75f)));
+    Gizmos.DrawRay(new Ray(transform.position + new Vector3(0, 0.5f, 0), new Vector2(transform.localScale.x, -0.5f)));
+    Gizmos.DrawRay(new Ray(transform.position + new Vector3(0, 0.5f, 0), new Vector2(transform.localScale.x, -0.25f)));
+    }*/
 }

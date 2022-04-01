@@ -16,7 +16,7 @@ public class DialogueController : Interractible
     private void Awake()
     {
         animator = GetComponentInChildren<Animator>();
-        player = FindObjectOfType<PlayerController>().transform;
+        player = FindObjectOfType<PlayerController>()?.transform;
         sprite = GetComponentInChildren<SpriteRenderer>();
     }
 

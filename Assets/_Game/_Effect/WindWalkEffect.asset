@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: WindWalkEffect
   m_EditorClassIdentifier: 
   typeEffect: 0
-  colorEffect: {r: 0.64705884, g: 0.9056604, b: 0.9056604, a: 1}
-  effectPrefab: {fileID: 7410336885811642170, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
+  colorEffect: {r: 1, g: 1, b: 1, a: 1}
+  colorSkin: {r: 1, g: 1, b: 1, a: 1}
+  effectPrefab: {fileID: 7410336885811642170, guid: fcfc46bad898ba248904b81521ded9de, type: 3}
   effects:
   - affectedValue: 3
     value: 100

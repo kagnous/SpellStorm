@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1016200216142642719}
   - component: {fileID: 1016200216142642716}
-  - component: {fileID: 1016200216142642785}
+  - component: {fileID: 2974092766564826813}
   - component: {fileID: 1016200216142642786}
   - component: {fileID: 8339965185365910402}
   - component: {fileID: 1016200216142642718}
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1016200216142642785
+--- !u!114 &2974092766564826813
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,15 +97,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1016200216142642717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd56254374732b458b6887ac88c0164, type: 3}
+  m_Script: {fileID: 11500000, guid: abb66d9af0115a445b3641b3f769a218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 3
+  _speed: 3.5
   _jumpForce: 300
   _maxHP: 5
   _HP: 0
   _maxMana: 100
-  _mana: 100
+  _mana: 0
   _armor: 0
   _effects: []
 --- !u!114 &1016200216142642786
@@ -122,10 +122,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damage: 3
   _fieldOfView: 7
+  _forgetRange: 10
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
   _defaultState: 2
+  collisionLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  _range: {x: 1.5, y: 1.5}
 --- !u!114 &8339965185365910402
 MonoBehaviour:
   m_ObjectHideFlags: 0

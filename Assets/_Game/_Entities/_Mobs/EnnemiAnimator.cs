@@ -19,18 +19,27 @@ public class EnnemiAnimator : MonoBehaviour
     {
         _stats.eventDamage += AnimDamage;
         _controller.eventAttack += AnimAttack;
+        _stats.eventDeath += AnimDeath;
     }
     private void OnDisable()
     {
         _stats.eventDamage -= AnimDamage;
         _controller.eventAttack -= AnimAttack;
+        _stats.eventDeath -= AnimDeath;
     }
 
     private void Update()
     {
-        if(_controller.State == EnnemiController.EnnemiState.attack || _controller.State == EnnemiController.EnnemiState.patrol)
+        if(_controller is SwordmobController)
         {
-            _animator.SetBool("Move", true);
+            if (_controller.State == EnnemiController.EnnemiState.Attack || _controller.State == EnnemiController.EnnemiState.Patrol)
+            {
+                _animator.SetBool("Move", true);
+            }
+            else
+            {
+                _animator.SetBool("Move", false);
+            }
         }
         else
         {
@@ -46,5 +55,10 @@ public class EnnemiAnimator : MonoBehaviour
     private void AnimAttack()
     {
         _animator.Play("SwordmanAttack");
+    }
+
+    private void AnimDeath()
+    {
+        _animator.Play("SwordmanDead");
     }
 }

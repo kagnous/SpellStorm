@@ -35,6 +35,9 @@ public class EffectMother : ScriptableObject
     [SerializeField, Tooltip("Couleur des particules")]
     protected Color colorEffect; public Color ColorEffect => colorEffect;
 
+    [SerializeField, Tooltip("Couleur du sprite (blanc pour rien)")]
+    protected Color colorSkin; public Color ColorSkin => colorSkin;
+
     [SerializeField, Tooltip("Prefab de l'objet pour les effets")]
     protected GameObject effectPrefab;
 
@@ -87,27 +90,27 @@ public class EffectMother : ScriptableObject
             {
                 case AffectedValue.HP:
                     target.ElementalDamage(effects[i].value);
-                    Debug.Log($"-{effects[i].value} HP");
+                        //Debug.Log($"-{effects[i].value} HP");
                     break;
                 case AffectedValue.Mana:
                     target.Mana += effects[i].value;
-                    Debug.Log($"+{effects[i].value} Mana");
+                        //Debug.Log($"+{effects[i].value} Mana");
                     break;
                 case AffectedValue.Armor:
                     target.Armor += effects[i].value;
-                    Debug.Log($"+{effects[i].value} armor");
+                        //Debug.Log($"+{effects[i].value} armor");
                     break;
                 case AffectedValue.Speed:
                     target.Speed += effects[i].value;
-                    Debug.Log($"+{effects[i].value} speed");
+                        //Debug.Log($"+{effects[i].value} speed");
                     break;
                 case AffectedValue.Jump:
                     target.JumpForce += effects[i].value;
-                    Debug.Log($"+{effects[i].value} jump");
+                        //Debug.Log($"+{effects[i].value} jump");
                     break;
                 case AffectedValue.GravityScale:
                     target.gameObject.GetComponent<Rigidbody2D>().gravityScale += effects[i].value;
-                    Debug.Log($"+{effects[i].value} gravityScale");
+                        //Debug.Log($"+{effects[i].value} gravityScale");
                     break;
                 case AffectedValue.Paralyse:
                     // Propetry Drawer pour masquer la value qui sert à rien ici
@@ -115,27 +118,26 @@ public class EffectMother : ScriptableObject
                     {
                         target.GetComponent<Animator>().enabled = false;
                         target.GetComponent<PlayerController>().StopMoveInput();
-                        target.GetComponent<SpriteRenderer>().color = new Color(0, 138, 255, 255);
                     }
                     else if(target.gameObject.tag == "Mob")
                     {
-                        target.GetComponent<EnnemiController>().State = EnnemiController.EnnemiState.freeze;
+                        target.GetComponent<EnnemiController>().State = EnnemiController.EnnemiState.Freeze;
                         target.GetComponent<Animator>().enabled = false;
-                        target.GetComponent<SpriteRenderer>().color = new Color(0, 138, 255, 255);
                     }
-                    Debug.Log($"Paralyse");
+                        //Debug.Log($"Paralyse");
                     break;
                 default:
                     break;
             }
+            target.GetComponent<SpriteRenderer>().color = colorSkin;
         }
     }
 
     /// <summary>
     /// Se lance à la fin de l'effet (principalement pour dissiper des effets fixes)
     /// </summary>
-    /// <param name="taget">StatsManager de la cible de l'effet</param>
-    public virtual void EndEffect(StatsManager taget) { }
+    /// <param name="target">StatsManager de la cible de l'effet</param>
+    public virtual void EndEffect(StatsManager target) { }
 }
 
 

@@ -892,8 +892,8 @@ TextureImporter:
       name: Guerrier_Boss_14
       rect:
         serializedVersion: 2
-        x: 394
-        y: 326
+        x: 395
+        y: 325
         width: 39
         height: 31
       alignment: 9
@@ -2534,8 +2534,8 @@ TextureImporter:
         y: 147
         width: 36
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

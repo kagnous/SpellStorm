@@ -33,6 +33,7 @@ public class StatsManager : MonoBehaviour
     // Event
     public delegate void DamageDelegate();
     public event DamageDelegate eventDamage;
+    public event DamageDelegate eventDeath;
 
     protected virtual void Awake()
     {
@@ -98,8 +99,8 @@ public class StatsManager : MonoBehaviour
 
         if(_HP <= 0)
         {
-            Debug.Log(name + " meurt !");
-            Destroy(gameObject);
+            eventDeath?.Invoke();
+            Death();
         } else if(modifLife < 0)
         {
             eventDamage?.Invoke();
@@ -107,14 +108,23 @@ public class StatsManager : MonoBehaviour
         {
             _HP = _maxHP;
         }
-        Debug.Log($"{name} a {_HP} hp");
+            //Debug.Log($"{name} a {_HP} hp");
     }
 
     /// <summary>
-    /// Calcule les dégâts physiques reçus en fonction de l'armure
+    /// Comportement quand l'entité n'a plus de vie
+    /// </summary>
+    protected virtual void Death()
+    {
+        Debug.Log(name + " meurt !");
+        Destroy(gameObject);
+    }
+
+    /// <summary>
+    /// Réduit les dégâts physiques reçus en fonction de l'armure
     /// </summary>
     /// <param name="damage">Dégâts reçus</param>
-    public void PhysicalDamage(int damage)
+    public virtual void PhysicalDamage(int damage)
     {
         damage -= _armor;
         if (damage <= 0)

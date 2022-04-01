@@ -40,10 +40,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2409048510867610599}
   - component: {fileID: 2409048510867610598}
-  - component: {fileID: 2409048510867610597}
+  - component: {fileID: 6991490103606786414}
   - component: {fileID: 2409048510867610596}
+  - component: {fileID: 5479651253432875255}
   - component: {fileID: 2409048510867610595}
   - component: {fileID: 2409048510867610594}
+  - component: {fileID: 3602106635555357691}
   m_Layer: 6
   m_Name: Bandit Archer
   m_TagString: Mob
@@ -106,9 +108,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 77d020b3070ecae4ca01cc800ae9d644, type: 3}
+  m_Sprite: {fileID: -5632558480353415302, guid: 19bc9a7aa1b748c459ffc651348f34e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.6, y: 1.95}
@@ -117,7 +119,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2409048510867610597
+--- !u!114 &6991490103606786414
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,15 +128,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2409048510867610593}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd56254374732b458b6887ac88c0164, type: 3}
+  m_Script: {fileID: 11500000, guid: abb66d9af0115a445b3641b3f769a218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 1
   _jumpForce: 300
-  _maxHP: 5
+  _maxHP: 3
   _HP: 0
   _maxMana: 100
-  _mana: 100
+  _mana: 0
   _armor: 0
   _effects: []
 --- !u!114 &2409048510867610596
@@ -150,7 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 2
-  _fieldOfView: 5
+  _fieldOfView: 10
+  _forgetRange: 15
   waypoints:
   - {fileID: 0}
   _defaultState: 2
@@ -158,6 +161,18 @@ MonoBehaviour:
   _speed: 100
   _recharge: 3
   _imprecision: 3
+--- !u!114 &5479651253432875255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2409048510867610593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d8662119d30a04eb6753b65b9e9562, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!70 &2409048510867610595
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -171,8 +186,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0035005808, y: 0}
-  m_Size: {x: 0.7439928, y: 0.975}
+  m_Offset: {x: 0.06107998, y: 0.025551558}
+  m_Size: {x: 0.79141045, y: 1.7367673}
   m_Direction: 0
 --- !u!50 &2409048510867610594
 Rigidbody2D:
@@ -195,3 +210,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &3602106635555357691
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2409048510867610593}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 05c09de431c0eca4097e83a6e870f7ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
