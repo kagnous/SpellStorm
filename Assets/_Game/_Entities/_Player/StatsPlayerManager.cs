@@ -24,6 +24,7 @@ public class StatsPlayerManager : StatsManager
     private float _invincibilityTime = 2;
 
     private float timer = 0;
+    private float timerAlt = 0;
 
     private void Start()
     {
@@ -45,6 +46,13 @@ public class StatsPlayerManager : StatsManager
         {
             SetMana(_manaPerX);
             timer = 0;
+        }
+
+        timerAlt += Time.deltaTime;
+        if (timerAlt >= 30)
+        {
+            SetLife(1);
+            timerAlt = 0;
         }
     }
 

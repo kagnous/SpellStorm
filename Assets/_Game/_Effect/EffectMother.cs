@@ -129,6 +129,8 @@ public class EffectMother : ScriptableObject
                 default:
                     break;
             }
+
+            if(colorSkin != Color.white)
             target.GetComponent<SpriteRenderer>().color = colorSkin;
         }
     }

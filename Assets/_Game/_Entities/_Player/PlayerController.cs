@@ -34,6 +34,8 @@ public class PlayerController : MonoBehaviour
     private LayerMask collisionLayer;
     #endregion
 
+    private bool isClimb = false; public bool IsClimb { get { return isClimb; } set { isClimb = value; } }
+
     /// <summary>
     /// Vecteur de la direction du player 
     /// </summary>
@@ -65,10 +67,20 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         #region Move
+        if(!isClimb)
+        {
             // Calcul de la velocité en fonction du mouvement player sur x, la speed et le temps
             Vector3 targetVelocity = new Vector2(_directionMovment.x * _playerStats.Speed * Time.deltaTime, rb.velocity.y);
             // Mouvement en fonction de la velocité calculée ci-desssus
             rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocity, 0.05f);
+        }
+        else
+        {
+            // Alternative avec la montée en y
+            Vector3 targetVelocity = new Vector2(_directionMovment.x * _playerStats.Speed * Time.deltaTime, _directionMovment.y * _playerStats.Speed * Time.deltaTime);
+            // Mouvement en fonction de la velocité calculée ci-desssus
+            rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocity, 0.05f);
+        }
         #endregion
 
         Flip(rb.velocity.x);
@@ -103,7 +115,7 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     private void Interract(InputAction.CallbackContext context)
     {
-        Debug.Log("Interraction");
+            //Debug.Log("Interraction");
         eventInterract?.Invoke();
     }
 

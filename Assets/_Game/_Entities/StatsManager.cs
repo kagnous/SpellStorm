@@ -65,7 +65,7 @@ public class StatsManager : MonoBehaviour
             {
                 if (_effects[i].TypeOfTheEffect == EffectMother.TypeEffect.Fire)
                 {
-                    Debug.Log("Froid enlève feu");
+                        //Debug.Log("Froid enlève feu");
                     _effects[i].EndEffect();
                     return;
                 }
@@ -77,7 +77,7 @@ public class StatsManager : MonoBehaviour
             {
                 if (_effects[i].TypeOfTheEffect == EffectMother.TypeEffect.Cold)
                 {
-                    Debug.Log("Feu enlève froid");
+                        //Debug.Log("Feu enlève froid");
                     _effects[i].EndEffect();
                     return;
                 }

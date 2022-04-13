@@ -41,14 +41,23 @@ public class PlayerAnimator : MonoBehaviour
 
     private void AnimAttack(MagicSpell spell)
     {
-        if(Mathf.Abs(rb.velocity.x) > 0.3f)
+        if(spell.Form.name == "FormePersonnelle")
+        {
+            _animator.Play("MageSelfCast");
+        }
+        else
+        {
+            _animator.Play("MageProjectileCast");
+        }
+
+        /*if(Mathf.Abs(rb.velocity.x) > 0.3f)
         {
             _animator.Play("MageWalkingAttack");
         }
         else
         {
             _animator.Play("MageStaticAttack");
-        }
+        }*/
     }
 
     private void AnimDeath()
@@ -58,7 +67,13 @@ public class PlayerAnimator : MonoBehaviour
 
     private void AnimDamage()
     {
-        //Debug.Log("Anim damage");
-        //_animator.Play("MageTakeDamage");
+        if(_characterStats.Armor > 0)
+        {
+            _animator.Play("MageTakeDamageArmor");
+        }
+        else
+        {
+            _animator.Play("MageTakeDamage");
+        }
     }
 }

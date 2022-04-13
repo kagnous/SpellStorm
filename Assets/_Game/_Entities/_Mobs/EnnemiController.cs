@@ -33,6 +33,10 @@ public class EnnemiController : MonoBehaviour
     [SerializeField, Tooltip("Points de passage de la patrouille (si il y a)")]
     private List<Transform> waypoints;
     private int destpoint = 0;
+
+    [SerializeField]
+    private float _patrolSpeed = 2;
+    private float _defaultSpeed;
     #endregion
 
     private Transform target; public Transform Target { get { return target; } set { target = value; } }
@@ -56,6 +60,8 @@ public class EnnemiController : MonoBehaviour
 
         // On assigne les waypoints de patrouille que si y en a
         if(waypoints.Count > 0) target = waypoints[0];
+
+        _defaultSpeed = _mobStats.Speed;
     }
 
     private void OnEnable()
@@ -72,6 +78,7 @@ public class EnnemiController : MonoBehaviour
         {
             target = _player.transform;
             _state = EnnemiState.Attack;
+            _mobStats.Speed = _defaultSpeed;
         }
     }
 
@@ -105,6 +112,8 @@ public class EnnemiController : MonoBehaviour
 
     private void Patrol()
     {
+        _mobStats.Speed = _patrolSpeed;
+
         // Se dirige vers son point de ronde
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * _mobStats.Speed * Time.fixedDeltaTime, Space.World);
@@ -148,11 +157,12 @@ public class EnnemiController : MonoBehaviour
         // Si on a trouvé quelque chose (donc fondamentalement le joueur, vu qu'on ne cherche que son Layer)
         if (raycast.collider != null)
         {
-            Debug.Log("VU !");
+                //Debug.Log("VU !");
             // On fait de sa transform la nouvelle cible
             target = raycast.collider.transform;
             // On passe en mode attaque
             _state = EnnemiState.Attack;
+            _mobStats.Speed = _defaultSpeed;
         }
         
     }
@@ -208,7 +218,7 @@ public class EnnemiController : MonoBehaviour
     {
         if(Vector2.Distance(transform.position, _player.transform.position) > _forgetRange)
         {
-            Debug.Log("Oublié");
+                //Debug.Log("Oublié");
             State = DefaultState;
         }
 

@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogue:
-    name: "H\xE9l\xE9na"
+    name: HELENA
     sentences:
     - Tu peux lancer des sorts avec ton click droit ou le boutons de gauche
     - "Change de forme et d'\xE9l\xE9ment pour ton sort avec A et E ou les gachettes

@@ -26,7 +26,7 @@ public class EffectConstantController : EffectController
 
     public override void RefreshEffect()
     {
-        Debug.Log("Refresh" + effet.name);
+            //Debug.Log("Refresh" + effet.name);
         StopAllCoroutines();
         StartCoroutine(ApplyCoroutine());
     }

@@ -53,7 +53,7 @@ public class LevelManager : MonoBehaviour
     /// </summary>
     public void GameOver()
     {
-            Debug.Log("GAME OVER");
+            //Debug.Log("GAME OVER");
         player.GetComponent<PlayerController>().enabled = false;
         player.GetComponent<PlayerCasting>().enabled = false;
 

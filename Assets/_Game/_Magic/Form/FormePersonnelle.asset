@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a04b52ddd202b4ea1e0df970de9ec4, type: 3}
   m_Name: FormePersonnelle
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: cd27c2b2f37687b43af72aca04697703, type: 3}
+  sprite: {fileID: 21300000, guid: 681bedb6cf4328f45a1e77e124113f1e, type: 3}

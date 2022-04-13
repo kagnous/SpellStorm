@@ -24,5 +24,6 @@ public class StatsEnnemiManager : StatsManager
         GetComponent<Collider2D>().enabled = false;
         GetComponent<EnnemiController>().enabled = false;
         GetComponent<Rigidbody2D>().gravityScale = 0;
+        GetComponent<Rigidbody2D>().Sleep();
     }
 }

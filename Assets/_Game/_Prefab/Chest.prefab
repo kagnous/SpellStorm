@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _orbContains: 5
+  _mana: 50
 --- !u!95 &3857271577780053481
 Animator:
   serializedVersion: 3
