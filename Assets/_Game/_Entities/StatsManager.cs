@@ -30,6 +30,11 @@ public class StatsManager : MonoBehaviour
     [SerializeField, Tooltip("Tout les effets qui affectent l'entité")]
     List<EffectController> _effects; public List<EffectController> Effects { get { return _effects; } set { _effects = value; } }
 
+    // Event
+    public delegate void DamageDelegate();
+    public event DamageDelegate eventDamage;
+    public event DamageDelegate eventDeath;
+
     protected virtual void Awake()
     {
         _HP = _maxHP;
@@ -60,7 +65,7 @@ public class StatsManager : MonoBehaviour
             {
                 if (_effects[i].TypeOfTheEffect == EffectMother.TypeEffect.Fire)
                 {
-                    Debug.Log("Froid enlève feu");
+                        //Debug.Log("Froid enlève feu");
                     _effects[i].EndEffect();
                     return;
                 }
@@ -72,7 +77,7 @@ public class StatsManager : MonoBehaviour
             {
                 if (_effects[i].TypeOfTheEffect == EffectMother.TypeEffect.Cold)
                 {
-                    Debug.Log("Feu enlève froid");
+                        //Debug.Log("Feu enlève froid");
                     _effects[i].EndEffect();
                     return;
                 }
@@ -91,23 +96,35 @@ public class StatsManager : MonoBehaviour
     protected virtual void SetLife(int modifLife)
     {
         _HP += modifLife;
+
         if(_HP <= 0)
         {
-            Debug.Log(name + " meurt !");
-            Destroy(gameObject);
-        }
-        else if(_HP > _maxHP)
+            eventDeath?.Invoke();
+            Death();
+        } else if(modifLife < 0)
+        {
+            eventDamage?.Invoke();
+        } else if(_HP > _maxHP)
         {
             _HP = _maxHP;
         }
-        Debug.Log($"{name} a {_HP} hp");
+            //Debug.Log($"{name} a {_HP} hp");
     }
 
     /// <summary>
-    /// Calcule les dégâts physiques reçus en fonction de l'armure
+    /// Comportement quand l'entité n'a plus de vie
+    /// </summary>
+    protected virtual void Death()
+    {
+        Debug.Log(name + " meurt !");
+        Destroy(gameObject);
+    }
+
+    /// <summary>
+    /// Réduit les dégâts physiques reçus en fonction de l'armure
     /// </summary>
     /// <param name="damage">Dégâts reçus</param>
-    public void PhysicalDamage(int damage)
+    public virtual void PhysicalDamage(int damage)
     {
         damage -= _armor;
         if (damage <= 0)

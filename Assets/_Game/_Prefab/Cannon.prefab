@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4223725364143573519}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.96, y: -1.46, z: 2.489007}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5745, y: 0.5745, z: 0.5745}
   m_Children:
   - {fileID: 4223725365523403408}
   m_Father: {fileID: 0}
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.9528302, g: 0, b: 0.018088376, a: 1}
+  m_Sprite: {fileID: 250391886309440160, guid: 8f4159951db5e2448a35754179e514ad, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cadenceCast: 3
   spells:
-  - {fileID: 11400000, guid: 8eeedbe90deb68a459ef9347c4c1ba06, type: 2}
+  - {fileID: 11400000, guid: d409a577350c3dc4aa0019f98714667f, type: 2}
 --- !u!1 &4223725365523403409
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ public class Immolation : SelfSpell
         // On récupère et modifie le sprite du caster
         //caster.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0, 1);
 
-        Debug.Log("Immolation !");
+        //Debug.Log("Immolation !");
 
         StatsManager casterStats = caster.GetComponent<StatsManager>();
         casterStats.AddEffect(effect);

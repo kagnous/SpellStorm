@@ -9,7 +9,7 @@ public class CameraFollow : MonoBehaviour
     private float _timeOffset = 0.2f;
 
     [SerializeField, Tooltip("Décalage de la caméra vis-à-vis du joueur")]
-    private Vector3 _posOffset = new Vector3(1,1,-10);
+    private Vector3 _posOffset = new Vector3(1,1,-10); public Vector3 PosOffset => _posOffset;
 
     private Vector3 velocity;
 

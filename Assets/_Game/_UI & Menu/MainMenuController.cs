@@ -53,6 +53,12 @@ public class MainMenuController : MonoBehaviour
     /// </summary>
     public void ButtonPlay()
     {
+        FindObjectOfType<CanvasGroup>().GetComponent<Animator>().SetTrigger("Start");
+        Invoke(nameof(LoadNewScene), 1f);
+    }
+
+    private void LoadNewScene()
+    {
         SceneManager.LoadScene(levelToLoad);
     }
 

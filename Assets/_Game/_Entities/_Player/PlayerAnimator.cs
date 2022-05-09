@@ -9,6 +9,7 @@ public class PlayerAnimator : MonoBehaviour
 
     private PlayerCasting _characterCasting;
     private PlayerController _characterMovment;
+    private StatsPlayerManager _characterStats;
 
     private void Awake()
     {
@@ -16,16 +17,20 @@ public class PlayerAnimator : MonoBehaviour
         _animator = GetComponent<Animator>();
         _characterCasting = GetComponent<PlayerCasting>();
         _characterMovment = GetComponent<PlayerController>();
+        _characterStats = GetComponent<StatsPlayerManager>();
     }
 
     private void OnEnable()
     {
-        _characterCasting.eventCast += Attack;
+        _characterCasting.eventCast += AnimAttack;
+        _characterStats.eventDeath += AnimDeath;
+        _characterStats.eventDamage += AnimDamage;
     }
-
     private void OnDisable()
     {
-        _characterCasting.eventCast -= Attack;
+        _characterCasting.eventCast -= AnimAttack;
+        _characterStats.eventDeath -= AnimDeath;
+        _characterStats.eventDamage += AnimDamage;
     }
 
     private void FixedUpdate()
@@ -34,15 +39,41 @@ public class PlayerAnimator : MonoBehaviour
         _animator.SetBool("IsGrounded", _characterMovment.IsGrounded);
     }
 
-    private void Attack(MagicSpell spell)
+    private void AnimAttack(MagicSpell spell)
     {
-        if(Mathf.Abs(rb.velocity.x) > 0.3f)
+        if(spell.Form.name == "FormePersonnelle")
+        {
+            _animator.Play("MageSelfCast");
+        }
+        else
+        {
+            _animator.Play("MageProjectileCast");
+        }
+
+        /*if(Mathf.Abs(rb.velocity.x) > 0.3f)
         {
             _animator.Play("MageWalkingAttack");
         }
         else
         {
             _animator.Play("MageStaticAttack");
+        }*/
+    }
+
+    private void AnimDeath()
+    {
+        _animator.Play("MageDead");
+    }
+
+    private void AnimDamage()
+    {
+        if(_characterStats.Armor > 0)
+        {
+            _animator.Play("MageTakeDamageArmor");
+        }
+        else
+        {
+            _animator.Play("MageTakeDamage");
         }
     }
 }

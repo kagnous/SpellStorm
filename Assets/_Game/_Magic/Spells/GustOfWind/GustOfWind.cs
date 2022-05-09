@@ -13,7 +13,7 @@ public class GustOfWind : ProjectileSpell
     {
         if (collision.gameObject.tag == "Mob" || collision.gameObject.tag == "Player")
         {
-            Debug.Log("Woosh");
+                //Debug.Log("Woosh");
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(intensity * -Mathf.Sign(projectile.transform.localScale.x),0));
             //Debug.Log(-Mathf.Sign(projectile.transform.localScale.x));
             if (collision.gameObject.tag == "Player")

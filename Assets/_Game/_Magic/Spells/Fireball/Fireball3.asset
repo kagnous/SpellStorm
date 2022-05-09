@@ -23,7 +23,7 @@ MonoBehaviour:
   _typeDamage: 2
   _damageRange: 3
   _explosion: {fileID: 7158826703393369548, guid: c0ce8230161bb1f43ae0c6fa378c98cc, type: 3}
-  _explosionDuration: 2
+  _explosionDuration: 0.8
   _collisionLayer:
     serializedVersion: 2
     m_Bits: 73

@@ -541,10 +541,10 @@ TextureImporter:
       name: X_la_magicienne_animation_16
       rect:
         serializedVersion: 2
-        x: 17
-        y: 72
-        width: 32
-        height: 13
+        x: 0
+        y: 74
+        width: 49
+        height: 11
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -869,27 +869,6 @@ TextureImporter:
       bones: []
       spriteID: 9d226efe8f9d002c0800000000000000
       internalID: -4467331167151578407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: X_la_magicienne_animation_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 74
-        width: 17
-        height: 11
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f87723b0d95627d20800000000000000
-      internalID: 3274791604223899535
       vertices: []
       indices: 
       edges: []

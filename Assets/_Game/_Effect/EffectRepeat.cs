@@ -14,4 +14,9 @@ public class EffectRepeat : EffectMother
         effectController.Coup = coup;
         effectController.Cadence = cadence;
     }
+
+    public override void EndEffect(StatsManager target)
+    {
+        target.GetComponent<SpriteRenderer>().color = Color.white;
+    }
 }

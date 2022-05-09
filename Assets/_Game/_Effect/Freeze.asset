@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Freeze
   m_EditorClassIdentifier: 
   typeEffect: 3
-  colorEffect: {r: 0, g: 0.7285204, b: 1, a: 1}
-  effectPrefab: {fileID: 7410336885811642170, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
+  colorEffect: {r: 1, g: 1, b: 1, a: 1}
+  colorSkin: {r: 0, g: 0.72156864, b: 0.9921569, a: 1}
+  effectPrefab: {fileID: 7410336885811642170, guid: e2ab95f3e3724204aaf46af23e9760a5, type: 3}
   effects:
   - affectedValue: 6
     value: 0
-  _duration: 5
+  _duration: 3.5

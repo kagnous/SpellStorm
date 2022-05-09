@@ -43,7 +43,8 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
 
         // Récupère le DialoguePanel et ses Composants
-        _dialoguePanel = FindObjectOfType<Canvas>().transform.Find("DialoguePanel").gameObject;
+        _dialoguePanel = GameObject.FindGameObjectWithTag("MainUI").transform.Find("DialoguePanel").gameObject;
+        //_dialoguePanel = FindObjectOfType<Canvas>().transform.Find("DialoguePanel").gameObject;
         _animator = _dialoguePanel.GetComponent<Animator>();
         _NPCName = _dialoguePanel.transform.Find("NPCname").GetComponent<Text>();
         _dialogue = _dialoguePanel.transform.Find("DialogueText").GetComponent<Text>();

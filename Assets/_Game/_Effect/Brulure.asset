@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Brulure
   m_EditorClassIdentifier: 
   typeEffect: 2
-  colorEffect: {r: 1, g: 0, b: 0, a: 1}
-  effectPrefab: {fileID: 7410336885811642170, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
+  colorEffect: {r: 1, g: 1, b: 1, a: 1}
+  colorSkin: {r: 1, g: 0.20188677, b: 0.20188677, a: 1}
+  effectPrefab: {fileID: 7410336885811642170, guid: 4d1fcddb7d2fe0844942c0a0fa203904, type: 3}
   effects:
   - affectedValue: 0
     value: 1

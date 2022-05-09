@@ -137,9 +137,9 @@ public class PlayerCasting : MonoBehaviour
         // On vérifie si le caster (player uniquement) est freeze
         if(gameObject.tag == "Player")
         {
-            PlayerController playerMovment = GetComponent<PlayerController>();
+            Animator playerAnimator = GetComponent<Animator>();
             // Si freeze, on vérifie si le sort casté est personnel, sinon on retourne false
-            if (!playerMovment.isActiveAndEnabled)
+            if (!playerAnimator.isActiveAndEnabled)
             {
                 if (spell.Form.name != "FormePersonnelle")
                 {

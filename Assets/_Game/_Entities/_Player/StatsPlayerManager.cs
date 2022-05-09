@@ -17,7 +17,14 @@ public class StatsPlayerManager : StatsManager
     [SerializeField, Tooltip("Intervalle de temps du régèn de mana")]
     private float _manaRegenTime = 1;
 
+    [SerializeField, Tooltip("Si le joueur peut prendre des dégâts")]
+    private bool _isInvincible = false;
+
+    [SerializeField, Tooltip("Temps d'invincibilité du joueur")]
+    private float _invincibilityTime = 2;
+
     private float timer = 0;
+    private float timerAlt = 0;
 
     private void Start()
     {
@@ -40,6 +47,28 @@ public class StatsPlayerManager : StatsManager
             SetMana(_manaPerX);
             timer = 0;
         }
+
+        timerAlt += Time.deltaTime;
+        if (timerAlt >= 30)
+        {
+            SetLife(1);
+            timerAlt = 0;
+        }
+    }
+
+    public override void PhysicalDamage(int damage)
+    {
+        base.PhysicalDamage(damage);
+
+        if(!_isInvincible && _HP > 0)
+        {
+            StartCoroutine(InvincibilityCoroutine());
+            StartCoroutine(BlinkCoroutine());
+        }
+    }
+    protected override void Death()
+    {
+        levelManager.GameOver();
     }
 
     /// <summary>
@@ -48,22 +77,37 @@ public class StatsPlayerManager : StatsManager
     /// <param name="modifLife">Valeur de modification de la vie</param>
     protected override void SetLife(int modifLife)
     {
-        _HP += modifLife;
-        if (_HP <= 0)
-        {
-            levelManager.GameOver();
-        }
-        else if (_HP > _maxHP)
-        {
-            _HP = _maxHP;
-        }
-        Debug.Log($"Le joueur a {_HP} hp");
+        if(!_isInvincible)
+            base.SetLife(modifLife);
+
         healthBar.SetHealth(_HP);
     }
-
+    /// <summary>
+    /// Override de la modification de mana
+    /// </summary>
+    /// <param name="mana">Valeur de modification de mana</param>
     public override void SetMana(int mana)
     {
         base.SetMana(mana);
         manaBar.SetHealth(_mana);
+    }
+
+    private IEnumerator InvincibilityCoroutine()
+    {
+        _isInvincible = true;
+        yield return new WaitForSeconds(_invincibilityTime);
+        _isInvincible = false;
+    }
+
+    private IEnumerator BlinkCoroutine()
+    {
+        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        while(_isInvincible)
+        {
+            sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 0.25f);
+            yield return new WaitForSeconds(0.2f);
+            sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 1);
+            yield return new WaitForSeconds(0.2f);
+        }
     }
 }
