@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 311253db7d5d0f04bad0c226d484e31e, type: 3}
   m_Name: ElementGlace
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 1e60a5ac9aaca9c4bb24986d56974ec9, type: 3}
+  sprite: {fileID: 21300000, guid: df6d589d1e8d9c845974c74947f9752c, type: 3}

@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class ProjectileController : MonoBehaviour
 {
-    [SerializeField, Tooltip("Spell à l'origine du projectile")]
-    private ProjectileSpell _projectileSpell;
-    public ProjectileSpell ProjectileSpell { get { return _projectileSpell; } set { _projectileSpell = value; } }
+    private ProjectileSpell _projectileSpell;public ProjectileSpell ProjectileSpell { get { return _projectileSpell; } set { _projectileSpell = value; } }
 
     /// <summary>
     /// Entité qui a incanté le spell
@@ -37,9 +35,10 @@ public class ProjectileController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Si la collision n'est ni avec Player ou Magic...
-        if (collision.gameObject.tag != "Magic" && collision.gameObject != _caster)
+        // Si la collision n'est ni avec le lanceur, Magic ou un object interractible...
+        if (collision.gameObject.tag != "Magic" && collision.gameObject.tag != "Projectile" && collision.gameObject.tag != "Interractible" && collision.gameObject != _caster)
         {
+            //Debug.Log(collision.name);
             // On appelle la fonction Impact du spell correspondant (si il est assigné)
             if (_projectileSpell != null)   _projectileSpell.Impact(collision, gameObject);
 

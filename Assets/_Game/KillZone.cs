@@ -13,6 +13,7 @@ public class KillZone : MonoBehaviour
                 LevelManager levelManager = FindObjectOfType<LevelManager>();
                 levelManager.GameOver();
             }
+            else
             Destroy(collision.gameObject);
         }
     }

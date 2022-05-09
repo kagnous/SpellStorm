@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Magic
   - Mob
+  - Reactive
+  - Interractible
+  - Projectile
+  - PlayerSpawn
+  - MainUI
   layers:
   - Default
   - TransparentFX
@@ -14,7 +19,7 @@ TagManager:
   - Water
   - UI
   - Mob
-  - 
+  - Nothing
   - 
   - 
   - 

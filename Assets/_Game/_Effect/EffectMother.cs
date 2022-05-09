@@ -24,6 +24,7 @@ public class EffectMother : ScriptableObject
     public enum TypeEffect
     {
         None,
+        Physical,
         Fire,
         Cold
     }
@@ -33,6 +34,9 @@ public class EffectMother : ScriptableObject
 
     [SerializeField, Tooltip("Couleur des particules")]
     protected Color colorEffect; public Color ColorEffect => colorEffect;
+
+    [SerializeField, Tooltip("Couleur du sprite (blanc pour rien)")]
+    protected Color colorSkin; public Color ColorSkin => colorSkin;
 
     [SerializeField, Tooltip("Prefab de l'objet pour les effets")]
     protected GameObject effectPrefab;
@@ -86,58 +90,60 @@ public class EffectMother : ScriptableObject
             {
                 case AffectedValue.HP:
                     target.ElementalDamage(effects[i].value);
-                    Debug.Log($"-{effects[i].value} HP");
+                        //Debug.Log($"-{effects[i].value} HP");
                     break;
                 case AffectedValue.Mana:
                     target.Mana += effects[i].value;
-                    Debug.Log($"+{effects[i].value} Mana");
+                        //Debug.Log($"+{effects[i].value} Mana");
                     break;
                 case AffectedValue.Armor:
                     target.Armor += effects[i].value;
-                    Debug.Log($"+{effects[i].value} armor");
+                        //Debug.Log($"+{effects[i].value} armor");
                     break;
                 case AffectedValue.Speed:
                     target.Speed += effects[i].value;
-                    Debug.Log($"+{effects[i].value} speed");
+                        //Debug.Log($"+{effects[i].value} speed");
                     break;
                 case AffectedValue.Jump:
                     target.JumpForce += effects[i].value;
-                    Debug.Log($"+{effects[i].value} jump");
+                        //Debug.Log($"+{effects[i].value} jump");
                     break;
                 case AffectedValue.GravityScale:
                     target.gameObject.GetComponent<Rigidbody2D>().gravityScale += effects[i].value;
-                    Debug.Log($"+{effects[i].value} gravityScale");
+                        //Debug.Log($"+{effects[i].value} gravityScale");
                     break;
                 case AffectedValue.Paralyse:
                     // Propetry Drawer pour masquer la value qui sert à rien ici
                     if (target.gameObject.tag == "Player")
                     {
-                        target.GetComponent<CharacterMovement>().enabled = false;
-                        target.GetComponent<CharacterMovement>().DirectionMovment = Vector2.zero;
+                        target.GetComponent<Animator>().enabled = false;
+                        target.GetComponent<PlayerController>().StopMoveInput();
                     }
                     else if(target.gameObject.tag == "Mob")
                     {
-                        Debug.Log($"Paralyse Goblin");
-                        target.GetComponent<GoblinController>().IsFreeze = true;
+                        target.GetComponent<EnnemiController>().State = EnnemiController.EnnemiState.Freeze;
+                        target.GetComponent<Animator>().enabled = false;
                     }
-                    Debug.Log($"Paralyse");
+                        //Debug.Log($"Paralyse");
                     break;
                 default:
                     break;
             }
+
+            if(colorSkin != Color.white)
+            target.GetComponent<SpriteRenderer>().color = colorSkin;
         }
     }
 
     /// <summary>
     /// Se lance à la fin de l'effet (principalement pour dissiper des effets fixes)
     /// </summary>
-    /// <param name="taget">StatsManager de la cible de l'effet</param>
-    public virtual void EndEffect(StatsManager taget) { }
+    /// <param name="target">StatsManager de la cible de l'effet</param>
+    public virtual void EndEffect(StatsManager target) { }
 }
 
 
 // Pour compacter la valeur affectée et le nombre, afin de pouvoir avoir une list de ça et donc des effets qui touchent plusieurs valeurs d'un coup
-// (terminer le custom inspector pour être mieux utilisable)
 [System.Serializable]
 public struct ModifyStatEffect
 {

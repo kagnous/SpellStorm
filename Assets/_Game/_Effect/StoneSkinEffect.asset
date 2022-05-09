@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: StoneSkinEffect
   m_EditorClassIdentifier: 
   typeEffect: 0
-  colorEffect: {r: 0, g: 0, b: 0, a: 1}
-  effectPrefab: {fileID: 7410336885811642170, guid: 52b03689d866b7f4da70f4d3652b2fd0, type: 3}
+  colorEffect: {r: 0.6698113, g: 0.56973994, b: 0.45749375, a: 1}
+  colorSkin: {r: 0.3301887, g: 0.2617348, b: 0.20372018, a: 1}
+  effectPrefab: {fileID: 7410336885811642170, guid: 74c53aac03d6a034dad4a8a85c4e1b35, type: 3}
   effects:
   - affectedValue: 2
     value: 5
   - affectedValue: 3
-    value: -100
+    value: -50
   - affectedValue: 4
     value: -200
   _duration: 5

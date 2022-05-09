@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class MainMenuController : MonoBehaviour
 {
@@ -13,6 +14,20 @@ public class MainMenuController : MonoBehaviour
     [SerializeField, Tooltip("Page de confirmation de Quit")]
     private GameObject closeWindow;
 
+    #region EventSystemFirstSelected
+    [Header("First selected")]
+    [SerializeField, Tooltip("Boutton selectionné à l'apparition de la scène")]
+    private GameObject loadFirstButton;
+    [SerializeField, Tooltip("Boutton selectionné à l'apparition des options")]
+    private GameObject optionFirstButton;
+    [SerializeField, Tooltip("Boutton selectionné en quittant les options")]
+    private GameObject optionCloseButton;
+    [SerializeField, Tooltip("Boutton selectionné à l'apparition du quit")]
+    private GameObject quitFirstButton;
+    [SerializeField, Tooltip("Boutton selectionné en quittant le quit")]
+    private GameObject quitCloseButton;
+    #endregion
+
     private void Awake()
     {
         // Rend le curseur visible
@@ -24,6 +39,10 @@ public class MainMenuController : MonoBehaviour
         mainWindow.SetActive(true);
         settingsWindow.SetActive(false);
         closeWindow.SetActive(false);
+
+        // Place le controller sur le premier boutton
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(loadFirstButton);
     }
 
     // ============================= MAIN MENU ===================================
@@ -33,6 +52,12 @@ public class MainMenuController : MonoBehaviour
     /// Load la Scene de jeu
     /// </summary>
     public void ButtonPlay()
+    {
+        FindObjectOfType<CanvasGroup>().GetComponent<Animator>().SetTrigger("Start");
+        Invoke(nameof(LoadNewScene), 1f);
+    }
+
+    private void LoadNewScene()
     {
         SceneManager.LoadScene(levelToLoad);
     }
@@ -44,6 +69,10 @@ public class MainMenuController : MonoBehaviour
     {
         mainWindow.SetActive(false);
         settingsWindow.SetActive(true);
+
+        // Place le controller sur le premier boutton option
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(optionFirstButton);
     }
 
     /// <summary>
@@ -61,6 +90,10 @@ public class MainMenuController : MonoBehaviour
     {
         mainWindow.SetActive(false);
         closeWindow.SetActive(true);
+
+        // Place le controller sur le premier boutton quit
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(quitFirstButton);
     }
     #endregion
 
@@ -74,6 +107,10 @@ public class MainMenuController : MonoBehaviour
     {
         settingsWindow.SetActive(false);
         mainWindow.SetActive(true);
+
+        // Place le controller sur le bon boutton MainMenu
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(optionCloseButton);
     }
     #endregion
 
@@ -87,6 +124,10 @@ public class MainMenuController : MonoBehaviour
     {
         closeWindow.SetActive(false);
         mainWindow.SetActive(true);
+
+        // Place le controller sur le premier boutton
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(quitCloseButton);
     }
 
     /// <summary>

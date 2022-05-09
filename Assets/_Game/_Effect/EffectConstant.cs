@@ -21,44 +21,47 @@ public class EffectConstant : EffectMother
             {
                 case AffectedValue.HP:
                     target.Heal(effects[i].value);
-                    Debug.Log($"-{effects[i].value} HP");
+                        //Debug.Log($"-{effects[i].value} HP");
                     break;
                 case AffectedValue.Mana:
                     target.Mana -= effects[i].value;
-                    Debug.Log($"-{effects[i].value} Mana");
+                        //Debug.Log($"-{effects[i].value} Mana");
                     break;
                 case AffectedValue.Armor:
                     target.Armor -= effects[i].value;
-                    Debug.Log($"-{effects[i].value} armor");
+                        //Debug.Log($"-{effects[i].value} armor");
                     break;
                 case AffectedValue.Speed:
                     target.Speed -= effects[i].value;
-                    Debug.Log($"-{effects[i].value} speed");
+                        //Debug.Log($"-{effects[i].value} speed");
                     break;
                 case AffectedValue.Jump:
                     target.JumpForce -= effects[i].value;
-                    Debug.Log($"-{effects[i].value} jump");
+                        //Debug.Log($"-{effects[i].value} jump");
                     break;
                 case AffectedValue.GravityScale:
                     target.gameObject.GetComponent<Rigidbody2D>().gravityScale -= effects[i].value;
-                    Debug.Log($"-{effects[i].value} gravityScale");
+                        //Debug.Log($"-{effects[i].value} gravityScale");
                     break;
                 case AffectedValue.Paralyse:
                     // La value ne change absolument rien ici
                     if (target.gameObject.tag == "Player")
                     {
-                        target.GetComponent<CharacterMovement>().enabled = true;
-                        target.GetComponent<CharacterMovement>().DirectionMovment = Vector2.zero;
+                        target.GetComponent<Animator>().enabled = true;
+                        target.GetComponent<PlayerController>().ResumeMoveInput();
                     }
                     else if (target.gameObject.tag == "Mob")
                     {
-                        target.GetComponent<GoblinController>().IsFreeze = false;
+                        target.GetComponent<EnnemiController>().Target = null;
+                        target.GetComponent<EnnemiController>().State = target.GetComponent<EnnemiController>().DefaultState;
+                        target.GetComponent<Animator>().enabled = true;
                     }
-                    Debug.Log($"End paralyse");
+                        //Debug.Log($"End paralyse");
                     break;
                 default:
                     break;
             }
+            target.GetComponent<SpriteRenderer>().color = Color.white;
         }
     }
 }

@@ -33,7 +33,7 @@ public class EffectRepeatController : EffectController
 
     public override void RefreshEffect()
     {
-        Debug.Log("Refresh" + effet.name);
+            //Debug.Log("Refresh" + effet.name);
         actualCoup = 0;
     }
 }

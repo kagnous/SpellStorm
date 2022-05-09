@@ -28,7 +28,7 @@ public class EffectController : MonoBehaviour
     {
         // Applique les consignes de fin d'effet dans le scriptable d'effet associé
         effet.EndEffect(target);
-        Debug.Log("Fin de l'effet");
+            //Debug.Log("Fin de l'effet");
 
         // Fouille dans la List des EffectsCOntrollers qui affectent la cible
         for (int i = 0; i < target.Effects.Count; i++)
