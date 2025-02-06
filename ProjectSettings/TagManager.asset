@@ -3,16 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Magic
+  - Mob
+  - Reactive
+  - Interractible
+  - Projectile
+  - PlayerSpawn
+  - MainUI
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
+  - Mob
+  - Nothing
   - 
   - 
   - 

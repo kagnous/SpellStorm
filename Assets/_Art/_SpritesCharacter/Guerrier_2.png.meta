@@ -1,0 +1,2121 @@
+fileFormatVersion: 2
+guid: deeffe9722169d441a0994d6f1d5255c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5673265459165236281
+    second: Guerrier_2_0
+  - first:
+      213: -8519725740964085884
+    second: Guerrier_2_1
+  - first:
+      213: -456518004179922823
+    second: Guerrier_2_2
+  - first:
+      213: -4555557007246256678
+    second: Guerrier_2_3
+  - first:
+      213: -5924898798955872622
+    second: Guerrier_2_4
+  - first:
+      213: 5440806159126778422
+    second: Guerrier_2_5
+  - first:
+      213: -4761065862089327100
+    second: Guerrier_2_6
+  - first:
+      213: 4487132452295189828
+    second: Guerrier_2_7
+  - first:
+      213: -7737817531198522685
+    second: Guerrier_2_8
+  - first:
+      213: 5618604829325703954
+    second: Guerrier_2_9
+  - first:
+      213: -4569546834470951641
+    second: Guerrier_2_10
+  - first:
+      213: 2197481965092307501
+    second: Guerrier_2_11
+  - first:
+      213: 7908449646469657237
+    second: Guerrier_2_12
+  - first:
+      213: 5850991324388086381
+    second: Guerrier_2_13
+  - first:
+      213: 1747006564216348725
+    second: Guerrier_2_14
+  - first:
+      213: 6328489888663150501
+    second: Guerrier_2_15
+  - first:
+      213: 4775726983221811839
+    second: Guerrier_2_16
+  - first:
+      213: 1257148836357237946
+    second: Guerrier_2_17
+  - first:
+      213: -5944681167329514908
+    second: Guerrier_2_18
+  - first:
+      213: 3339177310271408763
+    second: Guerrier_2_19
+  - first:
+      213: -3635224727877260176
+    second: Guerrier_2_20
+  - first:
+      213: 4685590323697594907
+    second: Guerrier_2_21
+  - first:
+      213: -6764596893668914905
+    second: Guerrier_2_22
+  - first:
+      213: 7657196497332174916
+    second: Guerrier_2_23
+  - first:
+      213: 1174420292759618975
+    second: Guerrier_2_24
+  - first:
+      213: -6113934846501590726
+    second: Guerrier_2_25
+  - first:
+      213: -6598909245232576275
+    second: Guerrier_2_26
+  - first:
+      213: 47259816793067816
+    second: Guerrier_2_27
+  - first:
+      213: -5298487602129827849
+    second: Guerrier_2_28
+  - first:
+      213: 4451207433067787814
+    second: Guerrier_2_29
+  - first:
+      213: -2471141424192916543
+    second: Guerrier_2_30
+  - first:
+      213: 4858590798936047847
+    second: Guerrier_2_31
+  - first:
+      213: -6136386074343900491
+    second: Guerrier_2_32
+  - first:
+      213: 8664709809982325369
+    second: Guerrier_2_33
+  - first:
+      213: 4478161135505018887
+    second: Guerrier_2_34
+  - first:
+      213: 922177635982707214
+    second: Guerrier_2_35
+  - first:
+      213: 5830880921197868033
+    second: Guerrier_2_36
+  - first:
+      213: -6264389862647135475
+    second: Guerrier_2_37
+  - first:
+      213: 2026716329736406243
+    second: Guerrier_2_38
+  - first:
+      213: 8113480092564684597
+    second: Guerrier_2_39
+  - first:
+      213: 8863158137724001215
+    second: Guerrier_2_40
+  - first:
+      213: 1692731269986614801
+    second: Guerrier_2_41
+  - first:
+      213: 7941105942960420437
+    second: Guerrier_2_42
+  - first:
+      213: -4072482799641884489
+    second: Guerrier_2_43
+  - first:
+      213: -8208770204800393183
+    second: Guerrier_2_44
+  - first:
+      213: 5859480053977332427
+    second: Guerrier_2_45
+  - first:
+      213: 2529844698682951765
+    second: Guerrier_2_46
+  - first:
+      213: 3337037371342460719
+    second: Guerrier_2_47
+  - first:
+      213: 8600115299630006203
+    second: Guerrier_2_48
+  - first:
+      213: 2897088712061679743
+    second: Guerrier_2_49
+  - first:
+      213: -804309552994649602
+    second: Guerrier_2_50
+  - first:
+      213: 6702076277447671173
+    second: Guerrier_2_51
+  - first:
+      213: -6394558224052231334
+    second: Guerrier_2_52
+  - first:
+      213: -2875183713049048729
+    second: Guerrier_2_53
+  - first:
+      213: 6759590119532469787
+    second: Guerrier_2_54
+  - first:
+      213: -9158481278144992822
+    second: Guerrier_2_55
+  - first:
+      213: -840135969183539852
+    second: Guerrier_2_56
+  - first:
+      213: -6277899396632222811
+    second: Guerrier_2_57
+  - first:
+      213: -8701116056971759199
+    second: Guerrier_2_58
+  - first:
+      213: 2673817466376218219
+    second: Guerrier_2_59
+  - first:
+      213: 2294634257748697873
+    second: Guerrier_2_60
+  - first:
+      213: 260057224371258986
+    second: Guerrier_2_61
+  - first:
+      213: 4280565987162929952
+    second: Guerrier_2_62
+  - first:
+      213: 574503663330912726
+    second: Guerrier_2_63
+  - first:
+      213: -5944900792228362937
+    second: Guerrier_2_64
+  - first:
+      213: 6940001809850143988
+    second: Guerrier_2_65
+  - first:
+      213: -3724176338583989363
+    second: Guerrier_2_66
+  - first:
+      213: 5236652628422465049
+    second: Guerrier_2_67
+  - first:
+      213: 4532363303966241169
+    second: Guerrier_2_68
+  - first:
+      213: -6339916574109743258
+    second: Guerrier_2_69
+  - first:
+      213: 780539376170639635
+    second: Guerrier_2_70
+  - first:
+      213: -6425347534234600173
+    second: Guerrier_2_71
+  - first:
+      213: 6563742816959021504
+    second: Guerrier_2_72
+  - first:
+      213: 461509359612576138
+    second: Guerrier_2_73
+  - first:
+      213: -1297149091426726248
+    second: Guerrier_2_74
+  - first:
+      213: 6641585471342159664
+    second: Guerrier_2_75
+  - first:
+      213: -7273193873124360987
+    second: Guerrier_2_76
+  - first:
+      213: 6852199162888958894
+    second: Guerrier_2_77
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Guerrier_2_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 221
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c376f58f138441b0800000000000000
+      internalID: -5673265459165236281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 221
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f751af39ad3c980800000000000000
+      internalID: -8519725740964085884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 221
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970194f3b4f1aa9f0800000000000000
+      internalID: -456518004179922823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_3
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 220
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad59b0dc90967c0c0800000000000000
+      internalID: -4555557007246256678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_4
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 222
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29eb81e0fe786cda0800000000000000
+      internalID: -5924898798955872622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_5
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 224
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63252860060a18b40800000000000000
+      internalID: 5440806159126778422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_6
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 224
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e3de9d2db4dedb0800000000000000
+      internalID: -4761065862089327100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_7
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 225
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445ae27013f754e30800000000000000
+      internalID: 4487132452295189828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_8
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 225
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca3f1cb3ffbd9490800000000000000
+      internalID: -7737817531198522685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_9
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 224
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bb049d25b49fd40800000000000000
+      internalID: 5618604829325703954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_10
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 222
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72529d25d55b590c0800000000000000
+      internalID: -4569546834470951641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_11
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 223
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2287a954360f7e10800000000000000
+      internalID: 2197481965092307501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_12
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 228
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59233ed7d0570cd60800000000000000
+      internalID: 7908449646469657237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_13
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 220
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d625b021c95e23150800000000000000
+      internalID: 5850991324388086381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_14
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 220
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5302460d63d9e3810800000000000000
+      internalID: 1747006564216348725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_15
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 228
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af1b62260053d750800000000000000
+      internalID: 6328489888663150501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_16
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 228
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a1f2b636ac64240800000000000000
+      internalID: 4775726983221811839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_17
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 220
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc6edcb43a427110800000000000000
+      internalID: 1257148836357237946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_18
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 221
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46aae5e79ff308da0800000000000000
+      internalID: -5944681167329514908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_19
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 222
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a85cc6214275e20800000000000000
+      internalID: 3339177310271408763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_20
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 222
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ce828ce561d8dc0800000000000000
+      internalID: -3635224727877260176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_21
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 222
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12b007f29f860140800000000000000
+      internalID: 4685590323697594907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_22
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 222
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729472037f25f12a0800000000000000
+      internalID: -6764596893668914905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_23
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 221
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44089de05a3d34a60800000000000000
+      internalID: 7657196497332174916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 184
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9582fea8016c4010800000000000000
+      internalID: 1174420292759618975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_25
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 186
+        width: 30
+        height: 32
+      alignment: 9
+      pivot: {x: 0.35, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39e36e66a0f62ba0800000000000000
+      internalID: -6113934846501590726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_26
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 177
+        width: 19
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34146342}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de80fd40107fb64a0800000000000000
+      internalID: -6598909245232576275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_27
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 188
+        width: 35
+        height: 30
+      alignment: 9
+      pivot: {x: 0.7285714, y: 0.46666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821d9109d86e7a000800000000000000
+      internalID: 47259816793067816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_28
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 189
+        width: 35
+        height: 29
+      alignment: 9
+      pivot: {x: 0.7285714, y: 0.4827586}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f78d34399df776b0800000000000000
+      internalID: -5298487602129827849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_29
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 189
+        width: 35
+        height: 29
+      alignment: 9
+      pivot: {x: 0.7285714, y: 0.4827586}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626759da39dd5cd30800000000000000
+      internalID: 4451207433067787814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_30
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 188
+        width: 35
+        height: 30
+      alignment: 9
+      pivot: {x: 0.7285714, y: 0.46666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c37a35a7fdb4bdd0800000000000000
+      internalID: -2471141424192916543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_31
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 186
+        width: 38
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7236842, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e08097f69e2d6340800000000000000
+      internalID: 4858590798936047847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_32
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 187
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5baf31a906d27daa0800000000000000
+      internalID: -6136386074343900491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_33
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 187
+        width: 21
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4516129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972c6d12aab3f3870800000000000000
+      internalID: 8664709809982325369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_34
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 187
+        width: 21
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4516129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7009cb093df952e30800000000000000
+      internalID: 4478161135505018887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_35
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 187
+        width: 21
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4516129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a0f8c8cab3ccc00800000000000000
+      internalID: 922177635982707214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_36
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 186
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104f993fd437be050800000000000000
+      internalID: 5830880921197868033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_37
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 185
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d030c5e2c9a6019a0800000000000000
+      internalID: -6264389862647135475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_38
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 185
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e40c6e83c7502c10800000000000000
+      internalID: 2026716329736406243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_39
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 184
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f7589382fd89070800000000000000
+      internalID: 8113480092564684597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_40
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 184
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbd6230e53400b70800000000000000
+      internalID: 8863158137724001215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_41
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 141
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e7fbf1f1acd7710800000000000000
+      internalID: 1692731269986614801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_42
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 162
+        width: 32
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 1.0769231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55636e508c9743e60800000000000000
+      internalID: 7941105942960420437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_43
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 144
+        width: 22
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4516129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8057d7872ab77c0800000000000000
+      internalID: -4072482799641884489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_44
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 143
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120ef0c9df6941e80800000000000000
+      internalID: -8208770204800393183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_45
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 143
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca3ec1701e015150800000000000000
+      internalID: 5859480053977332427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_46
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 143
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55807e98950db1320800000000000000
+      internalID: 2529844698682951765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_47
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 141
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2712111fc98f4e20800000000000000
+      internalID: 3337037371342460719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_48
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 141
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf39d5bc4fb95770800000000000000
+      internalID: 8600115299630006203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_49
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 143
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78fa3d85d6843820800000000000000
+      internalID: 2897088712061679743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_50
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 143
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9fc4419b486d4f0800000000000000
+      internalID: -804309552994649602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_51
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 146
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d37de7dde820d50800000000000000
+      internalID: 6702076277447671173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_52
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 146
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5360dfcc27f147a0800000000000000
+      internalID: -6394558224052231334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_53
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 141
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76909b775ab4918d0800000000000000
+      internalID: -2875183713049048729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_54
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 141
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e19fd5663eecd50800000000000000
+      internalID: 6759590119532469787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_55
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 141
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac92a1e1dc986e080800000000000000
+      internalID: -9158481278144992822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_56
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 141
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d59c989cc3754f0800000000000000
+      internalID: -840135969183539852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_57
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 141
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3e810b2cb60e8a0800000000000000
+      internalID: -6277899396632222811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_58
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 141
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a130c2fb0d6f3780800000000000000
+      internalID: -8701116056971759199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_59
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 141
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66e695b1de4b1520800000000000000
+      internalID: 2673817466376218219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_60
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 141
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113ad8e23bd28df10800000000000000
+      internalID: 2294634257748697873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_61
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 105
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a664cefeaa8eb9300800000000000000
+      internalID: 260057224371258986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_62
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 106
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b377ef510a76b30800000000000000
+      internalID: 4280565987162929952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_63
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 105
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9eff6b90c09f700800000000000000
+      internalID: 574503663330912726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_64
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 105
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7454a461a387f7da0800000000000000
+      internalID: -5944900792228362937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_65
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 124
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f49fa850e6df4060800000000000000
+      internalID: 6940001809850143988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_66
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 106
+        width: 20
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42424244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8359c10a51115cc0800000000000000
+      internalID: -3724176338583989363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_67
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 105
+        width: 15
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4117647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9169c3112d35ca840800000000000000
+      internalID: 5236652628422465049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_68
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 104
+        width: 16
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1917ce5596036ee30800000000000000
+      internalID: 4532363303966241169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_69
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 107
+        width: 20
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667c39657771408a0800000000000000
+      internalID: -6339916574109743258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_70
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 106
+        width: 18
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42424244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3112bd95d6805da00800000000000000
+      internalID: 780539376170639635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_71
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 105
+        width: 15
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4117647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31db387e57494d6a0800000000000000
+      internalID: -6425347534234600173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_72
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 106
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c14dd9d059171b50800000000000000
+      internalID: 6563742816959021504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_73
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 105
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81c930415c976600800000000000000
+      internalID: 461509359612576138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_74
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 104
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e0ac026c99ffde0800000000000000
+      internalID: -1297149091426726248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_75
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 107
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037aebc2cc6ab2c50800000000000000
+      internalID: 6641585471342159664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_76
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 106
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ecffd915bc601b90800000000000000
+      internalID: -7273193873124360987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrier_2_77
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 105
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3b93a85d6e71f50800000000000000
+      internalID: 6852199162888958894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 98dfe0e8deefa134ca9db79ec8851278
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Guerrier_2_75: 6641585471342159664
+      Guerrier_2_12: 7908449646469657237
+      Guerrier_2_33: 8664709809982325369
+      Guerrier_2_0: -5673265459165236281
+      Guerrier_2_46: 2529844698682951765
+      Guerrier_2_30: -2471141424192916543
+      Guerrier_2_65: 6940001809850143988
+      Guerrier_2_18: -5944681167329514908
+      Guerrier_2_26: -6598909245232576275
+      Guerrier_2_5: 5440806159126778422
+      Guerrier_2_10: -4569546834470951641
+      Guerrier_2_20: -3635224727877260176
+      Guerrier_2_8: -7737817531198522685
+      Guerrier_2_38: 2026716329736406243
+      Guerrier_2_29: 4451207433067787814
+      Guerrier_2_40: 8863158137724001215
+      Guerrier_2_31: 4858590798936047847
+      Guerrier_2_66: -3724176338583989363
+      Guerrier_2_76: -7273193873124360987
+      Guerrier_2_17: 1257148836357237946
+      Guerrier_2_43: -4072482799641884489
+      Guerrier_2_2: -456518004179922823
+      Guerrier_2_52: -6394558224052231334
+      Guerrier_2_36: 5830880921197868033
+      Guerrier_2_73: 461509359612576138
+      Guerrier_2_22: -6764596893668914905
+      Guerrier_2_24: 1174420292759618975
+      Guerrier_2_1: -8519725740964085884
+      Guerrier_2_51: 6702076277447671173
+      Guerrier_2_60: 2294634257748697873
+      Guerrier_2_28: -5298487602129827849
+      Guerrier_2_37: -6264389862647135475
+      Guerrier_2_19: 3339177310271408763
+      Guerrier_2_56: -840135969183539852
+      Guerrier_2_16: 4775726983221811839
+      Guerrier_2_41: 1692731269986614801
+      Guerrier_2_74: -1297149091426726248
+      Guerrier_2_63: 574503663330912726
+      Guerrier_2_67: 5236652628422465049
+      Guerrier_2_23: 7657196497332174916
+      Guerrier_2_14: 1747006564216348725
+      Guerrier_2_39: 8113480092564684597
+      Guerrier_2_62: 4280565987162929952
+      Guerrier_2_42: 7941105942960420437
+      Guerrier_2_70: 780539376170639635
+      Guerrier_2_53: -2875183713049048729
+      Guerrier_2_45: 5859480053977332427
+      Guerrier_2_71: -6425347534234600173
+      Guerrier_2_6: -4761065862089327100
+      Guerrier_2_11: 2197481965092307501
+      Guerrier_2_54: 6759590119532469787
+      Guerrier_2_21: 4685590323697594907
+      Guerrier_2_13: 5850991324388086381
+      Guerrier_2_25: -6113934846501590726
+      Guerrier_2_44: -8208770204800393183
+      Guerrier_2_34: 4478161135505018887
+      Guerrier_2_50: -804309552994649602
+      Guerrier_2_27: 47259816793067816
+      Guerrier_2_35: 922177635982707214
+      Guerrier_2_57: -6277899396632222811
+      Guerrier_2_64: -5944900792228362937
+      Guerrier_2_61: 260057224371258986
+      Guerrier_2_47: 3337037371342460719
+      Guerrier_2_55: -9158481278144992822
+      Guerrier_2_72: 6563742816959021504
+      Guerrier_2_9: 5618604829325703954
+      Guerrier_2_32: -6136386074343900491
+      Guerrier_2_4: -5924898798955872622
+      Guerrier_2_48: 8600115299630006203
+      Guerrier_2_49: 2897088712061679743
+      Guerrier_2_77: 6852199162888958894
+      Guerrier_2_59: 2673817466376218219
+      Guerrier_2_3: -4555557007246256678
+      Guerrier_2_58: -8701116056971759199
+      Guerrier_2_69: -6339916574109743258
+      Guerrier_2_68: 4532363303966241169
+      Guerrier_2_7: 4487132452295189828
+      Guerrier_2_15: 6328489888663150501
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

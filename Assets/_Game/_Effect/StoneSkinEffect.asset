@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d56090fa40edc8745948cc76715ec415, type: 3}
+  m_Name: StoneSkinEffect
+  m_EditorClassIdentifier: 
+  typeEffect: 0
+  colorEffect: {r: 0.6698113, g: 0.56973994, b: 0.45749375, a: 1}
+  colorSkin: {r: 0.3301887, g: 0.2617348, b: 0.20372018, a: 1}
+  effectPrefab: {fileID: 7410336885811642170, guid: 74c53aac03d6a034dad4a8a85c4e1b35, type: 3}
+  effects:
+  - affectedValue: 2
+    value: 5
+  - affectedValue: 3
+    value: -50
+  - affectedValue: 4
+    value: -200
+  _duration: 5
