@@ -204,7 +204,7 @@ TextureImporter:
       213: 8975497373047460861
     second: Decoration_66
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -225,6 +225,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -263,6 +264,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -318,6 +320,30 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -1744,6 +1770,74 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Box2: -389087280608379294
+      Bush3: -6474815905490174710
+      Decoration_61: 9129291531757830334
+      Decoration_66: 8975497373047460861
+      Box3: 8002333480267911400
+      Decoration_15: 2051757784263316258
+      Tree4: 3754962894339544984
+      Ice_2: -4280765825412746780
+      Sign3: -5171851249027356276
+      Ice_4: 1890265306528245158
+      Bush2: -7926080337853386996
+      Decoration_13: -8952722625416497748
+      Ice_6: -8250511426547991113
+      Sign8_dead: 2819730956193035774
+      Tree5: 7081662665494935325
+      Decoration_24: 1356666032084300529
+      Chest_Openning1: 6556747382515170609
+      Sign5: -8949584256050787847
+      Sign7_danger: 4031399933047166486
+      Tree1: -983121831306131238
+      Decoration_55: -7039922690111909782
+      Sign6: -7759075990075060554
+      Ice_1: 1282098462555372498
+      Ice_3: -6910469767916824147
+      Ice_8: -4512359775406577895
+      Decoration_17: 2558546051751004457
+      Chest_opeening2: -3244946511145094023
+      Decoration_57: 5109551500568956640
+      Bush1: 3872367889646283263
+      Decoration_23: 4695875553099044208
+      Decoration_59: -486014712148457805
+      Chest-Opened: -7581504208270405633
+      Decoration_60: 3923935869769228647
+      Sign1: 7599613549713535892
+      Decoration_65: 112849037592349899
+      Ice_7: 5440107034576067766
+      Tree3: -1050146069433883852
+      Decoration_62: -9148146005133271168
+      Decoration_56: -4898553197797412682
+      Decoration_26: -7001666877434044512
+      Box4: -368401321789775361
+      Sign2: 1636361473550653864
+      Decoration_12: -5957907480768474131
+      Banner3: -7176535113341808620
+      Sign4: -6087425619873452366
+      Ice_5: 8971082041390250704
+      Igloo2: -7984363791254667846
+      Chest_closed: 4695044113208969041
+      Barrel2: 4030208814000181183
+      Decoration_63: -6673973904867932238
+      God-Statue-ice: 250391886309440160
+      Igloo1: -7424899692321880588
+      Tree2: -9150735976156324452
+      Tree6: 5575579087702807243
+      Decoration_22: 7686115043111144839
+      Banner1: 9065660662822131003
+      Banner2: -7738137365935341131
+      Bush4: 429415279605046377
+      Box1: -4206819594563279181
+      Decoration_58: 7739369613645518331
+      Banner-empty: 6353197579478338055
+      Barrel1: 566846315969825457
+      Bush5: -545380113026382421
+      Decoration_16: 8538422899418973946
+      Decoration_18: -1454307687701597747
+      Decoration_64: -961450165099022851
+      Banner4: 1797242976973996596
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

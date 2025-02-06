@@ -273,7 +273,7 @@ TextureImporter:
       213: 7480886401518366597
     second: Nintendo Switch - Octopath Traveler - Haanit Sorcerer_89
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -294,6 +294,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -332,6 +333,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -383,6 +385,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2296,6 +2322,97 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_4: 6343470402104365739
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_8: 6579070956083520646
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_60: 5465758018202514641
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_14: 1897687474987915915
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_85: 2213760625696690628
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_36: 2865354468378376606
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_79: -7637931687263686565
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_3: 7263312184327204483
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_20: -4935671788067393223
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_35: -4492511273524368599
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_10: 374006504974519367
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_1: -2928556897194046863
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_51: 2006906802940751857
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_63: -7732544131194161799
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_86: 4929949037209639481
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_77: -3921403331487188277
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_65: -5187274625764817101
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_5: 850872542818637544
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_28: -8537140308138724390
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_75: -8467751219517840903
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_43: 4132584478410078136
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_44: -4104604340011469397
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_27: -5524214761381669821
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_58: 1309666657747371953
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_48: 977283429227351700
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_70: 685414979633824940
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_59: -5388955965004112559
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_30: 7911325680854019866
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_15: 4303656925609704526
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_24: 4119856931355880413
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_38: -2509154293350419077
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_31: 3935113270805569355
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_21: -5511772016182617966
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_87: 6822594514284978229
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_49: -5048434744004770326
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_39: 8908944432376510565
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_40: -5801271351681770956
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_33: 3557565448246236494
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_13: -5929730006147649099
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_46: 5330249651523150602
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_25: 8521134542277120694
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_73: 2999808435538049356
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_84: -1936694835762358157
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_9: -1509632362349592
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_11: -6487032595197820004
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_41: 6745406963548913976
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_42: 475750756343908926
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_71: 2566751973384580633
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_53: -8135935052299914213
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_67: -3651044479068764558
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_80: 2455842776372637429
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_81: 6384682646098093079
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_69: -5039160042498475790
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_72: 2624549725420249535
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_83: 7234013893560107688
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_0: 1691447600975436379
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_64: -6779923359428712663
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_18: -964649803777346950
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_55: -8491030893537785982
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_54: 4637332512059074790
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_52: -3183721556196807989
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_78: -4170039721472215371
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_82: -3708679724879116437
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_45: 1494264651054002206
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_37: -3745635261721456029
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_17: 6781273435750473212
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_62: -4373438449738922497
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_12: 4530014197665176863
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_89: 7480886401518366597
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_6: -4723043568474223976
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_29: 8182423529585950854
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_47: 605741093027405694
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_61: -5761662777375553323
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_2: -7930612487377130231
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_19: 9100203129661499537
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_34: -7223096693812267158
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_22: 4788114906305862136
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_68: 3135071303037949915
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_7: -4897478965021423460
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_88: -8720832347729766604
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_76: 3831042092316925744
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_23: -4798668877502115437
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_16: -8318483659131708225
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_74: 4391060833813749499
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_66: -1552120854015793152
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_32: -4405583060288500679
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_50: -6815010725132862177
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_56: 1093991284219343410
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_26: 242150448453335043
+      Nintendo Switch - Octopath Traveler - Haanit Sorcerer_57: 1187934011230768335
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
