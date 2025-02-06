@@ -23,6 +23,7 @@ public class PlayerAnimator : MonoBehaviour
     private void OnEnable()
     {
         _characterCasting.eventCast += AnimAttack;
+        //Cell.eventChangeState += fonctionQuiCHangeLeRendu(StateCell);
         _characterStats.eventDeath += AnimDeath;
         _characterStats.eventDamage += AnimDamage;
     }

@@ -237,7 +237,7 @@ TextureImporter:
       213: 6852199162888958894
     second: Guerrier_2_77
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -258,6 +258,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -296,6 +297,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -347,6 +349,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2008,6 +2034,85 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Guerrier_2_75: 6641585471342159664
+      Guerrier_2_12: 7908449646469657237
+      Guerrier_2_33: 8664709809982325369
+      Guerrier_2_0: -5673265459165236281
+      Guerrier_2_46: 2529844698682951765
+      Guerrier_2_30: -2471141424192916543
+      Guerrier_2_65: 6940001809850143988
+      Guerrier_2_18: -5944681167329514908
+      Guerrier_2_26: -6598909245232576275
+      Guerrier_2_5: 5440806159126778422
+      Guerrier_2_10: -4569546834470951641
+      Guerrier_2_20: -3635224727877260176
+      Guerrier_2_8: -7737817531198522685
+      Guerrier_2_38: 2026716329736406243
+      Guerrier_2_29: 4451207433067787814
+      Guerrier_2_40: 8863158137724001215
+      Guerrier_2_31: 4858590798936047847
+      Guerrier_2_66: -3724176338583989363
+      Guerrier_2_76: -7273193873124360987
+      Guerrier_2_17: 1257148836357237946
+      Guerrier_2_43: -4072482799641884489
+      Guerrier_2_2: -456518004179922823
+      Guerrier_2_52: -6394558224052231334
+      Guerrier_2_36: 5830880921197868033
+      Guerrier_2_73: 461509359612576138
+      Guerrier_2_22: -6764596893668914905
+      Guerrier_2_24: 1174420292759618975
+      Guerrier_2_1: -8519725740964085884
+      Guerrier_2_51: 6702076277447671173
+      Guerrier_2_60: 2294634257748697873
+      Guerrier_2_28: -5298487602129827849
+      Guerrier_2_37: -6264389862647135475
+      Guerrier_2_19: 3339177310271408763
+      Guerrier_2_56: -840135969183539852
+      Guerrier_2_16: 4775726983221811839
+      Guerrier_2_41: 1692731269986614801
+      Guerrier_2_74: -1297149091426726248
+      Guerrier_2_63: 574503663330912726
+      Guerrier_2_67: 5236652628422465049
+      Guerrier_2_23: 7657196497332174916
+      Guerrier_2_14: 1747006564216348725
+      Guerrier_2_39: 8113480092564684597
+      Guerrier_2_62: 4280565987162929952
+      Guerrier_2_42: 7941105942960420437
+      Guerrier_2_70: 780539376170639635
+      Guerrier_2_53: -2875183713049048729
+      Guerrier_2_45: 5859480053977332427
+      Guerrier_2_71: -6425347534234600173
+      Guerrier_2_6: -4761065862089327100
+      Guerrier_2_11: 2197481965092307501
+      Guerrier_2_54: 6759590119532469787
+      Guerrier_2_21: 4685590323697594907
+      Guerrier_2_13: 5850991324388086381
+      Guerrier_2_25: -6113934846501590726
+      Guerrier_2_44: -8208770204800393183
+      Guerrier_2_34: 4478161135505018887
+      Guerrier_2_50: -804309552994649602
+      Guerrier_2_27: 47259816793067816
+      Guerrier_2_35: 922177635982707214
+      Guerrier_2_57: -6277899396632222811
+      Guerrier_2_64: -5944900792228362937
+      Guerrier_2_61: 260057224371258986
+      Guerrier_2_47: 3337037371342460719
+      Guerrier_2_55: -9158481278144992822
+      Guerrier_2_72: 6563742816959021504
+      Guerrier_2_9: 5618604829325703954
+      Guerrier_2_32: -6136386074343900491
+      Guerrier_2_4: -5924898798955872622
+      Guerrier_2_48: 8600115299630006203
+      Guerrier_2_49: 2897088712061679743
+      Guerrier_2_77: 6852199162888958894
+      Guerrier_2_59: 2673817466376218219
+      Guerrier_2_3: -4555557007246256678
+      Guerrier_2_58: -8701116056971759199
+      Guerrier_2_69: -6339916574109743258
+      Guerrier_2_68: 4532363303966241169
+      Guerrier_2_7: 4487132452295189828
+      Guerrier_2_15: 6328489888663150501
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

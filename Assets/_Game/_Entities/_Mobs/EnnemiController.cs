@@ -151,7 +151,6 @@ public class EnnemiController : MonoBehaviour
 
     private void TraceRaycast(Vector2 direction, LayerMask mask)
     {
-
         // On trace un raycast de soi même jusqu'à la limite du champs de vision dans le sens du mob, en cherchant le layer "Player uniquement"
         RaycastHit2D raycast = Physics2D.Raycast(transform.position + new Vector3(0, 0.5f, 0), direction, _fieldOfView, mask);
         // Si on a trouvé quelque chose (donc fondamentalement le joueur, vu qu'on ne cherche que son Layer)
